@@ -1,0 +1,16 @@
+Slider {
+}
+
+Slider Label {
+    background-color: rgb(185, 185, 185);
+}
+
+.Timer {
+    background-color: rgb(14, 14, 14);
+    width: 461px;
+    height: 79px;
+}
+
+.Timer-Progress {
+    background-color: rgb(84, 180, 45);
+}
