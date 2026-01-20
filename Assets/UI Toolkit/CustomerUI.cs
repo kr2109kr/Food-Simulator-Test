@@ -44,6 +44,6 @@ public class CustomerUI : MonoBehaviour
 
     public void UpdateUI(Sprite sprite)
     {
-        icon.style.backgroundImage = new StyleBackground(sprite1);
+        icon.style.backgroundImage = new StyleBackground(sprite);
     }
 }

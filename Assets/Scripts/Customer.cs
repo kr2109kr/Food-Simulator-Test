@@ -18,14 +18,14 @@ public class Customer : MonoBehaviour
 
     private void Start()
     {
-        //StartCoroutine(CountdownTimer(_waitTimeSeconds));
-        Order();
+        StartCoroutine(CountdownTimer(_waitTimeSeconds));
+        
     }
 
     private IEnumerator CountdownTimer(float seconds)
     {
         float max = seconds;
-
+        Order();
         while (seconds > 0)
         {
             _customerUI.test = (seconds / max) * 100;
@@ -33,13 +33,14 @@ public class Customer : MonoBehaviour
             yield return null;
         }
         Debug.Log("หมดเวลา" + seconds);
+        yield return CountdownTimer(5);
     }
 
 
     private void Order()
     {
         int random =Random.Range(0, _taiyaki.datas.Length);
-        //_customerUI.UpdateUI(_taiyaki.datas[random].sprite);
+        _customerUI.UpdateUI(_taiyaki.datas[random].sprite);
         Debug.Log("Order : " + _taiyaki.datas[random].name);
     }
 }
