@@ -32,15 +32,18 @@ public class Customer : MonoBehaviour
             seconds -= Time.deltaTime;
             yield return null;
         }
-        Debug.Log("หมดเวลา" + seconds);
-        yield return CountdownTimer(5);
+
+        yield return CountdownTimer(_waitTimeSeconds);
     }
 
 
     private void Order()
     {
-        int random =Random.Range(0, _taiyaki.datas.Length);
-        _customerUI.UpdateUI(_taiyaki.datas[random].sprite);
-        Debug.Log("Order : " + _taiyaki.datas[random].name);
+        int random_0 = Random.Range(0, _taiyaki.datas.Length);
+        _customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
+
+        //int random_0 = Random.Range(0, _taiyaki.datas.Length);
+        //_customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
+        //Debug.Log("Order : " + _taiyaki.datas[random].name);
     }
 }

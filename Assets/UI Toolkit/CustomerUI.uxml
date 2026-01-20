@@ -1,10 +1,29 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/CustomerUI.uss?fileID=7433441132597879392&amp;guid=0b67102fafdf7ec44b0afe8cf095b315&amp;type=3#CustomerUI"/>
-    <ui:Label text="CountdownTimer : 0s " name="Test"/>
-    <ui:VisualElement name="Timer" class="Timer">
-        <ui:VisualElement name="Bar" class="Timer-Progress" style="flex-grow: 1; width: 100%;"/>
-    </ui:VisualElement>
-    <ui:VisualElement name="123" style="flex-grow: 1;">
-        <ui:VisualElement name="Icon" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;);"/>
-    </ui:VisualElement>
+    <ui:Label text="CountdownTimer : 0s " name="Test" style="align-items: flex-start; justify-content: flex-start;">
+        <ui:VisualElement name="Customer-1" style="flex-grow: 1;">
+            <ui:VisualElement name="Timer" class="Timer" style="width: 151px; height: 14px;">
+                <ui:VisualElement name="Bar-1" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="123" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon-0" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Customer-2" style="flex-grow: 1;">
+            <ui:VisualElement name="Timer" class="Timer" style="width: 151px; height: 14px;">
+                <ui:VisualElement name="Bar-2" class="Timer-Progress" style="flex-grow: 1; width: 100%;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="123" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Customer-3" style="flex-grow: 1;">
+            <ui:VisualElement name="Timer" class="Timer" style="width: 151px; height: 14px;">
+                <ui:VisualElement name="Bar-3" class="Timer-Progress" style="flex-grow: 1; width: 100%;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="123" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon-3" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:Label>
 </ui:UXML>
