@@ -14,12 +14,17 @@ public class Customer : MonoBehaviour
 
     [SerializeField] private string order;
 
-    [SerializeField] private Taiyaki _taiyaki;
+    [SerializeField] private TaiyakiSO _taiyaki;
 
     private void Start()
     {
         StartCoroutine(CountdownTimer(_waitTimeSeconds));
         
+    }
+
+    private void CheckOrder()
+    {
+
     }
 
     private IEnumerator CountdownTimer(float seconds)
@@ -33,17 +38,18 @@ public class Customer : MonoBehaviour
             yield return null;
         }
 
-        yield return CountdownTimer(_waitTimeSeconds);
+        yield return CountdownTimer(max);
     }
 
 
     private void Order()
     {
-        int random_0 = Random.Range(0, _taiyaki.datas.Length);
-        _customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
+        //int random_0 = Random.Range(0, _taiyaki.datas.Length);
+        //_customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
 
         //int random_0 = Random.Range(0, _taiyaki.datas.Length);
         //_customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
         //Debug.Log("Order : " + _taiyaki.datas[random].name);
+        
     }
 }

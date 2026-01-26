@@ -9,6 +9,7 @@ public class CustomerUI : MonoBehaviour
     private UIDocument _uiDocument;
     [SerializeField] public float test;
 
+    [SerializeField] private Money _money;
 
 
     VisualElement root;
@@ -19,6 +20,8 @@ public class CustomerUI : MonoBehaviour
     public VisualElement icon_0;
     public VisualElement icon_1;
     public VisualElement icon_2;
+
+    public Button button;
 
     public float xzy;
     
@@ -31,18 +34,13 @@ public class CustomerUI : MonoBehaviour
         progress_0 = root.Q<VisualElement>("Bar-1");
         progress_0.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
 
-        progress_1 = root.Q<VisualElement>("Bar-2");
-        progress_1.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
-
-        progress_2 = root.Q<VisualElement>("Bar-3");
-        progress_2.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
-
         label.text = "Hello";
 
-        icon_0 = root.Q<VisualElement>("Icon-0");
-        icon_1 = root.Q<VisualElement>("Icon-1");
-        icon_2 = root.Q<VisualElement>("Icon-2");
+        button = root.Q<Button>();
 
+        icon_0 = root.Q<VisualElement>("Icon-0");
+
+        button.clicked += Button_clicked;
         //icon.style.backgroundImage = new StyleBackground(AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Images/Custard.png"));
         //icon.style.backgroundImage = new StyleBackground(sprite1);
     }
@@ -50,8 +48,12 @@ public class CustomerUI : MonoBehaviour
     private void Update()
     {
         progress_0.style.width = new StyleLength(new Length(test, LengthUnit.Percent));
-        progress_1.style.width = new StyleLength(new Length(test, LengthUnit.Percent));
-        progress_2.style.width = new StyleLength(new Length(test, LengthUnit.Percent));
+    }
+
+
+    private void Button_clicked()
+    {
+        _money.AddMoney(100);
     }
 
     public void UpdateUI_0(Sprite sprite)
@@ -71,4 +73,6 @@ public class CustomerUI : MonoBehaviour
         icon_2.style.backgroundImage = new StyleBackground(sprite);
         //icon.style.backgroundImage = new StyleBackground(sprite);
     }
+
+    
 }
