@@ -16,6 +16,8 @@ public class Customer : MonoBehaviour
 
     [SerializeField] private TaiyakiSO _taiyaki;
 
+    [SerializeField] private Food _food;
+
     private void Start()
     {
         StartCoroutine(CountdownTimer(_waitTimeSeconds));
@@ -41,9 +43,11 @@ public class Customer : MonoBehaviour
         yield return CountdownTimer(max);
     }
 
+    
 
     private void Order()
     {
+        _food.RandomFood();
         //int random_0 = Random.Range(0, _taiyaki.datas.Length);
         //_customerUI.UpdateUI_0(_taiyaki.datas[random_0].sprite);
 
