@@ -1,26 +1,26 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/CustomerUI.uss?fileID=7433441132597879392&amp;guid=0b67102fafdf7ec44b0afe8cf095b315&amp;type=3#CustomerUI"/>
-    <ui:Label text="" name="Customers" style="align-items: flex-start; justify-content: flex-start; flex-direction: row; margin-right: 44px; margin-left: 50px;">
+    <ui:Label text="" name="Customers" style="align-items: flex-start; justify-content: flex-start; flex-direction: row; margin-right: -9px; margin-left: -5px;">
         <ui:VisualElement name="Customer-0" style="flex-grow: 1; align-items: center;">
             <ui:VisualElement name="Icon-0" data-source="" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
             <ui:VisualElement name="Timer-0" class="Timer" style="width: 151px; height: 14px;">
-                <ui:VisualElement name="Bar-0" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
+                <ui:VisualElement name="Progress-0" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Customer-1" style="flex-grow: 1; align-items: center;">
             <ui:VisualElement name="Icon-1" data-source="" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
             <ui:VisualElement name="Timer-1" class="Timer" style="width: 151px; height: 14px;">
-                <ui:VisualElement name="Bar-1" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
+                <ui:VisualElement name="Progress-1" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Customer-2" style="flex-grow: 1; align-items: center;">
             <ui:VisualElement name="Icon-2" data-source="" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/red-beans.png?fileID=21300000&amp;guid=708616fcdc485e34ab70e0111862f6b9&amp;type=3#red-beans&quot;); width: 61px;"/>
             <ui:VisualElement name="Timer-2" class="Timer" style="width: 151px; height: 14px;">
-                <ui:VisualElement name="Bar-2" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
+                <ui:VisualElement name="Progress-2" class="Timer-Progress" style="flex-grow: 1; width: auto;"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:Label>
-    <ui:VisualElement name="Money" style="flex-grow: 1; align-content: flex-start; align-self: flex-start; margin-top: 183px; margin-left: 15px;">
+    <ui:VisualElement name="Money" style="flex-grow: 1; align-content: flex-start; align-self: flex-start; margin-top: 171px; margin-left: 15px;">
         <ui:VisualElement name="Icon-0" style="flex-grow: 1; border-top-left-radius: 893px; border-top-right-radius: 893px; border-bottom-right-radius: 893px; border-bottom-left-radius: 893px; background-color: rgb(183, 22, 22); aspect-ratio: 1; background-image: url(&quot;project://database/Assets/Images/dollar.png?fileID=21300000&amp;guid=3b02d459792c6504e9e2e783828651b6&amp;type=3#dollar&quot;); width: 61px; height: -701px; min-width: -105px; max-width: 101px; max-height: 54px;"/>
         <ui:Label text="Money:&#x9;" name="Text">
             <Bindings>

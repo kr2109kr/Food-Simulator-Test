@@ -24,7 +24,7 @@ public class Customer : MonoBehaviour
     [Header("Sprite")]
     [SerializeField] private Sprite[] _sprites;
 
-
+    [SerializeField] private Money money;
     private void Awake()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
@@ -47,7 +47,21 @@ public class Customer : MonoBehaviour
 
         while (seconds > 0)
         {
-            //_customerUI.test = (seconds / max) * 100;
+            if (name == "Customer-0")
+            {
+                _customerUI.UpdateProgress_0((seconds / max) * 100);
+            }
+
+            else if (name == "Customer-1")
+            {
+                _customerUI.UpdateProgress_1((seconds / max) * 100);
+            }
+
+            else if (name == "Customer-2")
+            {
+                _customerUI.UpdateProgress_2((seconds / max) * 100);
+            }
+            
             
             seconds -= Time.deltaTime;
             yield return null;
@@ -130,10 +144,12 @@ public class Customer : MonoBehaviour
         Debug.Log("Customer " + _taiyakiFilling + filling);
         if (_taiyakiFilling == filling)
         {
+            money.AddMoney(200);
             ChangeColor(Color.green);
         }
         else if (_taiyakiFilling != filling)
         {
+            money.AddMoney(-200);
             ChangeColor(Color.red);
         }
     }

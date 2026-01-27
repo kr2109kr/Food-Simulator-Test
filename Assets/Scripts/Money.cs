@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Money : MonoBehaviour
 {
-    [SerializeField] private int _money;
+    [SerializeField] public int _money;
     [SerializeField] string _moneyText = "test";
     [SerializeField, TextArea] private string Debug_String;
 

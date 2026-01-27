@@ -14,21 +14,23 @@ public class CustomerUI : MonoBehaviour
 
     [SerializeField] private VisualElement root;
 
-    public VisualElement progress_0;
-    public VisualElement progress_1;
-    public VisualElement progress_2;
-
     public VisualElement icon_0;
     public VisualElement icon_1;
     public VisualElement icon_2;
 
-    
+    public VisualElement progress_0;
+    public VisualElement progress_1;
+    public VisualElement progress_2;
+
+
     public Button button;
 
 
     [SerializeField] public Sprite iconSprite_RedBeans;
     [SerializeField] public Sprite iconSprite_Custard;
     [SerializeField] public Sprite iconSprite_Chocolate;
+
+    private TextElement textElement;
 
     
     private void Awake()
@@ -46,10 +48,17 @@ public class CustomerUI : MonoBehaviour
         icon_1 = root.Q<VisualElement>("Icon-1");
         icon_2 = root.Q<VisualElement>("Icon-2");
 
+        progress_0 = root.Q<VisualElement>("Progress-0");
+        progress_1 = root.Q<VisualElement>("Progress-1");
+        progress_2 = root.Q<VisualElement>("Progress-2");
+
+        textElement = root.Q<TextElement>("Text");
+
         //button.clicked += Button_clicked;
 
         //icon_2.style.backgroundImage = new StyleBackground(AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Images/Custard.png"));
 
+        
 
     }
 
@@ -61,6 +70,7 @@ public class CustomerUI : MonoBehaviour
     private void Update()
     {
         //progress_0.style.width = new StyleLength(new Length(test, LengthUnit.Percent));
+        textElement.text = "Money: " + _money._money;
     }
 
 
@@ -87,5 +97,18 @@ public class CustomerUI : MonoBehaviour
         //icon.style.backgroundImage = new StyleBackground(sprite);
     }
 
-    
+    public void UpdateProgress_0(float time)
+    {
+        progress_0.style.width = new StyleLength(new Length(time, LengthUnit.Percent));
+    }
+
+    public void UpdateProgress_1(float time)
+    {
+        progress_1.style.width = new StyleLength(new Length(time, LengthUnit.Percent));
+    }
+
+    public void UpdateProgress_2(float time)
+    {
+        progress_2.style.width = new StyleLength(new Length(time, LengthUnit.Percent));
+    }
 }
