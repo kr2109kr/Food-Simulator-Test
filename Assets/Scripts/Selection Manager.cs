@@ -22,6 +22,9 @@ public class SelectionManager : MonoBehaviour
     private Plane _dragPlane;
 
     private Vector3 _oldPosition;
+
+    [SerializeField] private Food.Taiyaki.Filling _taiyakiFilling;
+
     private void OnEnable()
     {
         _trackingPoint.action.Enable();
@@ -52,6 +55,10 @@ public class SelectionManager : MonoBehaviour
             _selectedObject = hit.transform;
             _dragPlane = new Plane(-_camera.transform.forward, hit.point);
             _offset = _selectedObject.position - hit.point;
+
+            
+            _taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
+            
         }
     }
 
@@ -93,12 +100,11 @@ public class SelectionManager : MonoBehaviour
         {
             if (hits[1].transform.gameObject.TryGetComponent<Customer>(out Customer customer1))
             {
-                Debug.Log("Hello");
+                customer1.CheckOrder(_taiyakiFilling);
             }
             
 
             var customer = hits[1].transform.gameObject;
-            Debug.Log("Detected : " + hits[1].transform.gameObject.name);
         }
     }
 }

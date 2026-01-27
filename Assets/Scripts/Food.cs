@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Food : MonoBehaviour
+public class Food
 {
      
     
 
-    private class Taiyaki : Food
+    public class Taiyaki
     {
         public enum Filling
         {
@@ -20,6 +20,7 @@ public class Food : MonoBehaviour
 
         public static Filling RandomFilling()
         {
+            
             Array value = Enum.GetValues(typeof(Filling));
 
             int random = UnityEngine.Random.Range(0, value.Length);
@@ -29,12 +30,12 @@ public class Food : MonoBehaviour
         }
     }
 
-    private class Takoyaki : Food
+    private class Takoyaki
     {
         
     }
 
-    private class IchigoAme : Food
+    private class IchigoAme
     {
 
     }

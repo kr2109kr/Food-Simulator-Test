@@ -2,15 +2,8 @@ using UnityEngine;
 
 public class Taiyaki : MonoBehaviour
 {
-    [SerializeField] TaiyakiSO _taiyakiSO;
-    void Start()
-    {
-        
-    }
+    [field: SerializeField] public Food.Taiyaki.Filling _taiyakiFilling { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }
