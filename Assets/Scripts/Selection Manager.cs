@@ -56,8 +56,18 @@ public class SelectionManager : MonoBehaviour
             _dragPlane = new Plane(-_camera.transform.forward, hit.point);
             _offset = _selectedObject.position - hit.point;
 
+            if (hit.transform.CompareTag("Selectable"))
+            {
+                _taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
+            }
+
+
+            //////////
+            if (hit.transform.TryGetComponent<RawTaiyaki>(out var rawTaiyaki))
+            {
+                rawTaiyaki.Interact();
+            }
             
-            _taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
             
         }
     }

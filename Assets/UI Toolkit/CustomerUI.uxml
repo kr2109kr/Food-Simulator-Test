@@ -28,5 +28,4 @@
             </Bindings>
         </ui:Label>
     </ui:VisualElement>
-    <ui:Button text="Button"/>
 </ui:UXML>
