@@ -12,3 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a115d8971f66747bc0d155e3c7d52d, type: 3}
   m_Name: Taiyaki
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
+  <undercookedColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+  <excellentColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+  <overcookedColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+  <stateTimer>k__BackingField: 15
+  <_data>k__BackingField:
+  - filling: 0
+    sprite: {fileID: 21300000, guid: 708616fcdc485e34ab70e0111862f6b9, type: 3}
+  - filling: 1
+    sprite: {fileID: 21300000, guid: 9aacd73a9bab10f43905950ffa9235d0, type: 3}
+  - filling: 2
+    sprite: {fileID: 21300000, guid: 06017277c5317874eaaa26b81bd67803, type: 3}

@@ -1,61 +1,126 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Taiyaki : MonoBehaviour
 {
-    [field: SerializeField] public Food.Taiyaki.Filling _taiyakiFilling { get; private set; }
-    [SerializeField] private Color _color;
-    [SerializeField] private State _state;
+    private UnityEvent<Collider> OnColliderEnterEvent;
+    [SerializeField] private TaiyakiMaker _taiyakiMaker;
 
-    private MeshRenderer _meshRenderer;
+    private UnityEvent<Transform> InteractEvent;
 
-    private void Awake()
+    [Header("DonessChangeTime")]
+    [SerializeField] private float CookedStateTime;
+    [SerializeField] private float OvercookedStateTime;
+
+    
+
+    [SerializeField] private TaiyakiSO _taiyakiSO;
+
+    [SerializeField] private Data _data;
+
+
+
+
+
+
+
+    [Serializable]
+    private class Data
     {
-        _meshRenderer = GetComponent<MeshRenderer>();
+        public Color undercookColor;
+        public Color excellentColor;
+        public Color overcookedColor;
+
+        public enum State
+        {
+            Undercooked,
+            Excellent,
+            Overcooked
+        }
+
+        public Color GetColor(State state)
+        {
+            switch (state)
+            {
+                case State.Undercooked: return undercookColor;
+
+                case State.Excellent: return excellentColor;
+
+                case State.Overcooked: return overcookedColor;
+
+                default: return Color.grey;
+            }
+        }
+    }
+
+
+
+
+    public void StartCooking()
+    {
+        
+
+    }
+
+    public void Interact()
+    {
+        //_taiyakiMaker.FillRaw(transform);
+    }
+
+    public void StartTimer()
+    {
     }
 
     private void Start()
     {
-        StartCoroutine(CookTimer());
+        
     }
 
-    private enum State
-    {
-        Uncooked,
-        Done,
-        Overcooked
-    }
-
-    private void Update()
-    {
-        if (_state == State.Overcooked)
-        {
-            _meshRenderer.material.color = _color;
-        }
-    }
-
-    public void Cook()
-    {
-
-    }
-
-    private IEnumerator CookTimer()
+    public IEnumerator Timer(float seconds)
     {
         float timer = 0;
         float duration = 5f;
 
-        //yield return new WaitForSeconds(5f);
-        while (timer < duration)
+        foreach (Data.State state in Enum.GetValues(typeof(Data.State)))
         {
-            if (PickUp())
+            ChangeColor(_data.GetColor(state));
+            while (timer < duration)
             {
-                yield break;
+                //if (PickUp()){yield break;}
+
+                timer += Time.deltaTime;
+                yield return null;
             }
-            timer += Time.deltaTime;
-            yield return null;
+            
+            timer = 0;
+            
         }
-        _state = State.Overcooked;
+    }
+
+    private void NextState()
+    {
+        
+    }
+
+    public void Combine()
+    {
+        //Combine 2 Side of Taiyaki;
+    }
+
+    private void ChangeColor(Color color)
+    {
+        GetComponent<MeshRenderer>().material.color = color;
+    }
+
+
+    private void PlaySFX()
+    {
+
     }
 
     private bool PickUp()
@@ -66,4 +131,5 @@ public class Taiyaki : MonoBehaviour
         }
         else return false;
     }
+
 }

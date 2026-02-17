@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -24,6 +25,9 @@ public class SelectionManager : MonoBehaviour
     private Vector3 _oldPosition;
 
     [SerializeField] private Food.Taiyaki.Filling _taiyakiFilling;
+
+
+    [SerializeField] private Transform _equipment;
 
     private void OnEnable()
     {
@@ -58,7 +62,7 @@ public class SelectionManager : MonoBehaviour
 
             if (hit.transform.CompareTag("Selectable"))
             {
-                _taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
+                //_taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
             }
 
 
@@ -67,10 +71,69 @@ public class SelectionManager : MonoBehaviour
             {
                 rawTaiyaki.Interact();
             }
-            
-            
+
+
+
+
+            if (hit.transform.TryGetComponent<TaiyakiMaker>(out var taiyakiMaker))
+            {
+                
+                //taiyakiMaker.Interact();
+                //taiyakiMaker.FillRaw();
+            }
+
+
+            if (hit.transform.TryGetComponent<TaiyakiMakerHandle>(out var taiyakiMakerHandle))
+            {
+                //taiyakiMakerHandle.Interact();
+            }
+
+            if (hit.transform.TryGetComponent<TaiyakiMakerTray01>(out var taiyakiMakerTray01qqq))
+            {
+                //taiyakiMakerTray01.Interact();
+            }
+
+
+
+
+            if (hit.transform.CompareTag("Equipment"))
+            {
+                _equipment = hit.transform;
+            }
+
+
+            if (_equipment != null && (hit.transform.TryGetComponent<IInteractor>(out var target)))
+            {
+                target.Interact(_equipment);
+            }
+
+            else if (_equipment != null && (hit.transform.TryGetComponent<Batter>(out var targetBatter)))
+            {
+                targetBatter.BackToOriginPos();
+            }
+
         }
     }
+
+    private void Equip(Transform equipment)
+    {
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="context"></param>
+
+    private void Update()
+    {
+        if (Keyboard.current.zKey.wasPressedThisFrame)
+        {
+            _equipment = null;
+        }
+    }
+
+
 
     private void OnTouchRelease(InputAction.CallbackContext context)
     {
@@ -96,6 +159,20 @@ public class SelectionManager : MonoBehaviour
                 _selectedObject.position = ray.GetPoint(distance) + _offset;
             }
         }
+
+
+
+        ////////////
+        if (_equipment != null)
+        {
+            Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+            if (_dragPlane.Raycast(ray, out float distance))
+            {
+                _equipment.position = ray.GetPoint(distance) + _offset + new Vector3(0, 1f);
+            }
+        }
+
+
     }
 
     private void CheckRaycastTarget()

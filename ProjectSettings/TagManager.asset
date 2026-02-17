@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Selectable
   - Target
+  - Equipment
   layers:
   - Default
   - TransparentFX
