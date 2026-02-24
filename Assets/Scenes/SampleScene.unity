@@ -188,7 +188,150 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
+--- !u!1 &151962375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151962378}
+  - component: {fileID: 151962377}
+  - component: {fileID: 151962376}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &151962376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151962375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &151962377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151962375}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &151962378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151962375}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4082406, y: 0, z: -1.249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111993178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155592066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155592069}
+  - component: {fileID: 155592068}
+  - component: {fileID: 155592067}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &155592067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155592066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &155592068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155592066}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &155592069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155592066}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.7307775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020088448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163394093
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &163394094
 Transform:
   m_ObjectHideFlags: 0
@@ -441,6 +584,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FillingStation
   _gameObject: {fileID: 0}
+--- !u!1 &166220883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166220886}
+  - component: {fileID: 166220885}
+  - component: {fileID: 166220884}
+  m_Layer: 0
+  m_Name: 'Tray [2]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &166220884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166220883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &166220885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166220883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &166220886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166220883}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.2589998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111993178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &169727094
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +948,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187238506}
   m_Mesh: {fileID: 6821282971002940280, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &210313707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210313708}
+  - component: {fileID: 210313709}
+  - component: {fileID: 210313710}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210313708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210313707}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.414, y: 0, z: -1.249223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020088448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &210313709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210313707}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &210313710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210313707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &223887148
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +1200,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!1 &267349757
 GameObject:
@@ -1577,6 +1863,148 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371791987}
   m_Mesh: {fileID: 6934501820478004262, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &373158422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373158423}
+  - component: {fileID: 373158424}
+  - component: {fileID: 373158425}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373158423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373158422}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: -0.754223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732873786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &373158424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373158422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &373158425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373158422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &381313461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381313464}
+  - component: {fileID: 381313463}
+  - component: {fileID: 381313462}
+  m_Layer: 0
+  m_Name: 'Tray [3]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &381313462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381313461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &381313463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381313461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &381313464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381313461}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.2360003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022645973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382818307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +2134,77 @@ Transform:
   - {fileID: 164431687}
   m_Father: {fileID: 1224282286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &397793680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397793681}
+  - component: {fileID: 397793682}
+  - component: {fileID: 397793683}
+  m_Layer: 0
+  m_Name: 'Tray [2]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &397793681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397793680}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.386, y: 0, z: -0.25522268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732873786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &397793682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397793680}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &397793683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397793680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +2380,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!65 &471169552
 BoxCollider:
@@ -1903,6 +2403,149 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.65, y: 0.05, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &508137804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508137805}
+  - component: {fileID: 508137806}
+  - component: {fileID: 508137807}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &508137805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508137804}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.414, y: 0, z: -1.249223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 670601832}
+  m_Father: {fileID: 1732873786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &508137806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508137804}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &508137807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508137804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &509258520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509258523}
+  - component: {fileID: 509258522}
+  - component: {fileID: 509258521}
+  m_Layer: 0
+  m_Name: 'Tray [3]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &509258521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509258520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &509258522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509258520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &509258523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509258520}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.2360003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111993178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &532207273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +2601,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 0}
   _taiyakiPrefab: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 0}
   <IsAvaliable>k__BackingField: 0
 --- !u!65 &532207276
 BoxCollider:
@@ -2168,6 +2812,77 @@ MonoBehaviour:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
     overcookedColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &574210760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574210763}
+  - component: {fileID: 574210762}
+  - component: {fileID: 574210761}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &574210761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574210760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &574210762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574210760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &574210763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574210760}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.7540003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022645973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642724337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,15 +3038,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.428
+      value: -0.628
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.552
+      value: 0.189
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.742
+      value: -8.802
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2371,13 +3086,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
+--- !u!1001 &670601831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 508137805}
+    m_Modifications:
+    - target: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_Name
+      value: L-Taiyaki
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0042832196
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0041772127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.99988496
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000003259629
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.015173316
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -361.739
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+--- !u!4 &670601832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4184201960931478678, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  m_PrefabInstance: {fileID: 670601831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686771038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +3224,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!1 &727068290
 GameObject:
@@ -2579,6 +3357,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727068290}
   m_Mesh: {fileID: 8301544291354919721, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &739548416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739548419}
+  - component: {fileID: 739548418}
+  - component: {fileID: 739548417}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &739548417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739548416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &739548418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739548416}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &739548419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739548416}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.7307775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732873786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746388026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +3559,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746388026}
   m_Mesh: {fileID: 8270186722507089038, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &766640929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766640932}
+  - component: {fileID: 766640931}
+  - component: {fileID: 766640930}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &766640930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766640929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &766640931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766640929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &766640932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766640929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.7540003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111993178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788077946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +4121,219 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FillingStation
   _gameObject: {fileID: 0}
+--- !u!1 &886080640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886080641}
+  - component: {fileID: 886080642}
+  - component: {fileID: 886080643}
+  m_Layer: 0
+  m_Name: 'Tray [3]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886080641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886080640}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.23577726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020088448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &886080642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886080640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &886080643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886080640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &886798535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886798536}
+  - component: {fileID: 886798537}
+  - component: {fileID: 886798538}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886798536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886798535}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: -0.754223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020088448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &886798537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886798535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &886798538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886798535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &892478813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892478816}
+  - component: {fileID: 892478815}
+  - component: {fileID: 892478814}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &892478814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892478813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &892478815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892478813}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &892478816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892478813}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.7310002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111993178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937496345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,6 +4805,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!65 &960325236
 BoxCollider:
@@ -3742,6 +4876,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!65 &984475055
 BoxCollider:
@@ -3906,6 +5041,256 @@ MonoBehaviour:
   _money: 0
   _moneyText: test
   Debug_String: 
+--- !u!1 &1015799390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015799394}
+  - component: {fileID: 1015799393}
+  - component: {fileID: 1015799392}
+  - component: {fileID: 1015799391}
+  m_Layer: 0
+  m_Name: TaiyakiMaker (L)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1015799391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015799390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed70eafe503c8d4e99a564c4262e701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMaker
+  _taiyakiMakerTray: {fileID: 0}
+  _target: {x: 0, y: 0, z: 0}
+  _rightPan: {fileID: 2022645973}
+  _leftTaiyakiMakerPan: {fileID: 1732873785}
+  _rightTaiyakiMakerPan: {fileID: 2022645969}
+--- !u!23 &1015799392
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015799390}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b521214fc47ef394f8f0d2841fb439c7, type: 2}
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1015799393
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015799390}
+  m_Mesh: {fileID: -2464147978925010747, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!4 &1015799394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015799390}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.8366744, z: -0.54770064, w: 0}
+  m_LocalPosition: {x: -1.76, y: 0.84093213, z: -5.711784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1732873786}
+  - {fileID: 2022645973}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 66.419, y: 180, z: 0}
+--- !u!1 &1020088446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020088448}
+  - component: {fileID: 1020088451}
+  - component: {fileID: 1020088450}
+  - component: {fileID: 1020088449}
+  - component: {fileID: 1020088447}
+  m_Layer: 0
+  m_Name: L-Pan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1020088447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020088446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 210313710}
+  - {fileID: 886798538}
+  - {fileID: 1270444009}
+  - {fileID: 886080643}
+  - {fileID: 155592067}
+  _taiyakiMaker: {fileID: 1752797416}
+  _otherTaiyakiMakerPan: {fileID: 1111993174}
+  taiyaki: {fileID: 2115753165}
+--- !u!4 &1020088448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020088446}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67803967, z: 0.25622296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 210313708}
+  - {fileID: 886798536}
+  - {fileID: 1270444007}
+  - {fileID: 886080641}
+  - {fileID: 155592069}
+  m_Father: {fileID: 1752797419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1020088449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020088446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: 0.39754167, y: -0.06621838, z: 1.325}
+--- !u!23 &1020088450
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020088446}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1020088451
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020088446}
+  m_Mesh: {fileID: 8387508163481556902, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
 --- !u!1 &1026179897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +5422,148 @@ MonoBehaviour:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
     overcookedColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &1031624963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031624966}
+  - component: {fileID: 1031624965}
+  - component: {fileID: 1031624964}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1031624964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031624963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &1031624965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031624963}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1031624966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031624963}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4082406, y: 0, z: -1.249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022645973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076010428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076010431}
+  - component: {fileID: 1076010430}
+  - component: {fileID: 1076010429}
+  m_Layer: 0
+  m_Name: 'Tray [2]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1076010429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076010428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &1076010430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076010428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1076010431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076010428}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.2589998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022645973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076986772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,7 +5577,7 @@ GameObject:
   - component: {fileID: 1608512627}
   - component: {fileID: 1076986776}
   m_Layer: 0
-  m_Name: TaiyakiMaker
+  m_Name: TaiyakiMaker (C)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4204,6 +5731,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081527408}
   m_Mesh: {fileID: 8301544291354919721, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &1087845832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1087845833}
+  - component: {fileID: 1087845834}
+  - component: {fileID: 1087845835}
+  m_Layer: 0
+  m_Name: 'Tray [3]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1087845833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087845832}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.23577726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732873786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1087845834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087845832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1087845835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087845832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &1099740267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +6176,145 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1224282286}
   m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
+--- !u!1 &1111993173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111993178}
+  - component: {fileID: 1111993177}
+  - component: {fileID: 1111993176}
+  - component: {fileID: 1111993175}
+  - component: {fileID: 1111993174}
+  m_Layer: 0
+  m_Name: R-Pan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1111993174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111993173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 151962376}
+  - {fileID: 766640930}
+  - {fileID: 166220884}
+  - {fileID: 509258521}
+  - {fileID: 892478814}
+  _taiyakiMaker: {fileID: 1752797416}
+  _otherTaiyakiMakerPan: {fileID: 1020088447}
+  taiyaki: {fileID: 0}
+--- !u!65 &1111993175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111993173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: -0.3975417, y: -0.06621838, z: 1.325}
+--- !u!23 &1111993176
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111993173}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1111993177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111993173}
+  m_Mesh: {fileID: -3657788380509882747, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!4 &1111993178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111993173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.5796697e-18, y: 0.67803967, z: 0.25622293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 151962378}
+  - {fileID: 766640932}
+  - {fileID: 166220886}
+  - {fileID: 509258523}
+  - {fileID: 892478816}
+  m_Father: {fileID: 1752797419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113140563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5263,6 +7000,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!65 &1249405965
 BoxCollider:
@@ -5285,6 +7023,77 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.65, y: 0.05, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1270444006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270444007}
+  - component: {fileID: 1270444008}
+  - component: {fileID: 1270444009}
+  m_Layer: 0
+  m_Name: 'Tray [2]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270444007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270444006}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.386, y: 0, z: -0.25522268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020088448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1270444008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270444006}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1270444009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270444006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1752797416}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &1392194999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +7207,77 @@ Transform:
   - {fileID: 1812265299}
   m_Father: {fileID: 1224282286}
   m_LocalEulerAnglesHint: {x: 0, y: -6.401, z: 0}
+--- !u!1 &1400472648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400472651}
+  - component: {fileID: 1400472650}
+  - component: {fileID: 1400472649}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1400472649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400472648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1015799391}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &1400472650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400472648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1400472651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400472648}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.7310002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022645973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1427939432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5679,6 +7559,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 0}
   _taiyakiPrefab: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 0}
   <IsAvaliable>k__BackingField: 0
 --- !u!65 &1538572282
 BoxCollider:
@@ -6017,6 +7898,145 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640791199}
   m_Mesh: {fileID: -1989779400494333680, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &1732873784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732873786}
+  - component: {fileID: 1732873789}
+  - component: {fileID: 1732873788}
+  - component: {fileID: 1732873787}
+  - component: {fileID: 1732873785}
+  m_Layer: 0
+  m_Name: L-Pan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1732873785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732873784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 508137807}
+  - {fileID: 373158425}
+  - {fileID: 397793683}
+  - {fileID: 1087845835}
+  - {fileID: 739548417}
+  _taiyakiMaker: {fileID: 1015799391}
+  _otherTaiyakiMakerPan: {fileID: 2022645969}
+  taiyaki: {fileID: 2115753165}
+--- !u!4 &1732873786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732873784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67803967, z: 0.25622296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 508137805}
+  - {fileID: 373158423}
+  - {fileID: 397793681}
+  - {fileID: 1087845833}
+  - {fileID: 739548419}
+  m_Father: {fileID: 1015799394}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1732873787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732873784}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: 0.39754167, y: -0.06621838, z: 1.325}
+--- !u!23 &1732873788
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732873784}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1732873789
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732873784}
+  m_Mesh: {fileID: 8387508163481556902, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
 --- !u!1 &1747871618
 GameObject:
   m_ObjectHideFlags: 0
@@ -6148,6 +8168,117 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747871618}
   m_Mesh: {fileID: 6821282971002940280, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &1752797415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752797419}
+  - component: {fileID: 1752797418}
+  - component: {fileID: 1752797417}
+  - component: {fileID: 1752797416}
+  m_Layer: 0
+  m_Name: TaiyakiMaker (R)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1752797416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752797415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed70eafe503c8d4e99a564c4262e701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMaker
+  _taiyakiMakerTray: {fileID: 0}
+  _target: {x: 0, y: 0, z: 0}
+  _rightPan: {fileID: 1111993178}
+  _leftTaiyakiMakerPan: {fileID: 1020088447}
+  _rightTaiyakiMakerPan: {fileID: 1111993174}
+--- !u!23 &1752797417
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752797415}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b521214fc47ef394f8f0d2841fb439c7, type: 2}
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1752797418
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752797415}
+  m_Mesh: {fileID: -2464147978925010747, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!4 &1752797419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752797415}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.8366744, z: -0.54770064, w: 0}
+  m_LocalPosition: {x: 1.76, y: 0.84093213, z: -5.711784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1020088448}
+  - {fileID: 1111993178}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 66.419, y: 180, z: 0}
 --- !u!1 &1758260863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,6 +8695,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!65 &1818783448
 BoxCollider:
@@ -7729,6 +9861,145 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013704043}
   m_Mesh: {fileID: -8423031703438563639, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &2022645968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022645973}
+  - component: {fileID: 2022645972}
+  - component: {fileID: 2022645971}
+  - component: {fileID: 2022645970}
+  - component: {fileID: 2022645969}
+  m_Layer: 0
+  m_Name: R-Pan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2022645969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022645968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 1031624964}
+  - {fileID: 574210761}
+  - {fileID: 1076010429}
+  - {fileID: 381313462}
+  - {fileID: 1400472649}
+  _taiyakiMaker: {fileID: 1015799391}
+  _otherTaiyakiMakerPan: {fileID: 1732873785}
+  taiyaki: {fileID: 0}
+--- !u!65 &2022645970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022645968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: -0.3975417, y: -0.06621838, z: 1.325}
+--- !u!23 &2022645971
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022645968}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 04b42e2e109f42d438b7a9cb2e0c8cd9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2022645972
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022645968}
+  m_Mesh: {fileID: -3657788380509882747, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!4 &2022645973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022645968}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.5796697e-18, y: 0.67803967, z: 0.25622293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1031624966}
+  - {fileID: 574210763}
+  - {fileID: 1076010431}
+  - {fileID: 381313464}
+  - {fileID: 1400472651}
+  m_Father: {fileID: 1015799394}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047726495
 GameObject:
   m_ObjectHideFlags: 0
@@ -7798,6 +10069,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!1 &2058600156
 GameObject:
@@ -7868,6 +10140,7 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
   _target: {x: 0, y: 0, z: 0}
+  _fillingPrefab: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
   <IsAvaliable>k__BackingField: 1
 --- !u!1 &2115753165 stripped
 GameObject:
@@ -7926,11 +10199,112 @@ PrefabInstance:
       propertyPath: m_Name
       value: Taiyaki
       objectReference: {fileID: 0}
+    - target: {fileID: 4982512077159477269, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+--- !u!1001 &4580746696244831360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _custardColor.b
+      value: 0.27450982
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _custardColor.g
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _custardColor.r
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _redBeanColor.b
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _redBeanColor.g
+      value: 0.27450982
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _redBeanColor.r
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _chocolateColor.b
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _chocolateColor.g
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: -2211780658379759144, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: _chocolateColor.r
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9024061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.42624554
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029001176
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.056008838
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 8.958
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321270030503191791, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -11.287
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_Name
+      value: Filling
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133694346962370133, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5caa91081223654fb19ba94c6d0b837, type: 3}
 --- !u!1001 &4830704207141377215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +10478,9 @@ SceneRoots:
   - {fileID: 3077034394422502223}
   - {fileID: 163394094}
   - {fileID: 1608512626}
+  - {fileID: 1015799394}
+  - {fileID: 1752797419}
   - {fileID: 223887152}
   - {fileID: 1758260867}
   - {fileID: 654392073}
+  - {fileID: 4580746696244831360}

@@ -19,6 +19,8 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     public GameObject TaiyakiGameObject { get; private set; }
     public GameObject combinedTaiyaki { get; set; }
 
+    [SerializeField] private GameObject _fillingPrefab;
+
     [field: SerializeField] public bool IsAvaliable { get; set; } = true;
 
     public void Interact(Transform transform)
@@ -27,6 +29,8 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         TaiyakiGameObject = Instantiate(_taiyakiPrefab, this.transform);
         TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
         FillRaw(TaiyakiGameObject.transform);
+
+        
     }
 
 
@@ -61,6 +65,25 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             }
 
             yield return rawTaiyaki.GetComponent<Taiyaki>().Timer(5f);
+        }
+    }
+
+    public void AddFilling(string color)
+    {
+        if (color == "Red-Beans")
+        {
+            var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
+            fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._redBeanColor;
+        }
+        else if (color == "Custard")
+        {
+            var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
+            fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._custardColor;
+        }
+        else if (color == "Chocolate")
+        {
+            var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
+            fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._chocolateColor;
         }
     }
 

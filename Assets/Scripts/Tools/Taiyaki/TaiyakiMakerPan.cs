@@ -18,6 +18,8 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         isClosed = !isClosed;
 
         transform.Rotate(new Vector3(0, 0, 180));
+
+
     }
 
     public void Interact(Transform transform)

@@ -37,7 +37,7 @@ public class Taiyaki : MonoBehaviour
         {
             Undercooked,
             Excellent,
-            Overcooked
+            //Overcooked
         }
 
         public Color GetColor(State state)
@@ -48,7 +48,7 @@ public class Taiyaki : MonoBehaviour
 
                 case State.Excellent: return excellentColor;
 
-                case State.Overcooked: return overcookedColor;
+                //case State.Overcooked: return overcookedColor;
 
                 default: return Color.grey;
             }
@@ -71,7 +71,7 @@ public class Taiyaki : MonoBehaviour
 
     public void StartTimer()
     {
-        StartCoroutine(Timer(5));
+        StartCoroutine(Timer(7));
     }
 
     private void Start()
@@ -82,7 +82,7 @@ public class Taiyaki : MonoBehaviour
     public IEnumerator Timer(float seconds)
     {
         float timer = 0;
-        float duration = 5f;
+        float duration = 15f;
 
         foreach (Data.State state in Enum.GetValues(typeof(Data.State)))
         {
@@ -96,6 +96,7 @@ public class Taiyaki : MonoBehaviour
             }
             
             timer = 0;
+            duration += 2;
             
         }
     }

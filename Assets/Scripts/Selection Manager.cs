@@ -89,7 +89,46 @@ public class SelectionManager : MonoBehaviour
                 target1.Interact(_equipment);
             }
         }
+
+
     }
+
+    private void AClicked()
+    {
+        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.aKey.wasPressedThisFrame)
+        {
+            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
+            {
+                wwww.AddFilling("Red-Beans");
+            }
+        }
+    }
+
+    private void SClicked()
+    {
+        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
+            {
+                wwww.AddFilling("Custard");
+            }
+        }
+    }
+
+    private void DClicked()
+    {
+        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.dKey.wasPressedThisFrame)
+        {
+            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
+            {
+                wwww.AddFilling("Chocolate");
+            }
+        }
+    }
+
 
     private void Equip(Transform equipment)
     {
@@ -107,6 +146,10 @@ public class SelectionManager : MonoBehaviour
         {
             _equipment = null;
         }
+
+        AClicked();
+        SClicked();
+        DClicked();
     }
 
 
