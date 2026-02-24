@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &40871817
+--- !u!1 &132023222
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,38 +127,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 40871818}
-  - component: {fileID: 40871819}
-  - component: {fileID: 40871820}
+  - component: {fileID: 132023223}
+  - component: {fileID: 132023224}
+  - component: {fileID: 132023225}
   m_Layer: 0
-  m_Name: Handle
+  m_Name: 'Tray [3]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &40871818
+--- !u!4 &132023223
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40871817}
+  m_GameObject: {fileID: 132023222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.377, y: 0.62300086, z: 1.5960007}
-  m_LocalScale: {x: 0.5774, y: 0.15362, z: 0.63191754}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.23577726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1608512626}
+  m_Father: {fileID: 1115059255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &40871819
+--- !u!65 &132023224
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40871817}
+  m_GameObject: {fileID: 132023222}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -171,21 +171,136 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &40871820
+--- !u!114 &132023225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40871817}
+  m_GameObject: {fileID: 132023222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc9f3b10c6646c41915cb4a629533f3, type: 3}
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiHandle
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
   _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &163394093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163394094}
+  - component: {fileID: 163394099}
+  - component: {fileID: 163394098}
+  - component: {fileID: 163394097}
+  m_Layer: 0
+  m_Name: Filling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163394094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163394093}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.8366744, z: -0.54770064, w: 0}
+  m_LocalPosition: {x: -0.8279936, y: 3.1471627, z: -5.3903813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &163394097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163394093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6458973, y: 0.5, z: 0.40668333}
+  m_Center: {x: -0.011083921, y: -0.022374686, z: -0.017387683}
+--- !u!23 &163394098
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163394093}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &163394099
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163394093}
+  m_Mesh: {fileID: 8270186722507089038, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
 --- !u!1 &164431683
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,10 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
@@ -503,7 +616,6 @@ GameObject:
   - component: {fileID: 187238511}
   - component: {fileID: 187238510}
   - component: {fileID: 187238509}
-  - component: {fileID: 187238508}
   m_Layer: 0
   m_Name: Taiyaki-2
   m_TagString: Untagged
@@ -526,19 +638,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1000779807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &187238508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187238506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &187238509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,10 +650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -637,153 +734,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187238506}
   m_Mesh: {fileID: 6821282971002940280, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!1 &209333164
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 209333170}
-  - component: {fileID: 209333172}
-  - component: {fileID: 209333171}
-  - component: {fileID: 209333168}
-  - component: {fileID: 209333173}
-  - component: {fileID: 209333174}
-  m_Layer: 0
-  m_Name: Taiyaki-4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &209333168
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6458965, y: 0.5, z: 0.40668333}
-  m_Center: {x: 0.011084517, y: -0.02237476, z: -0.017386729}
---- !u!4 &209333170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41269737, y: -0.05, z: 0.7310001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986254143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &209333171
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &209333172
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  m_Mesh: {fileID: 8301544291354919721, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &209333173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
---- !u!114 &209333174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209333164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
 --- !u!1 &223887148
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &223887149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +768,8 @@ MonoBehaviour:
   _taiyakiMakerTray: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
   _rightPan: {fileID: 1538572280}
+  _leftTaiyakiMakerPan: {fileID: 0}
+  _rightTaiyakiMakerPan: {fileID: 0}
 --- !u!23 &223887150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -894,6 +846,76 @@ Transform:
   - {fileID: 802732795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 66.419, y: 180, z: 0}
+--- !u!1 &240100937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240100938}
+  - component: {fileID: 240100939}
+  - component: {fileID: 240100940}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &240100938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240100937}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: 0.7307775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115059255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &240100939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240100937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &240100940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240100937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &267349757
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +929,6 @@ GameObject:
   - component: {fileID: 267349762}
   - component: {fileID: 267349761}
   - component: {fileID: 267349760}
-  - component: {fileID: 267349759}
   m_Layer: 0
   m_Name: Taiyaki-2
   m_TagString: Untagged
@@ -930,19 +951,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538572280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &267349759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267349757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &267349760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,10 +963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -1054,7 +1060,6 @@ GameObject:
   - component: {fileID: 325205463}
   - component: {fileID: 325205462}
   - component: {fileID: 325205461}
-  - component: {fileID: 325205460}
   m_Layer: 0
   m_Name: Taiyaki-3
   m_TagString: Untagged
@@ -1077,19 +1082,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538572280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &325205460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325205458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &325205461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,10 +1094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -1325,153 +1315,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &341231974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 341231980}
-  - component: {fileID: 341231982}
-  - component: {fileID: 341231981}
-  - component: {fileID: 341231978}
-  - component: {fileID: 341231983}
-  - component: {fileID: 341231984}
-  m_Layer: 0
-  m_Name: Taiyaki-1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &341231978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6458965, y: 0.5, z: 0.40668458}
-  m_Center: {x: 0.011084517, y: -0.02237476, z: -0.01738667}
---- !u!4 &341231980
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41269737, y: -0.05, z: -0.75400025}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986254143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &341231981
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &341231982
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  m_Mesh: {fileID: 947085821834232400, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &341231983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
---- !u!114 &341231984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341231974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
 --- !u!1 &359740339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,7 +1328,6 @@ GameObject:
   - component: {fileID: 359740344}
   - component: {fileID: 359740343}
   - component: {fileID: 359740342}
-  - component: {fileID: 359740341}
   m_Layer: 0
   m_Name: Taiyaki-4
   m_TagString: Untagged
@@ -1508,19 +1350,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 382818308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &359740341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359740339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &359740342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,10 +1362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -1632,7 +1459,6 @@ GameObject:
   - component: {fileID: 371791992}
   - component: {fileID: 371791991}
   - component: {fileID: 371791990}
-  - component: {fileID: 371791989}
   m_Layer: 0
   m_Name: Taiyaki-3
   m_TagString: Untagged
@@ -1655,19 +1481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532207274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &371791989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371791987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &371791990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,10 +1493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -2022,7 +1833,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &461570237
+--- !u!1 &471169549
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2030,41 +1841,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 461570242}
-  - component: {fileID: 461570248}
-  - component: {fileID: 461570247}
-  - component: {fileID: 461570245}
-  - component: {fileID: 461570250}
-  - component: {fileID: 461570249}
+  - component: {fileID: 471169550}
+  - component: {fileID: 471169552}
+  - component: {fileID: 471169551}
   m_Layer: 0
-  m_Name: Taiyaki-1
+  m_Name: 'Tray [3]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &461570242
+--- !u!4 &471169550
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
+  m_GameObject: {fileID: 471169549}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.396, y: -0.05, z: -0.754223}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.2360003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115059255}
+  m_Father: {fileID: 1986254143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &461570245
+--- !u!114 &471169551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471169549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &471169552
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
+  m_GameObject: {fileID: 471169549}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2077,98 +1901,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.64588475, y: 0.5, z: 0.40668458}
-  m_Center: {x: -0.011090135, y: -0.022374447, z: -0.017386908}
---- !u!23 &461570247
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &461570248
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
-  m_Mesh: {fileID: -1989779400494333680, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &461570249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!114 &461570250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461570237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &532207273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,12 +1956,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
   _taiyakiMaker: {fileID: 0}
-  taiyakis:
-  - {fileID: 1099740270}
-  - {fileID: 938470317}
-  - {fileID: 954160603}
-  - {fileID: 371791990}
-  - {fileID: 1081527411}
+  _taiyakiPrefab: {fileID: 0}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 0
 --- !u!65 &532207276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2431,10 +2162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2649,6 +2378,76 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb2cbf984efd764299b741040f09f26, type: 3}
+--- !u!1 &686771038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 686771039}
+  - component: {fileID: 686771040}
+  - component: {fileID: 686771041}
+  m_Layer: 0
+  m_Name: 'Tray [2]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &686771039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686771038}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.386, y: 0, z: -0.25522268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115059255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &686771040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686771038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &686771041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686771038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
 --- !u!1 &727068290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,7 +2461,6 @@ GameObject:
   - component: {fileID: 727068295}
   - component: {fileID: 727068294}
   - component: {fileID: 727068293}
-  - component: {fileID: 727068292}
   m_Layer: 0
   m_Name: Taiyaki-4
   m_TagString: Untagged
@@ -2685,19 +2483,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538572280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &727068292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727068290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &727068293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,10 +2495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -2809,7 +2592,6 @@ GameObject:
   - component: {fileID: 746388031}
   - component: {fileID: 746388030}
   - component: {fileID: 746388029}
-  - component: {fileID: 746388028}
   m_Layer: 0
   m_Name: Taiyaki-0
   m_TagString: Untagged
@@ -2832,19 +2614,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1000779807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &746388028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746388026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &746388029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2857,10 +2626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -3069,7 +2836,7 @@ GameObject:
   - component: {fileID: 1986254146}
   - component: {fileID: 1986254147}
   m_Layer: 0
-  m_Name: R_Pan
+  m_Name: R-Pan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3085,7 +2852,6 @@ GameObject:
   m_Component:
   - component: {fileID: 802732795}
   - component: {fileID: 802732797}
-  - component: {fileID: 802732796}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -3108,19 +2874,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 223887152}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &802732796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802732794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc9f3b10c6646c41915cb4a629533f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiHandle
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!65 &802732797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3155,7 +2908,6 @@ GameObject:
   - component: {fileID: 830136991}
   - component: {fileID: 830136990}
   - component: {fileID: 830136989}
-  - component: {fileID: 830136988}
   m_Layer: 0
   m_Name: Taiyaki-3
   m_TagString: Untagged
@@ -3178,19 +2930,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 382818308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &830136988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830136986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &830136989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,10 +2942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -3526,7 +3263,6 @@ GameObject:
   - component: {fileID: 938470319}
   - component: {fileID: 938470318}
   - component: {fileID: 938470317}
-  - component: {fileID: 938470316}
   m_Layer: 0
   m_Name: Taiyaki-1
   m_TagString: Untagged
@@ -3549,19 +3285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532207274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &938470316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938470314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &938470317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3574,10 +3297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -3673,7 +3394,6 @@ GameObject:
   - component: {fileID: 954160605}
   - component: {fileID: 954160604}
   - component: {fileID: 954160603}
-  - component: {fileID: 954160602}
   m_Layer: 0
   m_Name: Taiyaki-2
   m_TagString: Untagged
@@ -3696,19 +3416,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532207274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954160602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954160600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &954160603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3721,10 +3428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -3919,6 +3624,146 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955501631}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &960325233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960325234}
+  - component: {fileID: 960325236}
+  - component: {fileID: 960325235}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &960325234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960325233}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4082406, y: 0, z: -1.249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986254143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &960325235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960325233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &960325236
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960325233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &984475052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984475053}
+  - component: {fileID: 984475055}
+  - component: {fileID: 984475054}
+  m_Layer: 0
+  m_Name: 'Tray [4]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &984475053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984475052}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: 0.7310002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986254143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984475054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984475052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &984475055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984475052}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1000779806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,10 +4031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
@@ -4207,7 +4050,7 @@ GameObject:
   - component: {fileID: 1608512627}
   - component: {fileID: 1076986776}
   m_Layer: 0
-  m_Name: TaiyakiMaker 1
+  m_Name: TaiyakiMaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4228,6 +4071,8 @@ MonoBehaviour:
   _taiyakiMakerTray: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
   _rightPan: {fileID: 1986254143}
+  _leftTaiyakiMakerPan: {fileID: 1115059258}
+  _rightTaiyakiMakerPan: {fileID: 1986254147}
 --- !u!1 &1081527408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4086,6 @@ GameObject:
   - component: {fileID: 1081527413}
   - component: {fileID: 1081527412}
   - component: {fileID: 1081527411}
-  - component: {fileID: 1081527410}
   m_Layer: 0
   m_Name: Taiyaki-4
   m_TagString: Untagged
@@ -4264,19 +4108,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532207274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1081527410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081527408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &1081527411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4289,10 +4120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -4388,7 +4217,6 @@ GameObject:
   - component: {fileID: 1099740272}
   - component: {fileID: 1099740271}
   - component: {fileID: 1099740270}
-  - component: {fileID: 1099740269}
   m_Layer: 0
   m_Name: Taiyaki-0
   m_TagString: Untagged
@@ -4411,19 +4239,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532207274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1099740269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099740267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &1099740270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4436,10 +4251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -4647,10 +4460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
@@ -4911,8 +4722,10 @@ GameObject:
   - component: {fileID: 1115059255}
   - component: {fileID: 1115059257}
   - component: {fileID: 1115059256}
+  - component: {fileID: 1115059259}
+  - component: {fileID: 1115059258}
   m_Layer: 0
-  m_Name: L_Pan
+  m_Name: L-Pan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4931,11 +4744,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1448135628}
-  - {fileID: 461570242}
-  - {fileID: 1573985558}
-  - {fileID: 1704997975}
-  - {fileID: 1120014380}
+  - {fileID: 2047726496}
+  - {fileID: 2058600157}
+  - {fileID: 686771039}
+  - {fileID: 132023223}
+  - {fileID: 240100938}
   m_Father: {fileID: 1608512626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1115059256
@@ -4995,49 +4808,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115059254}
   m_Mesh: {fileID: 8387508163481556902, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!1 &1120014379
-GameObject:
+--- !u!114 &1115059258
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1120014380}
-  - component: {fileID: 1120014386}
-  - component: {fileID: 1120014385}
-  - component: {fileID: 1120014383}
-  - component: {fileID: 1120014388}
-  - component: {fileID: 1120014387}
-  m_Layer: 0
-  m_Name: Taiyaki-4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1120014380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.396, y: -0.05, z: 0.73077726}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1115059255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1120014383
+  m_GameObject: {fileID: 1115059254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 2047726498}
+  - {fileID: 2058600159}
+  - {fileID: 686771041}
+  - {fileID: 132023225}
+  - {fileID: 240100940}
+  _taiyakiMaker: {fileID: 1076986776}
+  _otherTaiyakiMakerPan: {fileID: 1986254147}
+  taiyaki: {fileID: 2115753165}
+--- !u!65 &1115059259
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
+  m_GameObject: {fileID: 1115059254}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5050,98 +4848,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.64588475, y: 0.5, z: 0.40668333}
-  m_Center: {x: -0.011090135, y: -0.022374356, z: -0.017386729}
---- !u!23 &1120014385
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1120014386
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
-  m_Mesh: {fileID: -8423031703438563639, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1120014387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!114 &1120014388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120014379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: 0.39754167, y: -0.06621838, z: 1.325}
 --- !u!1 &1124237683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +4863,6 @@ GameObject:
   - component: {fileID: 1124237688}
   - component: {fileID: 1124237687}
   - component: {fileID: 1124237686}
-  - component: {fileID: 1124237685}
   m_Layer: 0
   m_Name: Taiyaki-1
   m_TagString: Untagged
@@ -5178,19 +4885,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538572280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1124237685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124237683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &1124237686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,10 +4897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -5523,7 +5215,7 @@ Transform:
   - {fileID: 384896789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1236055819
+--- !u!1 &1249405962
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5531,26 +5223,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1236055825}
-  - component: {fileID: 1236055827}
-  - component: {fileID: 1236055826}
-  - component: {fileID: 1236055823}
-  - component: {fileID: 1236055828}
-  - component: {fileID: 1236055829}
+  - component: {fileID: 1249405963}
+  - component: {fileID: 1249405965}
+  - component: {fileID: 1249405964}
   m_Layer: 0
-  m_Name: Taiyaki-0
+  m_Name: 'Tray [2]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1236055823
+--- !u!4 &1249405963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249405962}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.2589998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986254143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249405964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249405962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &1249405965
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
+  m_GameObject: {fileID: 1249405962}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5563,260 +5283,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6458942, y: 0.5, z: 0.40668333}
-  m_Center: {x: 0.011085516, y: -0.022374999, z: -0.017387802}
---- !u!4 &1236055825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.40824062, y: -0.05, z: -1.249}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986254143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1236055826
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1236055827
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
-  m_Mesh: {fileID: 1215521910779385029, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1236055828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
---- !u!114 &1236055829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236055819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!1 &1244618458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1244618464}
-  - component: {fileID: 1244618466}
-  - component: {fileID: 1244618465}
-  - component: {fileID: 1244618462}
-  - component: {fileID: 1244618467}
-  - component: {fileID: 1244618468}
-  m_Layer: 0
-  m_Name: Taiyaki-3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1244618462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6458965, y: 0.5, z: 0.40668398}
-  m_Center: {x: 0.011084517, y: -0.022374284, z: -0.017387005}
---- !u!4 &1244618464
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41269737, y: -0.05, z: 0.23600015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986254143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1244618465
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1244618466
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  m_Mesh: {fileID: 6934501820478004262, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1244618467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
---- !u!114 &1244618468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244618458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1392194999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5930,153 +5398,6 @@ Transform:
   - {fileID: 1812265299}
   m_Father: {fileID: 1224282286}
   m_LocalEulerAnglesHint: {x: 0, y: -6.401, z: 0}
---- !u!1 &1417623279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1417623285}
-  - component: {fileID: 1417623287}
-  - component: {fileID: 1417623286}
-  - component: {fileID: 1417623283}
-  - component: {fileID: 1417623288}
-  - component: {fileID: 1417623289}
-  m_Layer: 0
-  m_Name: Taiyaki-2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1417623283
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6458965, y: 0.5, z: 0.40668523}
-  m_Center: {x: 0.011084517, y: -0.022374522, z: -0.017386878}
---- !u!4 &1417623285
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41269737, y: -0.05, z: -0.25899997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986254143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1417623286
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1417623287
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  m_Mesh: {fileID: -6409796366895309998, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1417623288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
---- !u!114 &1417623289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417623279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
 --- !u!114 &1427939432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6091,153 +5412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 93fe91e195caf254b865e0b186466379, type: 3}
   m_ActionId: e966403c-380a-4114-bf7f-135805e50300
---- !u!1 &1448135623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1448135628}
-  - component: {fileID: 1448135634}
-  - component: {fileID: 1448135633}
-  - component: {fileID: 1448135631}
-  - component: {fileID: 1448135636}
-  - component: {fileID: 1448135635}
-  m_Layer: 0
-  m_Name: Taiyaki-0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1448135628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.414, y: -0.05, z: -1.249223}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1115059255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1448135631
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6458973, y: 0.5, z: 0.40668333}
-  m_Center: {x: -0.011083921, y: -0.022374686, z: -0.017387683}
---- !u!23 &1448135633
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1448135634
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  m_Mesh: {fileID: 8270186722507089038, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1448135635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!114 &1448135636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448135623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
 --- !u!114 &1451413919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6298,7 +5472,6 @@ GameObject:
   - component: {fileID: 1497007540}
   - component: {fileID: 1497007539}
   - component: {fileID: 1497007538}
-  - component: {fileID: 1497007537}
   m_Layer: 0
   m_Name: Taiyaki-0
   m_TagString: Untagged
@@ -6321,19 +5494,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538572280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1497007537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497007535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &1497007538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6346,10 +5506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -6519,12 +5677,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
   _taiyakiMaker: {fileID: 0}
-  taiyakis:
-  - {fileID: 1497007538}
-  - {fileID: 1124237686}
-  - {fileID: 267349760}
-  - {fileID: 325205461}
-  - {fileID: 727068293}
+  _taiyakiPrefab: {fileID: 0}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 0
 --- !u!65 &1538572282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6613,7 +5768,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1569399060}
   - component: {fileID: 1569399062}
-  - component: {fileID: 1569399061}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -6636,19 +5790,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758260867}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1569399061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569399059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc9f3b10c6646c41915cb4a629533f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiHandle
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!65 &1569399062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6670,153 +5811,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1573985557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1573985558}
-  - component: {fileID: 1573985564}
-  - component: {fileID: 1573985563}
-  - component: {fileID: 1573985561}
-  - component: {fileID: 1573985566}
-  - component: {fileID: 1573985565}
-  m_Layer: 0
-  m_Name: Taiyaki-2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1573985558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.386, y: -0.05, z: -0.25522286}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1115059255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1573985561
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.64588475, y: 0.5, z: 0.40668586}
-  m_Center: {x: -0.011090135, y: -0.022374447, z: -0.017387198}
---- !u!23 &1573985563
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1573985564
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  m_Mesh: {fileID: 6821282971002940280, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1573985565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!114 &1573985566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573985557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
 --- !u!4 &1608512626
 Transform:
   m_ObjectHideFlags: 0
@@ -6832,7 +5826,6 @@ Transform:
   m_Children:
   - {fileID: 1115059255}
   - {fileID: 1986254143}
-  - {fileID: 40871818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 66.419, y: 180, z: 0}
 --- !u!23 &1608512627
@@ -6906,7 +5899,6 @@ GameObject:
   - component: {fileID: 1640791204}
   - component: {fileID: 1640791203}
   - component: {fileID: 1640791202}
-  - component: {fileID: 1640791201}
   m_Layer: 0
   m_Name: Taiyaki-1
   m_TagString: Untagged
@@ -6929,19 +5921,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1000779807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1640791201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640791199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &1640791202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6954,10 +5933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -7040,153 +6017,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640791199}
   m_Mesh: {fileID: -1989779400494333680, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!1 &1704997974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1704997975}
-  - component: {fileID: 1704997981}
-  - component: {fileID: 1704997980}
-  - component: {fileID: 1704997978}
-  - component: {fileID: 1704997983}
-  - component: {fileID: 1704997982}
-  m_Layer: 0
-  m_Name: Taiyaki-3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1704997975
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.396, y: -0.05, z: 0.23577714}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1115059255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1704997978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.64588475, y: 0.5, z: 0.4066846}
-  m_Center: {x: -0.011090135, y: -0.022374209, z: -0.017387556}
---- !u!23 &1704997980
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3518489661698024eaf22dcdf19d2c27, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1704997981
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  m_Mesh: {fileID: 8676467045743081635, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
---- !u!114 &1704997982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1076986776}
---- !u!114 &1704997983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704997974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
-  _data:
-    undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
-    excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
-    overcookedColor: {r: 1, g: 0.14509805, b: 0, a: 0}
 --- !u!1 &1747871618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7200,7 +6030,6 @@ GameObject:
   - component: {fileID: 1747871623}
   - component: {fileID: 1747871622}
   - component: {fileID: 1747871621}
-  - component: {fileID: 1747871620}
   m_Layer: 0
   m_Name: Taiyaki-2
   m_TagString: Untagged
@@ -7223,19 +6052,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 382818308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1747871620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747871618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &1747871621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7248,10 +6064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -7352,7 +6166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1758260864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7368,6 +6182,8 @@ MonoBehaviour:
   _taiyakiMakerTray: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
   _rightPan: {fileID: 532207274}
+  _leftTaiyakiMakerPan: {fileID: 0}
+  _rightTaiyakiMakerPan: {fileID: 0}
 --- !u!23 &1758260865
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7582,7 +6398,6 @@ GameObject:
   - component: {fileID: 1814642738}
   - component: {fileID: 1814642737}
   - component: {fileID: 1814642736}
-  - component: {fileID: 1814642735}
   m_Layer: 0
   m_Name: Taiyaki-1
   m_TagString: Untagged
@@ -7605,19 +6420,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 382818308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1814642735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814642733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &1814642736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,10 +6432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -7716,6 +6516,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814642733}
   m_Mesh: {fileID: -1989779400494333680, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &1818783445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818783446}
+  - component: {fileID: 1818783448}
+  - component: {fileID: 1818783447}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818783446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818783445}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4126974, y: 0, z: -0.7540003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986254143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818783447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818783445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 4377265116791373274, guid: 0f3b12b5969042740bd16a65c2f5f9a5, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!65 &1818783448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818783445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1883119678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,10 +6618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0, g: 0, b: 0, a: 0}
     excellentColor: {r: 0, g: 0, b: 0, a: 0}
@@ -7898,6 +6766,8 @@ MonoBehaviour:
   _taiyakiMakerTray: {fileID: 0}
   _target: {x: 0, y: 0, z: 0}
   _rightPan: {fileID: 0}
+  _leftTaiyakiMakerPan: {fileID: 0}
+  _rightTaiyakiMakerPan: {fileID: 0}
 --- !u!1 &1893272240
 GameObject:
   m_ObjectHideFlags: 0
@@ -7911,7 +6781,6 @@ GameObject:
   - component: {fileID: 1893272245}
   - component: {fileID: 1893272244}
   - component: {fileID: 1893272243}
-  - component: {fileID: 1893272242}
   m_Layer: 0
   m_Name: Taiyaki-0
   m_TagString: Untagged
@@ -7934,19 +6803,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 382818308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1893272242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893272240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 1758260864}
 --- !u!114 &1893272243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7959,10 +6815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -8374,7 +7228,6 @@ GameObject:
   - component: {fileID: 1964792382}
   - component: {fileID: 1964792381}
   - component: {fileID: 1964792380}
-  - component: {fileID: 1964792379}
   m_Layer: 0
   m_Name: Taiyaki-3
   m_TagString: Untagged
@@ -8397,19 +7250,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1000779807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1964792379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964792377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &1964792380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8422,10 +7262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -8521,11 +7359,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1236055825}
-  - {fileID: 341231980}
-  - {fileID: 1417623285}
-  - {fileID: 1244618464}
-  - {fileID: 209333170}
+  - {fileID: 960325234}
+  - {fileID: 1818783446}
+  - {fileID: 1249405963}
+  - {fileID: 471169550}
+  - {fileID: 984475053}
   m_Father: {fileID: 1608512626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1986254144
@@ -8604,8 +7442,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7818758, y: 0.13243732, z: 3.1573746}
-  m_Center: {x: -0.39753792, y: -0.06621838, z: 0.000000111315444}
+  m_Size: {x: 0.5, y: 0.13243732, z: 0.5}
+  m_Center: {x: -0.3975417, y: -0.06621838, z: 1.325}
 --- !u!114 &1986254147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8615,16 +7453,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 794603363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Script: {fileID: 11500000, guid: 163e16125765ac844a2c29bab38de637, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
-  _taiyakiMaker: {fileID: 0}
-  taiyakis:
-  - {fileID: 1236055828}
-  - {fileID: 341231983}
-  - {fileID: 1417623288}
-  - {fileID: 1244618467}
-  - {fileID: 209333173}
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerPan
+  <taiyakiMakerTrays>k__BackingField:
+  - {fileID: 960325235}
+  - {fileID: 1818783447}
+  - {fileID: 1249405964}
+  - {fileID: 471169551}
+  - {fileID: 984475054}
+  _taiyakiMaker: {fileID: 1076986776}
+  _otherTaiyakiMakerPan: {fileID: 1115059258}
+  taiyaki: {fileID: 0}
 --- !u!1 &1988414698
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,7 +7611,6 @@ GameObject:
   - component: {fileID: 2013704048}
   - component: {fileID: 2013704047}
   - component: {fileID: 2013704046}
-  - component: {fileID: 2013704045}
   m_Layer: 0
   m_Name: Taiyaki-4
   m_TagString: Untagged
@@ -8794,19 +7633,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1000779807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2013704045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013704043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee88994cc459bb4abc5da5759cbfa38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray01
-  _taiyakiMaker: {fileID: 223887149}
 --- !u!114 &2013704046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8819,10 +7645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _taiyakiMaker: {fileID: 0}
   CookedStateTime: 0
   OvercookedStateTime: 0
-  _taiyakiSO: {fileID: 0}
   _data:
     undercookColor: {r: 0.92941177, g: 1, b: 0, a: 0}
     excellentColor: {r: 0.53333336, g: 1, b: 0, a: 0}
@@ -8905,6 +7729,208 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013704043}
   m_Mesh: {fileID: -8423031703438563639, guid: 68a7b7aa442add04689bad05f11e3550, type: 3}
+--- !u!1 &2047726495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047726496}
+  - component: {fileID: 2047726497}
+  - component: {fileID: 2047726498}
+  m_Layer: 0
+  m_Name: 'Tray [0]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047726496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047726495}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.414, y: 0, z: -1.249223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115059255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2047726497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047726495}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2047726498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047726495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &2058600156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058600157}
+  - component: {fileID: 2058600158}
+  - component: {fileID: 2058600159}
+  m_Layer: 0
+  m_Name: 'Tray [1]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058600157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058600156}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.396, y: 0, z: -0.754223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115059255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2058600158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058600156}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2058600159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058600156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7f2ed22878a3547ab4e7f9ffd58933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaiyakiMakerTray
+  _taiyakiMaker: {fileID: 1076986776}
+  _taiyakiPrefab: {fileID: 3181381677574602571, guid: a949b63d3acaac547bca07afd1918cb7, type: 3}
+  _target: {x: 0, y: 0, z: 0}
+  <IsAvaliable>k__BackingField: 1
+--- !u!1 &2115753165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4982512077159477269, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+  m_PrefabInstance: {fileID: 3077034394422502223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3077034394422502223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916537063018144699, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982512077159477269, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
+      propertyPath: m_Name
+      value: Taiyaki
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16695e68546c76e479736d9421f4cb10, type: 3}
 --- !u!1001 &4830704207141377215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9075,6 +8101,8 @@ SceneRoots:
   - {fileID: 937496347}
   - {fileID: 169727095}
   - {fileID: 4830704207141377215}
+  - {fileID: 3077034394422502223}
+  - {fileID: 163394094}
   - {fileID: 1608512626}
   - {fileID: 223887152}
   - {fileID: 1758260867}

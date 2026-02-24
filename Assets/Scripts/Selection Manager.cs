@@ -66,34 +66,6 @@ public class SelectionManager : MonoBehaviour
             }
 
 
-            //////////
-            if (hit.transform.TryGetComponent<RawTaiyaki>(out var rawTaiyaki))
-            {
-                rawTaiyaki.Interact();
-            }
-
-
-
-
-            if (hit.transform.TryGetComponent<TaiyakiMaker>(out var taiyakiMaker))
-            {
-                
-                //taiyakiMaker.Interact();
-                //taiyakiMaker.FillRaw();
-            }
-
-
-            if (hit.transform.TryGetComponent<TaiyakiMakerHandle>(out var taiyakiMakerHandle))
-            {
-                //taiyakiMakerHandle.Interact();
-            }
-
-            if (hit.transform.TryGetComponent<TaiyakiMakerTray01>(out var taiyakiMakerTray01qqq))
-            {
-                //taiyakiMakerTray01.Interact();
-            }
-
-
 
 
             if (hit.transform.CompareTag("Equipment"))
@@ -104,7 +76,7 @@ public class SelectionManager : MonoBehaviour
 
             if (_equipment != null && (hit.transform.TryGetComponent<IInteractor>(out var target)))
             {
-                target.Interact(_equipment);
+                //target.Interact(_equipment);
             }
 
             else if (_equipment != null && (hit.transform.TryGetComponent<Batter>(out var targetBatter)))
@@ -112,6 +84,10 @@ public class SelectionManager : MonoBehaviour
                 targetBatter.BackToOriginPos();
             }
 
+            if (hit.transform.TryGetComponent<IInteractor>(out var target1))
+            {
+                target1.Interact(_equipment);
+            }
         }
     }
 

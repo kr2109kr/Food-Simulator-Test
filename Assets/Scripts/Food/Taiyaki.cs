@@ -9,7 +9,6 @@ using UnityEngine.InputSystem;
 public class Taiyaki : MonoBehaviour
 {
     private UnityEvent<Collider> OnColliderEnterEvent;
-    [SerializeField] private TaiyakiMaker _taiyakiMaker;
 
     private UnityEvent<Transform> InteractEvent;
 
@@ -17,9 +16,7 @@ public class Taiyaki : MonoBehaviour
     [SerializeField] private float CookedStateTime;
     [SerializeField] private float OvercookedStateTime;
 
-    
-
-    [SerializeField] private TaiyakiSO _taiyakiSO;
+   
 
     [SerializeField] private Data _data;
 
@@ -74,6 +71,7 @@ public class Taiyaki : MonoBehaviour
 
     public void StartTimer()
     {
+        StartCoroutine(Timer(5));
     }
 
     private void Start()

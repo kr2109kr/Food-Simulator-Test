@@ -54,7 +54,7 @@ public class RawTaiyaki : MonoBehaviour
 
     public void Interact()
     {
-        _taiyakiMaker.FillRaw(transform);
+        //_taiyakiMaker.FillRaw(transform);
     }
 
     public void StartTimer()
