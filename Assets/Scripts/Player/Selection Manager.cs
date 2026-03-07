@@ -120,7 +120,7 @@ public class SelectionManager : MonoBehaviour
 
     private void OnTouchRelease(InputAction.CallbackContext context)
     {
-        CheckRaycastTarget();
+        //CheckRaycastTarget();
 
         if (_selectedObject != null)
         {
