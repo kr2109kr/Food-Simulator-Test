@@ -20,8 +20,7 @@ public class Taiyaki : MonoBehaviour
 
     [SerializeField] private Data _data;
 
-
-
+    public bool isPause;
 
 
 
@@ -33,11 +32,19 @@ public class Taiyaki : MonoBehaviour
         public Color excellentColor;
         public Color overcookedColor;
 
+        public Side side;
+
         public enum State
         {
             Undercooked,
             Excellent,
-            //Overcooked
+            Overcooked
+        }
+
+        public enum Side
+        {
+            Left,
+            Right
         }
 
         public Color GetColor(State state)
@@ -71,7 +78,7 @@ public class Taiyaki : MonoBehaviour
 
     public void StartTimer()
     {
-        StartCoroutine(Timer(7));
+        StartCoroutine(Timer(5));
     }
 
     private void Start()
@@ -87,29 +94,36 @@ public class Taiyaki : MonoBehaviour
         foreach (Data.State state in Enum.GetValues(typeof(Data.State)))
         {
             ChangeColor(_data.GetColor(state));
+
             while (timer < duration)
             {
                 //if (PickUp()){yield break;}
-
-                timer += Time.deltaTime;
+                if (!isPause)
+                {
+                    timer += Time.deltaTime;
+                }
                 yield return null;
             }
-            
+
             timer = 0;
-            duration += 2;
-            
         }
+    }
+
+    public void Pause()
+    {
+        isPause = true;
+    }
+
+    public void UnPause()
+    {
+        isPause = false;
     }
 
     private void NextState()
     {
-        
+
     }
 
-    public void Combine()
-    {
-        //Combine 2 Side of Taiyaki;
-    }
 
     private void ChangeColor(Color color)
     {

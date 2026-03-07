@@ -23,30 +23,69 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
     [field: SerializeField] public bool IsAvaliable { get; set; } = true;
 
-    public void Interact(Transform transform)
-    {
-        //_taiyakiMaker.Interact(_taiyaki, this.transform);
-        TaiyakiGameObject = Instantiate(_taiyakiPrefab, this.transform);
-        TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
-        FillRaw(TaiyakiGameObject.transform);
 
-        
+    private bool isUsing;
+
+
+    public void Interact(Equipment playerEquipment)
+    {
+        if (playerEquipment != null && playerEquipment.CheckEquipment("Batter"))
+        {
+            //_taiyakiMaker.Interact(_taiyaki, this.transform);
+            TaiyakiGameObject = Instantiate(_taiyakiPrefab, this.transform);
+
+
+            TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
+            FillRaw(TaiyakiGameObject.transform);
+        }
     }
 
 
-    public bool IsEmpty()
+    public bool IsNotEmpty()
     {
         if (transform.childCount != 0)
         {
             //Debug.Log(name + " is not Empty");
-            return false;
+            return true;
         }
         else
         {
             //Debug.Log(name + " is Empty");
-            return true;
+            return false;
         }
     }
+
+    public void CreateCombinedTaiyaki()
+    {
+        combinedTaiyaki = new GameObject("Taiyaki");
+    }
+
+    public void SetCombinedTaiyaki(Taiyaki otherTaiyaki)
+    {
+        combinedTaiyaki.transform.SetParent(transform);
+
+        TaiyakiGameObject.transform.SetParent(combinedTaiyaki.transform);
+        otherTaiyaki.transform.SetParent(combinedTaiyaki.transform);
+    }
+
+    //
+    public void SwitchCombinedTaiyaki(Taiyaki otherTaiyaki)
+    {
+        
+        combinedTaiyaki = null;
+    }
+
+    public void RemoveToOtherTray()
+    {
+        combinedTaiyaki = null;
+    }
+
+    public void RecieveCombinedTaiyaki(GameObject combinedTaiyaki)
+    {
+        this.combinedTaiyaki = combinedTaiyaki;
+    }
+    //
+    
 
     public void FillRaw(Transform rawTaiyaki)
     {
@@ -68,6 +107,8 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         }
     }
 
+
+
     public void AddFilling(string color)
     {
         if (color == "Red-Beans")
@@ -85,17 +126,5 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
             fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._chocolateColor;
         }
-    }
-
-    public void Destroy()
-    {
-        Destroy(TaiyakiGameObject);
-    }
-
-    public void Combine(GameObject sideTaiyaki)
-    {
-        var taiyaki = new GameObject("Taiyaki");
-        TaiyakiGameObject.transform.SetParent(taiyaki.transform, true);
-
     }
 }

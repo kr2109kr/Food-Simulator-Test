@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class FillingStation : MonoBehaviour, IInteractor
+public class FillingStation : MonoBehaviour
 {
     [SerializeField] private GameObject _gameObject;
 
@@ -51,7 +51,7 @@ public class FillingStation : MonoBehaviour, IInteractor
 
     }
 
-    public void Interact(Transform transform)
+    public void Interact()
     {
         switch (_filling)
         {

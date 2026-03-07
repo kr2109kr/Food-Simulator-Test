@@ -4764,7 +4764,6 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   taiyaki: {fileID: 0}
   <SideOfPan>k__BackingField: 0
-  _requiredEquipment: {fileID: 0}
 --- !u!65 &1115059259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5236,7 +5235,6 @@ GameObject:
   - component: {fileID: 1392195002}
   - component: {fileID: 1392195001}
   - component: {fileID: 1392195000}
-  - component: {fileID: 1392195004}
   m_Layer: 0
   m_Name: Station
   m_TagString: Untagged
@@ -5338,19 +5336,6 @@ Transform:
   - {fileID: 1812265299}
   m_Father: {fileID: 1224282286}
   m_LocalEulerAnglesHint: {x: 0, y: -6.401, z: 0}
---- !u!114 &1392195004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392194999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c77e2bf84641b448e72bd6506ed52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Station
-  _equipment: {fileID: 1812265301}
 --- !u!114 &1427939432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6356,8 +6341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c1ecf61cfcb044c88ce37ee5d3e12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Equipment
-  _station: {fileID: 1392195004}
-  _tag: Batter
 --- !u!1 &1814642733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7478,7 +7461,6 @@ MonoBehaviour:
   _taiyakiMaker: {fileID: 1076986776}
   taiyaki: {fileID: 0}
   <SideOfPan>k__BackingField: 1
-  _requiredEquipment: {fileID: 0}
 --- !u!1 &1988414698
 GameObject:
   m_ObjectHideFlags: 0

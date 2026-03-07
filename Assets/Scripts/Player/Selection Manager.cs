@@ -1,12 +1,5 @@
-using System;
-using System.Collections;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-using static UnityEditor.PlayerSettings;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -24,10 +17,9 @@ public class SelectionManager : MonoBehaviour
 
     private Vector3 _oldPosition;
 
-    [SerializeField] private Food.Taiyaki.Filling _taiyakiFilling;
 
+    [SerializeField] private PlayerEquipment _playerEquipment;
 
-    [SerializeField] private Transform _equipment;
 
     private void OnEnable()
     {
@@ -35,6 +27,9 @@ public class SelectionManager : MonoBehaviour
         _clickingAction.action.Enable();
 
         _trackingPoint.action.performed += OnTouchPosition;
+        _trackingPoint.action.performed += OnMousePosition;
+
+
         _clickingAction.action.performed += OnTouchPress;
         _clickingAction.action.canceled += OnTouchRelease;
     }
@@ -59,99 +54,68 @@ public class SelectionManager : MonoBehaviour
             _selectedObject = hit.transform;
             _dragPlane = new Plane(-_camera.transform.forward, hit.point);
             _offset = _selectedObject.position - hit.point;
+ 
+            //var T = hit.transform.GetComponent<Equipment>();
+            //Debug.Log(T);
 
-            if (hit.transform.CompareTag("Selectable"))
-            {
-                //_taiyakiFilling = hit.transform.GetComponent<Taiyaki>()._taiyakiFilling;
-            }
+            CheckRayForEquipment(hit);
+            CheckRayForStation(hit);
 
-
-
-
-            if (hit.transform.CompareTag("Equipment"))
-            {
-                _equipment = hit.transform;
-            }
-
-
-            if (_equipment != null && (hit.transform.TryGetComponent<IInteractor>(out var target)))
-            {
-                //target.Interact(_equipment);
-            }
-
-            else if (_equipment != null && (hit.transform.TryGetComponent<Batter>(out var targetBatter)))
-            {
-                targetBatter.BackToOriginPos();
-            }
-
-            if (hit.transform.TryGetComponent<IInteractor>(out var target1))
-            {
-                target1.Interact(_equipment);
-            }
+            CheckForInteract(hit);
         }
-
-
     }
 
-    private void AClicked()
+
+    private void CheckRayForEquipment(RaycastHit hit)
     {
-        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
-        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.aKey.wasPressedThisFrame)
+        if (hit.transform.TryGetComponent<Equipment>(out var equipment))
         {
-            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
-            {
-                wwww.AddFilling("Red-Beans");
-            }
+            _playerEquipment.Equip(equipment);
         }
     }
 
-    private void SClicked()
+    private void CheckRayForStation(RaycastHit hit)
     {
-        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
-        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.sKey.wasPressedThisFrame)
+        if (hit.transform.TryGetComponent<Station>(out var station) && _playerEquipment.HasEqupment)
         {
-            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
-            {
-                wwww.AddFilling("Custard");
-            }
+            _playerEquipment.UnEquip();
         }
     }
 
-    private void DClicked()
+    private void CheckForInteract(RaycastHit hit)
     {
-        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
-        if (Physics.Raycast(ray, out RaycastHit hit) && Keyboard.current.dKey.wasPressedThisFrame)
+        if (hit.transform.TryGetComponent<IInteractor>(out var interactor))
         {
-            if ((hit.transform.TryGetComponent<TaiyakiMakerTray>(out var wwww)))
-            {
-                wwww.AddFilling("Chocolate");
-            }
+            interactor.Interact(_playerEquipment.GetEquipment());
         }
     }
 
-
-    private void Equip(Transform equipment)
+    public void TakeEquipment()
     {
-
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="context"></param>
-
-    private void Update()
-    {
-        if (Keyboard.current.zKey.wasPressedThisFrame)
+        if (_playerEquipment.GetEquipment())
         {
-            _equipment = null;
+            var t = _playerEquipment.GetEquipment().transform;
+            Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+
+
+
+            if (_dragPlane.Raycast(ray, out float distance))
+            {
+                t.position = ray.GetPoint(distance) + _offset;
+            }
+
         }
 
-        AClicked();
-        SClicked();
-        DClicked();
+
     }
 
+    private void OnMousePosition(InputAction.CallbackContext context)
+    {
+        _currentTouchPos = context.ReadValue<Vector2>();
+
+        TakeEquipment();
+
+    }
 
 
     private void OnTouchRelease(InputAction.CallbackContext context)
@@ -168,8 +132,10 @@ public class SelectionManager : MonoBehaviour
 
     private void OnTouchPosition(InputAction.CallbackContext context)
     {
+
         _currentTouchPos = context.ReadValue<Vector2>();
 
+        /*
         if (_selectedObject != null)
         {
             Ray ray = _camera.ScreenPointToRay( _currentTouchPos );
@@ -178,20 +144,7 @@ public class SelectionManager : MonoBehaviour
                 _selectedObject.position = ray.GetPoint(distance) + _offset;
             }
         }
-
-
-
-        ////////////
-        if (_equipment != null)
-        {
-            Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
-            if (_dragPlane.Raycast(ray, out float distance))
-            {
-                _equipment.position = ray.GetPoint(distance) + _offset + new Vector3(0, 1f);
-            }
-        }
-
-
+        */
     }
 
     private void CheckRaycastTarget()
@@ -206,7 +159,7 @@ public class SelectionManager : MonoBehaviour
         {
             if (hits[1].transform.gameObject.TryGetComponent<Customer>(out Customer customer1))
             {
-                customer1.CheckOrder(_taiyakiFilling);
+                //customer1.CheckOrder(_taiyakiFilling);
             }
             
 
