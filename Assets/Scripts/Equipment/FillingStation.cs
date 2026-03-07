@@ -21,21 +21,6 @@ public class FillingStation : MonoBehaviour
         _originalPos = transform.position;
     }
 
-    private void Update()
-    {
-        if (Keyboard.current.zKey.wasPressedThisFrame)
-        {
-            BackToOriginPos();
-        }
-    }
-
-    public void BackToOriginPos()
-    {
-        transform.position = _originalPos;
-
-
-    }
-
     private void SelectRedBeans()
     {
         

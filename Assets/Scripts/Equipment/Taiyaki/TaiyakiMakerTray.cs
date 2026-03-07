@@ -38,6 +38,11 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
             FillRaw(TaiyakiGameObject.transform);
         }
+
+        if (playerEquipment != null && playerEquipment.CheckEquipment("Tongs"))
+        {
+            //Tongs.PickupTaiyaki();
+        }
     }
 
 
