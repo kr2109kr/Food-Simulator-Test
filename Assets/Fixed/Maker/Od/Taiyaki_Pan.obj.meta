@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: a0b4e819342908a40a228ab19a491c6d
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackSG
+    second: {fileID: 2100000, guid: 2719b600bcbbe0a4aa173bef24d65bee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Control1SG
+    second: {fileID: 2100000, guid: 14e407ef92868af488aebab43b2c3e8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Control2SG
+    second: {fileID: 2100000, guid: ae359915131f05f46851a3a45e36d080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Control3SG
+    second: {fileID: 2100000, guid: 1d2faf3235634e14c86277a5c5aa159f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Control4SG
+    second: {fileID: 2100000, guid: bb734cc61d2dbe24a977928c59f648ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrawerHandleSG
+    second: {fileID: 2100000, guid: c113f16ee681a404b8318735526a8a1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrawerSG
+    second: {fileID: 2100000, guid: c1bd46a3a8c15394e8aaa9f4bfbf248b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontPanelSG
+    second: {fileID: 2100000, guid: 65c3cb98199bc1d489b279558398ee40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontTopSG
+    second: {fileID: 2100000, guid: 6ca565755f2e0a044b5ec386410de923, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle1SG
+    second: {fileID: 2100000, guid: 9da1d56645c667b45a95c60fe32adc4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle2SG
+    second: {fileID: 2100000, guid: f2d10ab72e0c02f43951340fc1273de7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle3SG
+    second: {fileID: 2100000, guid: 3c87f3ec416578f4c9721e8323353088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle4SG
+    second: {fileID: 2100000, guid: 1e853b36d9ea04e44a17391e2969af4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InSG
+    second: {fileID: 2100000, guid: cef1322fc3c603e45a8f8a3a8198e91f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_CSG
+    second: {fileID: 2100000, guid: 93f29cdee9407bf4e8f0219aec7d47f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Left_ASG
+    second: {fileID: 2100000, guid: be9ff6d58c0e02b40b3d8fb887211f34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Left_BSG
+    second: {fileID: 2100000, guid: 5e20bf7ea69a9ac44817622a7d41fad5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Left_BSG1
+    second: {fileID: 2100000, guid: 714d9e56f90e72d41bcd1c9ed4deccf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Right_ASG
+    second: {fileID: 2100000, guid: 66d7f9447c2493246aaabe56c92b274c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Right_BSG
+    second: {fileID: 2100000, guid: e70e667c8ffad8444a51cc4a481ba41f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan_Right_BSG1
+    second: {fileID: 2100000, guid: b672e589eda59d74fb52228fb603539a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlugSG
+    second: {fileID: 2100000, guid: 674eab6975c6e7a49b02c45e49982f6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PowerPlugSG
+    second: {fileID: 2100000, guid: e6ef8b38b85fed1448cd30f7678d30b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideSG
+    second: {fileID: 2100000, guid: aa20f3d24004de24494eedf922436f4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_BackSGMat
+    second: {fileID: 2100000, guid: ff021a1a0108d6648aee6f4b0cfe6239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Control1SGMat
+    second: {fileID: 2100000, guid: f9956cb47a733a640ae55ad54f640b7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Control2SGMat
+    second: {fileID: 2100000, guid: bcc5aa62fbc9fb54fb64b70b1baf1569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Control3SGMat
+    second: {fileID: 2100000, guid: 55c1f1d5132bcca46a8739591e733915, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Control4SGMat
+    second: {fileID: 2100000, guid: 1a2d333c896c2ea4998887396dbfde61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_DrawerHandleSGMat
+    second: {fileID: 2100000, guid: ab8162dc17941aa4897571997f337434, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_DrawerSGMat
+    second: {fileID: 2100000, guid: 611937e8a8a2ba04ba78f5ccbea14bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_FrontPanelSGMat
+    second: {fileID: 2100000, guid: bb99493adee3c394ea2d7d402c0e4bdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_FrontTopSGMat
+    second: {fileID: 2100000, guid: 4059110c22ff6e947a282a9878bfb633, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Handle1SGMat
+    second: {fileID: 2100000, guid: ad132e400fe4e894fbf46d64ff3e7a45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Handle2SGMat
+    second: {fileID: 2100000, guid: 460bc8aa7f749a649bd19d03ea785093, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Handle3SGMat
+    second: {fileID: 2100000, guid: 93b9e178c46dbcd408b2242c3676097f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Handle4SGMat
+    second: {fileID: 2100000, guid: 84484b7597b22cd47a25c9acd1107b06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_InSGMat
+    second: {fileID: 2100000, guid: 904ea117082c34f48b715ced0b023c3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_CSGMat
+    second: {fileID: 2100000, guid: 0f6d4a6e17e3cb1418874ef5d41146d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Left_ASGMat
+    second: {fileID: 2100000, guid: 11991880e22f8684d84b9e9bc90e7c24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Left_BSG1Mat
+    second: {fileID: 2100000, guid: 8a8c9cb4dce02134a9f3951d94450b46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Left_BSGMat
+    second: {fileID: 2100000, guid: e635510766e327a499adb35fa5207f12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Right_ASGMat
+    second: {fileID: 2100000, guid: e6bc96328710e284995ada20a6739e54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Right_BSG1Mat
+    second: {fileID: 2100000, guid: 945f54aa842a9eb4586e45153fa6ea9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Right_BSG1_1Mat
+    second: {fileID: 2100000, guid: a44f31027b3f649429d3a68599f4118a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Right_BSGMat
+    second: {fileID: 2100000, guid: e475b0f226246624fa10be1216cd2b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Pan_Right_BSG_1Mat
+    second: {fileID: 2100000, guid: 5a348948bb1cc8044bb8800e36a48362, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_PlugSGMat
+    second: {fileID: 2100000, guid: 5d9913ab45887f84c89aaf4686733f4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_PowerPlugSGMat
+    second: {fileID: 2100000, guid: c7b646ea8d0fb8d43a23ef6c0b0da681, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_SideSGMat
+    second: {fileID: 2100000, guid: 3fb165fae0c81c141a0317925c44dfb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_UnderSGMat
+    second: {fileID: 2100000, guid: d57bf32d0b40d0840bfc8456d944759d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Wire1SGMat
+    second: {fileID: 2100000, guid: e9d6d7d30e0ebe243a8c9e3e2fe823a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Wire2SGMat
+    second: {fileID: 2100000, guid: 40d1b6af8ffe2a04c92b785837bff208, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Taiyaki_Pan_Wire3SGMat
+    second: {fileID: 2100000, guid: 17c56d86a694ccf4782b07efe1446604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnderSG
+    second: {fileID: 2100000, guid: ab2a941425f082540822fcd842554f85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire1SG
+    second: {fileID: 2100000, guid: b47829c2e86161e4483411c6578ff801, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire2SG
+    second: {fileID: 2100000, guid: eadfd7f9a73a22341915221453bbbade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire3SG
+    second: {fileID: 2100000, guid: acd37cadbc15cb140b70b9cfaea26dae, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

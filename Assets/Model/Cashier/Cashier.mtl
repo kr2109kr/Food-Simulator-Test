@@ -1,0 +1,178 @@
+# Apple ModelI/O MTL File: Cashier.mtl
+
+newmtl CaseSG
+	map_Kd CaseSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic CaseSG-metallic.png
+	specularTint 0
+	map_roughness CaseSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl DrawerSG
+	map_Kd DrawerSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic DrawerSG-metallic.png
+	specularTint 0
+	map_roughness DrawerSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl HandleSG
+	map_Kd HandleSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic HandleSG-metallic.png
+	specularTint 0
+	map_roughness HandleSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl MiniMonitor_ASG
+	map_Kd MiniMonitor_ASG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic MiniMonitor_ASG-metallic.png
+	specularTint 0
+	map_roughness MiniMonitor_ASG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl MiniMonitor_BSG
+	map_Kd MiniMonitor_BSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic MiniMonitor_BSG-metallic.png
+	specularTint 0
+	map_roughness MiniMonitor_BSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl MiniMonitor_CSG
+	map_Kd MiniMonitor_CSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic MiniMonitor_CSG-metallic.png
+	specularTint 0
+	map_roughness MiniMonitor_CSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Monitor_ASG
+	map_Kd Monitor_ASG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Monitor_ASG-metallic.png
+	specularTint 0
+	map_roughness Monitor_ASG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Monitor_BSG
+	map_Kd Monitor_BSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Monitor_BSG-metallic.png
+	specularTint 0
+	map_roughness Monitor_BSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Monitor_CSG
+	map_Kd Monitor_CSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Monitor_CSG-metallic.png
+	specularTint 0
+	map_roughness Monitor_CSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Monitor_DSG
+	map_Kd Monitor_DSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Monitor_DSG-metallic.png
+	specularTint 0
+	map_roughness Monitor_DSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl PrinterSG
+	map_Kd PrinterSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic PrinterSG-metallic.png
+	specularTint 0
+	map_roughness PrinterSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

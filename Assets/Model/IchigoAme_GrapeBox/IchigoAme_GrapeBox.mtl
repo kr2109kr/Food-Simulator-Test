@@ -1,0 +1,82 @@
+# Apple ModelI/O MTL File: IchigoAme_GrapeBox.mtl
+
+newmtl NailSG
+	map_Kd NailSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic NailSG-metallic.png
+	specularTint 0
+	map_roughness NailSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl UnderSG
+	map_Kd UnderSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic UnderSG-metallic.png
+	specularTint 0
+	map_roughness UnderSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl TriangleSG
+	map_Kd TriangleSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TriangleSG-metallic.png
+	specularTint 0
+	map_roughness TriangleSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl LongSG
+	map_Kd LongSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic LongSG-metallic.png
+	specularTint 0
+	map_roughness LongSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl ShortSG
+	map_Kd ShortSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic ShortSG-metallic.png
+	specularTint 0
+	map_roughness ShortSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

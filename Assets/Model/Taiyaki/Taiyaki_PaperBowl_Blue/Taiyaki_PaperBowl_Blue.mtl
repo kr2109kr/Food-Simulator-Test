@@ -1,0 +1,18 @@
+# Apple ModelI/O MTL File: Taiyaki_PaperBowl_Blue.mtl
+
+newmtl Taiyaki_PaperBowlSG
+	map_Kd Taiyaki_PaperBowlSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Taiyaki_PaperBowlSG-metallic.png
+	specularTint 0
+	map_roughness Taiyaki_PaperBowlSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
