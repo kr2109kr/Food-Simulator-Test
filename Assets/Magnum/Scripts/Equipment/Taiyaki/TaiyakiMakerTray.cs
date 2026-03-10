@@ -24,6 +24,8 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     [SerializeField] private GameObject _fillingPrefab;
 
     [field: SerializeField] public bool IsAvaliable { get; set; } = true;
+    
+
 
 
     private bool isUsing;
@@ -37,12 +39,24 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             TaiyakiGameObject = Instantiate(_taiyakiPrefab, transform);
             TaiyakiGameObject.transform.localPosition = _startPosition;
 
+            var _batter = playerEquipment.GetComponent<Batter>();
+            _batter.IsPouring();
+
             //TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
             FillRaw(TaiyakiGameObject.transform);
         }
 
         if (playerEquipment != null && playerEquipment.CheckEquipment("Tongs"))
         {
+            if (combinedTaiyaki != null)
+            {
+                var _tongs = playerEquipment.GetComponent<Tongs>();
+
+                _tongs.PickUp(combinedTaiyaki);
+                RemoveToOtherTray();
+
+            }
+            
             //Tongs.PickupTaiyaki();
         }
     }
@@ -65,21 +79,22 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     public void CreateCombinedTaiyaki()
     {
         combinedTaiyaki = new GameObject("Taiyaki");
+        combinedTaiyaki.transform.SetParent(transform, false);
     }
 
     public void SetCombinedTaiyaki(Taiyaki otherTaiyaki)
     {
-        combinedTaiyaki.transform.SetParent(transform);
 
         TaiyakiGameObject.transform.SetParent(combinedTaiyaki.transform);
+
         otherTaiyaki.transform.SetParent(combinedTaiyaki.transform);
+
+        otherTaiyaki.transform.localRotation = Quaternion.Euler(0,0,180);
+        otherTaiyaki.transform.localPosition = Vector3.zero;
     }
 
     //
-    public void SwitchCombinedTaiyaki(Taiyaki otherTaiyaki)
-    {
-        combinedTaiyaki = null;
-    }
+    
 
     public void RemoveToOtherTray()
     {
@@ -89,6 +104,17 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     public void RecieveCombinedTaiyaki(GameObject combinedTaiyaki)
     {
         this.combinedTaiyaki = combinedTaiyaki;
+
+        Debug.Log(combinedTaiyaki.transform.eulerAngles.z);
+
+
+        //combinedTaiyaki.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        combinedTaiyaki.transform.Rotate(0, 0, 180);
+
+
+
+
+        combinedTaiyaki.transform.localPosition = Vector3.zero;
     }
     //
     

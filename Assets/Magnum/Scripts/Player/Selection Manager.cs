@@ -94,14 +94,14 @@ public class SelectionManager : MonoBehaviour
     {
         if (_playerEquipment.GetEquipment())
         {
-            var t = _playerEquipment.GetEquipment().transform;
+            var t = _playerEquipment.GetEquipment();
             Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
 
 
 
             if (_dragPlane.Raycast(ray, out float distance))
             {
-                t.position = ray.GetPoint(distance) + _offset;
+                t.transform.position = ray.GetPoint(distance) + t.GetOffsetPosition();
             }
 
         }

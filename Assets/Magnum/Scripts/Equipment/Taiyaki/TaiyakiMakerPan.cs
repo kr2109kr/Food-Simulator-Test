@@ -1,10 +1,12 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 {
     [SerializeField] private TaiyakiMakerTray[] _trays;
     [SerializeField] private TaiyakiMaker _taiyakiMaker;
-    public bool IsClosed { get; set; }
+    public bool IsOpen { get; set; }
 
     [SerializeField] private GameObject taiyaki;
 
@@ -13,7 +15,12 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
     [field: SerializeField] public Side SideOfPan { get; private set; }
 
     [SerializeField] private Equipment _requiredEquipment;
-    
+
+
+    [SerializeField] private Quaternion _rotation;
+
+
+    [SerializeField] private Animator _animator;
 
     public enum Side
     {
@@ -24,25 +31,55 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
     public void Interact(Equipment playerEquipment)
     {
+        if (!IsOpen && playerEquipment == null)
+        {
+            Open();
+        }
 
-        if (playerEquipment is null)
+        else if (IsOpen && playerEquipment is null)
         {
             Close();
+            StartCoroutine(Delay(0.5f, () => _taiyakiMaker.StartCombine(this)));
         }
 
-        
-        if (IsClosed)
-        {
-            _taiyakiMaker.StartCombine(this);
-        }
+    }
+
+    private IEnumerator Delay(float seconds, Action action)
+    {
+        yield return new WaitForSeconds(seconds);
+        action();
     }
 
     public void Close()
     {
-        IsClosed = !IsClosed;
+        IsOpen = false;
+        //transform.Rotate(new Vector3(0, 0, 165));
+        _animator.SetBool("IsOpen", false);
 
-        transform.Rotate(new Vector3(0, 0, 180));
+        GetAnotherPan().DisableCollider();
     }
+
+
+    public void Open()
+    {
+        IsOpen = true;
+        _animator.SetBool("IsOpen", true);
+
+        GetAnotherPan().EnableCollider();
+    }
+
+    private void EnableCollider()
+    {
+        GetComponent<BoxCollider>().enabled = true;
+    }
+
+    private void DisableCollider()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+    }
+
+    
+
 
     public int GetTraysLength()
     {

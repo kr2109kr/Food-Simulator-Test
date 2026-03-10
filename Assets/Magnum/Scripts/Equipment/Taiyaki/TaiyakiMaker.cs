@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public interface IInteractor
@@ -20,7 +22,6 @@ public class TaiyakiMaker : MonoBehaviour
     /// <param name="taiyakiParent"></param>
     /// 
     
-
 
 
     public bool CheckEquipment(Transform equipment, string name)
@@ -62,6 +63,12 @@ public class TaiyakiMaker : MonoBehaviour
 
     public void FlipTray(int index, TaiyakiMakerPan pan)
     {
-        pan.Switch(index);
+        StartCoroutine(Delay(0.5f, () => pan.Switch(index)));
+    }
+
+    private IEnumerator Delay(float seconds, Action action)
+    {
+        yield return new WaitForSeconds(seconds);
+        action();
     }
 }
