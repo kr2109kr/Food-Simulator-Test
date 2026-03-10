@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 {
     [SerializeField] private TaiyakiMakerTray[] _trays;
     [SerializeField] private TaiyakiMaker _taiyakiMaker;
-    public bool IsOpen { get; set; }
+    public bool IsOpen { get; set; } = true;
 
     [SerializeField] private GameObject taiyaki;
 
@@ -22,10 +23,28 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
     [SerializeField] private Animator _animator;
 
+
+    [SerializeField] private string _closeAnimName = "Close";
+    [SerializeField] private string _openAnimName = "Open";
+
     public enum Side
     {
         Left,
         Right
+    }
+
+    private void Awake()
+    {
+        
+
+        AnimatorController animatorController = _animator.runtimeAnimatorController as AnimatorController;
+
+        AnimatorStateMachine animatorStateMachine = animatorController.layers[0].stateMachine;
+
+        _animator.Play(animatorStateMachine.defaultState.name, 0, 1f); //Set Default Animation State
+
+
+        //animatorStateMachine.defaultState.speed = 1f;
     }
 
 
@@ -34,39 +53,60 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         if (!IsOpen && playerEquipment == null)
         {
             Open();
+            
         }
 
         else if (IsOpen && playerEquipment is null)
         {
             Close();
-            StartCoroutine(Delay(0.5f, () => _taiyakiMaker.StartCombine(this)));
+            PlayCloseAnimation();
+
+            StartCoroutine(PlayAnimationAndWait(_closeAnimName, 0, () => 
+            { 
+                _taiyakiMaker.StartCombine(this); 
+                EnableCollider(); 
+                Debug.Log("Opennnn"); 
+            }));
         }
 
     }
 
-    private IEnumerator Delay(float seconds, Action action)
+    public void Open()
     {
-        yield return new WaitForSeconds(seconds);
-        action();
+        IsOpen = true;
+
+        PlayOpenAnimation();
+
+        GetAnotherPan().EnableCollider();
     }
 
     public void Close()
     {
         IsOpen = false;
-        //transform.Rotate(new Vector3(0, 0, 165));
-        _animator.SetBool("IsOpen", false);
+
+        PlayCloseAnimation();
 
         GetAnotherPan().DisableCollider();
     }
 
-
-    public void Open()
+    private void PlayOpenAnimation()
     {
-        IsOpen = true;
         _animator.SetBool("IsOpen", true);
 
-        GetAnotherPan().EnableCollider();
+        DisableCollider();
+        StartCoroutine(PlayAnimationAndWait(_openAnimName, 0, () => { EnableCollider(); Debug.Log("Opennnn"); }));
+        
     }
+
+    private void PlayCloseAnimation()
+    {
+        _animator.SetBool("IsOpen", false);
+
+        DisableCollider();
+        
+    }
+
+    
 
     private void EnableCollider()
     {
@@ -77,9 +117,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
     {
         GetComponent<BoxCollider>().enabled = false;
     }
-
-    
-
 
     public int GetTraysLength()
     {
@@ -100,7 +137,7 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         if (_trays[index].combinedTaiyaki != null)
         {
             _trays[index].combinedTaiyaki.transform.SetParent(GetAnotherPan()._trays[index].transform);
-            
+
             GetAnotherPan()._trays[index].RecieveCombinedTaiyaki(_trays[index].combinedTaiyaki);
             _trays[index].RemoveToOtherTray();
         }
@@ -114,9 +151,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         }
     }
     //
-
-
-
 
     public TaiyakiMakerPan GetAnotherPan()
     {
@@ -133,12 +167,45 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         else return null;
     }
 
+    private IEnumerator PlayAnimationAndWait(string name, int layer, Action action)
+    {
+        yield return WaitForAnimation(name, layer);
+        action();
+    }
+
+    private IEnumerator WaitForAnimation(string name, int layer)
+    {
+        while (!_animator.IsInTransition(layer))
+        {
+            yield return null;
+        }
+
+        while (_animator.IsInTransition(layer))
+        {
+            yield return null;
+        }
+
+        if (_animator.GetCurrentAnimatorStateInfo(layer).IsName(name))
+        {
+            while (_animator.GetCurrentAnimatorStateInfo(layer).normalizedTime < 1f)
+            {
+                yield return null;
+                Debug.Log("Delay");
+            }
+        }
+
+        
+
+
+
+
+        Debug.Log("Animation has Finished");
+    }
 
     public TaiyakiMakerTray GetTrays(int indexOfTray)
     {
         return _trays[indexOfTray];
     }
-
 
     public Taiyaki GetTaiyaki(int index)
     {
