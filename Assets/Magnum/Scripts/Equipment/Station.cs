@@ -15,5 +15,4 @@ public class Station : MonoBehaviour
         return _equipmentPosition;
     }
 
-
 }

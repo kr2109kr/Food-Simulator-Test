@@ -30,4 +30,9 @@ public class Bowl : MonoBehaviour, IInteractor
             tongs.TaiyakiObject = null;
         }
     }
+
+    public void SwitchToCounter()
+    {
+        
+    }
 }
