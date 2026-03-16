@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Tongs : MonoBehaviour
+public class Tongs : Equipment
 {
     [SerializeField] private Animator _animator;
     public GameObject TaiyakiObject { get; set; }

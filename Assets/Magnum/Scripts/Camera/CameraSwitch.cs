@@ -10,9 +10,10 @@ public class CameraSwitch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera[] _cookingVirtualCams;
     [SerializeField] private CinemachineVirtualCamera[] _cashierVirtualCams;
 
-    private int currentCookingCam;
-    private int currentCashierCam;
-    private bool isInCookingSection = true;
+    [SerializeField] private CinemachineBrain _brain;
+    private int _currentCookingCam;
+    private int _currentCashierCam;
+    private bool _isInCookingSection = true;
 
 
     [Header("Input References")]
@@ -46,50 +47,65 @@ public class CameraSwitch : MonoBehaviour
             cam.Priority = 0;
         }
 
-        _cookingVirtualCams[currentCookingCam].Priority = 10;
+        _cookingVirtualCams[_currentCookingCam].Priority = 10;
     }
 
     private void SwitchToCookingSection(InputAction.CallbackContext obj)
     {
-        if (!isInCookingSection)
+        if (!_isInCookingSection)
         {
             foreach (CinemachineVirtualCamera cam in _cashierVirtualCams)
             {
                 cam.Priority = 0;
             }
 
-            _cookingVirtualCams[currentCookingCam].Priority = 10;
+            _cookingVirtualCams[_currentCookingCam].Priority = 10;
 
-            isInCookingSection = true;
+            _isInCookingSection = true;
         }
     }
 
     private void SwitchToCounterSection(InputAction.CallbackContext context)
     {
-        if (isInCookingSection)
+        if (_isInCookingSection)
         {
             foreach (CinemachineVirtualCamera cam in _cookingVirtualCams)
             {
                 cam.Priority = 0;
             }
 
-            _cashierVirtualCams[currentCashierCam].Priority = 10;
+            _cashierVirtualCams[_currentCashierCam].Priority = 10;
 
-            isInCookingSection = false;
+            _isInCookingSection = false;
         }
     }
 
     public void SwitchToPreviousCamera(InputAction.CallbackContext context)
     {
-        _cookingVirtualCams[currentCookingCam].Priority = 0;
-        currentCookingCam = (currentCookingCam - 1 + _cookingVirtualCams.Length) % _cookingVirtualCams.Length;
-        _cookingVirtualCams[currentCookingCam].Priority = 1;
+        if (_isInCookingSection)
+        {
+            _cookingVirtualCams[_currentCookingCam].Priority = 0;
+            _currentCookingCam = (_currentCookingCam - 1 + _cookingVirtualCams.Length) % _cookingVirtualCams.Length;
+            _cookingVirtualCams[_currentCookingCam].Priority = 1;
+        }
     }
 
     public void SwitchToNextCamera(InputAction.CallbackContext context)
     {
-        _cookingVirtualCams[currentCookingCam].Priority = 0;
-        currentCookingCam = (currentCookingCam + 1) % _cookingVirtualCams.Length;
-        _cookingVirtualCams[currentCookingCam].Priority = 1;
+        if (_isInCookingSection)
+        {
+            _cookingVirtualCams[_currentCookingCam].Priority = 0;
+            _currentCookingCam = (_currentCookingCam + 1) % _cookingVirtualCams.Length;
+            _cookingVirtualCams[_currentCookingCam].Priority = 1;
+        }
+    }
+
+    public bool IsCameraSwitching()
+    {
+        if (_brain.IsBlending)
+        {
+            return true;
+        }
+        return false;
     }
 }

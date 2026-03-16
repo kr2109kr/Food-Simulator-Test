@@ -4,8 +4,13 @@ using UnityEngine;
 
 public interface IInteractor
 {
-    void Interact(Equipment playerEquipment);
+    void Interact(Player player);
 
+}
+
+public interface Itest
+{
+    void Test(Equipment equipment);
 }
 
 public class TaiyakiMaker : MonoBehaviour

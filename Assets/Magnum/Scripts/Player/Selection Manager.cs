@@ -18,7 +18,9 @@ public class SelectionManager : MonoBehaviour
     private Vector3 _oldPosition;
 
 
-    [SerializeField] private PlayerEquipment _playerEquipment;
+    [SerializeField] private Player _player;
+
+    [SerializeField] private CameraSwitch _cameraSwitch;
 
 
     private void OnEnable()
@@ -54,31 +56,8 @@ public class SelectionManager : MonoBehaviour
             _selectedObject = hit.transform;
             _dragPlane = new Plane(-_camera.transform.forward, hit.point);
             _offset = _selectedObject.position - hit.point;
- 
-            //var T = hit.transform.GetComponent<Equipment>();
-            //Debug.Log(T);
-
-            CheckRayForEquipment(hit);
-            CheckRayForStation(hit);
 
             CheckForInteract(hit);
-        }
-    }
-
-
-    private void CheckRayForEquipment(RaycastHit hit)
-    {
-        if (hit.transform.TryGetComponent<Equipment>(out var equipment))
-        {
-            _playerEquipment.Equip(equipment);
-        }
-    }
-
-    private void CheckRayForStation(RaycastHit hit)
-    {
-        if (hit.transform.TryGetComponent<Station>(out var station) && _playerEquipment.HasEqupment)
-        {
-            _playerEquipment.UnEquip();
         }
     }
 
@@ -86,15 +65,15 @@ public class SelectionManager : MonoBehaviour
     {
         if (hit.transform.TryGetComponent<IInteractor>(out var interactor))
         {
-            interactor.Interact(_playerEquipment.GetEquipment());
+            interactor.Interact(_player);
         }
     }
 
     public void TakeEquipment()
     {
-        if (_playerEquipment.GetEquipment())
+        if (_player.GetEquipment())
         {
-            var t = _playerEquipment.GetEquipment();
+            var t = _player.GetEquipment();
             Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
 
 
@@ -114,7 +93,6 @@ public class SelectionManager : MonoBehaviour
         _currentTouchPos = context.ReadValue<Vector2>();
 
         TakeEquipment();
-
     }
 
 

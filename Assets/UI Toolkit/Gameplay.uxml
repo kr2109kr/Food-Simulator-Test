@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Image source="project://database/Assets/UI%20Toolkit/UI%20Image/Cashbar.png?fileID=2800000&amp;guid=5bbc8a78a64f0da4eb7d148f9ddd363e&amp;type=3#Cashbar"/>
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1;"/>
+</ui:UXML>

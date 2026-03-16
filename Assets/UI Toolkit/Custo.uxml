@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" style="flex-direction: row;">
+        <ui:Image source="project://database/Assets/UI%20Toolkit/UI%20Image/Customer_Reaction.png?fileID=168328748&amp;guid=4adece42fb0aadd439dd86b3b6d92d6c&amp;type=3#Customer_Reaction_3" name="Image"/>
+        <ui:VisualElement name="ProgressBar" style="flex-grow: 1; opacity: 1; aspect-ratio: auto; background-color: rgb(111, 111, 111); max-width: 63px; max-height: 296px; justify-content: flex-end; visibility: visible; display: flex;">
+            <ui:VisualElement name="ProgressBarValue" style="flex-grow: 1; background-color: rgb(103, 226, 157); opacity: 1; max-height: 166px;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

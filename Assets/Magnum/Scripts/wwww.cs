@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Food
+public class wwww
 {
      
     
@@ -46,7 +46,7 @@ public class Food
     }
     public void Test()
     {
-        Debug.Log(Food.Taiyaki.RandomFilling());
+        //Debug.Log(Www.Taiyaki.RandomFilling());
     }
     public void RandomFood()
     {

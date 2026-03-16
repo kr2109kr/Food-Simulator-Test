@@ -1,3 +1,4 @@
+using FoodSystem;
 using NUnit.Framework;
 using System;
 using System.Collections;
@@ -30,35 +31,41 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
     private bool isUsing;
 
-
-    public void Interact(Equipment playerEquipment)
+    public void Interact(Player player)
     {
-        if (playerEquipment != null && playerEquipment.CheckEquipment("Batter"))
+
+
+        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Kettle"))
         {
             //_taiyakiMaker.Interact(_taiyaki, this.transform);
             TaiyakiGameObject = Instantiate(_taiyakiPrefab, transform);
             TaiyakiGameObject.transform.localPosition = _startPosition;
 
-            var _batter = playerEquipment.GetComponent<Batter>();
-            _batter.IsPouring();
+            var _kettle = player.GetEquipment().GetComponent<Kettle>();
+            _kettle.IsPouring();
 
             //TaiyakiGameObject.GetComponent<Taiyaki>().StartTimer();
             FillRaw(TaiyakiGameObject.transform);
         }
 
-        if (playerEquipment != null && playerEquipment.CheckEquipment("Tongs"))
+        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Tongs"))
         {
             if (combinedTaiyaki != null)
             {
-                var _tongs = playerEquipment.GetComponent<Tongs>();
+                var _tongs = player.GetEquipment().GetComponent<Tongs>();
 
                 _tongs.PickUp(combinedTaiyaki);
                 RemoveToOtherTray();
 
             }
-            
+
             //Tongs.PickupTaiyaki();
         }
+    }
+
+    public void Interact(Equipment playerEquipment)
+    {
+        
     }
 
 
@@ -82,7 +89,7 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         combinedTaiyaki.transform.SetParent(transform, false);
     }
 
-    public void SetCombinedTaiyaki(Taiyaki otherTaiyaki)
+    public void SetCombinedTaiyaki(TaiyakiOld otherTaiyaki)
     {
 
         TaiyakiGameObject.transform.SetParent(combinedTaiyaki.transform);
@@ -135,7 +142,7 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
                 yield return null;
             }
 
-            yield return rawTaiyaki.GetComponent<Taiyaki>().Timer(5f);
+            yield return rawTaiyaki.GetComponent<TaiyakiOld>().Timer(5f);
         }
     }
 
@@ -159,4 +166,6 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._chocolateColor;
         }
     }
+
+    
 }

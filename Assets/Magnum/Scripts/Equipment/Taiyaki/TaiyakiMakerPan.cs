@@ -1,3 +1,4 @@
+using FoodSystem;
 using System;
 using System.Collections;
 using UnityEditor.Animations;
@@ -11,7 +12,7 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
     [SerializeField] private GameObject taiyaki;
 
-    private Taiyaki _taiyaki;
+    private TaiyakiOld _taiyaki;
 
     [field: SerializeField] public Side SideOfPan { get; private set; }
 
@@ -46,29 +47,26 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
         //animatorStateMachine.defaultState.speed = 1f;
     }
-
-
-    public void Interact(Equipment playerEquipment)
+    public void Interact(Player player)
     {
-        if (!IsOpen && playerEquipment == null)
+        if (!IsOpen && player.GetEquipment() == null)
         {
             Open();
-            
+
         }
 
-        else if (IsOpen && playerEquipment is null)
+        else if (IsOpen && player.GetEquipment() is null)
         {
             Close();
             PlayCloseAnimation();
 
-            StartCoroutine(PlayAnimationAndWait(_closeAnimName, 0, () => 
-            { 
-                _taiyakiMaker.StartCombine(this); 
-                EnableCollider(); 
-                Debug.Log("Opennnn"); 
+            StartCoroutine(PlayAnimationAndWait(_closeAnimName, 0, () =>
+            {
+                _taiyakiMaker.StartCombine(this);
+                EnableCollider();
+                Debug.Log("Opennnn");
             }));
         }
-
     }
 
     public void Open()
@@ -207,9 +205,9 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
         return _trays[indexOfTray];
     }
 
-    public Taiyaki GetTaiyaki(int index)
+    public TaiyakiOld GetTaiyaki(int index)
     {
-        return _trays[index].TaiyakiGameObject.GetComponent<Taiyaki>();
+        return _trays[index].TaiyakiGameObject.GetComponent<TaiyakiOld>();
     }
 
     private void GetCombinedTaiyaki()
@@ -233,4 +231,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
     {
         return (_trays[index].combinedTaiyaki);
     }
+
+    
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Batter : MonoBehaviour
+public class Kettle : Equipment
 {
     [SerializeField] private Animator _animator;
 

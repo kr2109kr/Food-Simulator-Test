@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerEquipment : MonoBehaviour
+public class Player : MonoBehaviour
 {
     Equipment _equipment;
     private SelectionManager _selectionManager;
@@ -13,6 +13,7 @@ public class PlayerEquipment : MonoBehaviour
         _equipment.GetComponent<BoxCollider>().enabled = false;
         HasEqupment = true;
 
+        
 
         //AddSound
     }
@@ -27,6 +28,14 @@ public class PlayerEquipment : MonoBehaviour
 
         //AddSound
     }
+
+    public void DestroyEquipment()
+    {
+        HasEqupment = false;
+        Destroy(_equipment.gameObject);
+        _equipment = null;
+    }
+
 
     public Equipment GetEquipment()
     {

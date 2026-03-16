@@ -1,12 +1,24 @@
 using System;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
-public class Equipment : MonoBehaviour
+public class Equipment : MonoBehaviour, IInteractor
 {
     [SerializeField] private Station _station;
-    [SerializeField] private string _tag;
 
     [SerializeField] private Vector3 _offsetPosition;
+    private CameraSwitch CameraSwitch;
+
+    [field: SerializeField] public string NameTag { get; private set; }
+
+    public virtual void Interact(Player player)
+    {
+        if (!player.GetEquipment())
+        {
+            player.Equip(this);
+        }
+    }
+
 
     public void FollowCursor(Transform cursorPosition)
     {
@@ -17,7 +29,7 @@ public class Equipment : MonoBehaviour
 
     public void ReturnToStation()
     {
-        transform.position = _station.GetResetEquipmentPos();
+        transform.localPosition = _station.GetResetEquipmentPos();
     }
 
     public Vector3 GetOffsetPosition()
@@ -27,7 +39,7 @@ public class Equipment : MonoBehaviour
     ///
     public bool CheckEquipment(string name)
     {
-        if (_tag == name)
+        if (NameTag == name)
         {
             return true;
         }
@@ -38,4 +50,8 @@ public class Equipment : MonoBehaviour
         }
     }
 
+    public void SetStation(Station station)
+    {
+        _station = station;
+    }
 }
