@@ -47,7 +47,7 @@ public class CustomerUI : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        _customer.OnWaitingToOrderEvent.AddListener(ChangeIconToWaitingToOrder);
         _customer.OnOrderedFoodEvent.AddListener(ChangeIconToFoodOrdered);
         _customer.Test.AddListener(ChangeProgress);
         _customer.OnAngryEvent.AddListener(ChangeIconToAngry);
@@ -59,7 +59,8 @@ public class CustomerUI : MonoBehaviour
 
     private void OnDisable()
     {
-        _customer.OnOrderedFoodEvent.RemoveAllListeners();
+        _customer.OnWaitingToOrderEvent.RemoveListener(ChangeIconToWaitingToOrder);
+        _customer.OnOrderedFoodEvent.RemoveListener(ChangeIconToFoodOrdered);
     }
     private void Awake()
     {
@@ -100,8 +101,6 @@ public class CustomerUI : MonoBehaviour
 
     private void Start()
     {
-        ChangeIconToWaitingToOrder();
-        
 
     }
 
@@ -112,11 +111,16 @@ public class CustomerUI : MonoBehaviour
     }
 
 
-    public void ChangeIconToWaitingToOrder()
+
+    public void ChangeIconToWaitingToOrder(float percent)
     {
         _image.sprite = orderSprite;
-        progressBar.style.display = DisplayStyle.None;
+        progressBar.style.display = DisplayStyle.Flex;
+        progress_0.style.maxHeight = new StyleLength(new Length(percent, LengthUnit.Percent));
+
     }
+
+
 
     public void ChangeIconToFoodOrdered()
     {
@@ -124,7 +128,7 @@ public class CustomerUI : MonoBehaviour
         {
             TaiyakiData taiyakiData = (TaiyakiData)_customer.FoodOrderList[0];
 
-            switch (taiyakiData._filling)
+            switch (taiyakiData.FillingType)
             {
                 case TaiyakiData.Filling.RedBeans:
                     _image.sprite = _redBeansSprite;

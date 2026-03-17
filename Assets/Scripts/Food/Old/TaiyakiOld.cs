@@ -25,6 +25,7 @@ namespace FoodSystem
         private TaiyakiData taiyakiData = new();
 
 
+
         [Serializable]
         private class Data
         {
@@ -62,7 +63,10 @@ namespace FoodSystem
             }
         }
 
-
+        public void SetFilling(TaiyakiData.Filling filling)
+        {
+            taiyakiData.FillingType = filling;
+        }
 
 
         public void StartCooking()

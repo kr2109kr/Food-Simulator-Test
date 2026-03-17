@@ -1401,6 +1401,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7553c7f407ba8b74984bcd4923e1d296, type: 3}
   m_PrefabInstance: {fileID: 287725194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &313383228
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965396199025477126, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_Name
+      value: Taiyaki
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.42664
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.19988
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.13097
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024231056810118634, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 965396199025477126, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1324544646}
+    - targetCorrespondingSourceObject: {fileID: 965396199025477126, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1324544645}
+  m_SourcePrefab: {fileID: 100100000, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
 --- !u!1001 &313576162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1549,7 +1612,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: -0.005779745, y: 0.96104896, z: -0.27626315, w: 0.0055085244}
-  m_LocalPosition: {x: -5.45, y: 7.858, z: -19.55}
+  m_LocalPosition: {x: -26.164, y: 7.858, z: -19.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4482,6 +4545,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4791344026714681059, guid: 666fb685408a02f40bdcee46da9a8c35, type: 3}
   m_PrefabInstance: {fileID: 1316075420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1324544644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 965396199025477126, guid: fbb5661e0a1c31f48814674623d0e8f5, type: 3}
+  m_PrefabInstance: {fileID: 313383228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1324544645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324544644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodSystem.TaiyakiOld
+  CookedStateTime: 0
+  OvercookedStateTime: 0
+  _data:
+    undercookColor: {r: 0, g: 0, b: 0, a: 0}
+    excellentColor: {r: 0, g: 0, b: 0, a: 0}
+    overcookedColor: {r: 0, g: 0, b: 0, a: 0}
+    side: 0
+  isPause: 0
+--- !u!114 &1324544646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324544644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1339438c26538f645ad588c845d4ab48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
 --- !u!4 &1380615856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 218815604987579110, guid: 5b8af7ceb9fa88742ab0e9eaf12b5065, type: 3}
@@ -9371,3 +9471,4 @@ SceneRoots:
   - {fileID: 1231912533}
   - {fileID: 2095802334}
   - {fileID: 358707461}
+  - {fileID: 313383228}

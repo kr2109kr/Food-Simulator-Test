@@ -5,9 +5,9 @@ namespace FoodSystem
 {
     public class TaiyakiData : FoodData
     {
-        public Filling _filling;
-        Doness _leftDoness;
-        Doness _rightDoness;
+        public Filling FillingType { get; set; }
+        public Doness LeftDoness { get; private set; }
+        public Doness RightDoness { get; private set; }
 
         public TaiyakiData()
         {
@@ -16,7 +16,7 @@ namespace FoodSystem
 
         public TaiyakiData(Filling filling)
         {
-            _filling = filling;
+            FillingType = filling;
         }
 
         public enum Filling
@@ -28,7 +28,20 @@ namespace FoodSystem
         
         public enum Doness
         {
-            
+            Uncooked,
+            Excellent,
+            Burnt
+        }
+
+        public enum Side
+        {
+            Left,
+            Right
+        }
+
+        public void SetDoness(Side side, Doness doness)
+        {
+            LeftDoness = (side == Side.Left) ? doness : RightDoness = doness;
         }
 
         public static Filling RandomFilling()
