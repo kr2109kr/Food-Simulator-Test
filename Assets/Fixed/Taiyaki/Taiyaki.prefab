@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3024231056810118634}
   - component: {fileID: 2354357025695015960}
   - component: {fileID: 5098034211100831354}
+  - component: {fileID: 3596251313824770948}
   m_Layer: 0
   m_Name: Taiyaki
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965396199025477126}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.73275, y: 5.8473, z: -24.47013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -9103484930961366303, guid: 1983f9582a442e64aa8e1f4a8990357b, type: 3}
+  - {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,3 +91,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3596251313824770948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965396199025477126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1339438c26538f645ad588c845d4ab48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
+  _underCookedMaterial: {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
+  _burntMaterial: {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
+  _excellentMaterial: {fileID: 2100000, guid: 3edcebe5cd8fd73469d6402b76d75b64, type: 2}
