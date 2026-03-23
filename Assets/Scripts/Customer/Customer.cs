@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using System;
 
 public class Customer : MonoBehaviour, IInteractor
 {
@@ -35,93 +36,138 @@ public class Customer : MonoBehaviour, IInteractor
 
     [SerializeField] private Money money;
 
-    private State _state;
+    private WaitingState _waitingState;
+
+    
 
 
+    private TaiyakiDataOLD _taiyaki;
+    private TaiyakiData _taiyakiSO;
 
-    private TaiyakiData _taiyaki;
+    private FoodData _foodDataSO;
 
-    public FoodOrder FoodOrderList { get; private set; } = new();
+    private bool hasOrdered;
+
+    public FoodOrder FoodOrders { get; private set; } = new();
     [SerializeField] private CustomerUI _customerUI;
 
 
 
-    public UnityEvent<float> OnWaitingToOrderEvent { get; private set; } = new UnityEvent<float>();
-    public UnityEvent OnOrderedFoodEvent { get; private set; } = new UnityEvent();
+    Dictionary<WaitingState, Action> ActionMap = new Dictionary<WaitingState, Action>(); 
+ 
+    public UnityEvent<float> OnWaitingToOrder { get; private set; } = new UnityEvent<float>();
+    public UnityEvent<float> OnWaitingForFood { get; private set; } = new UnityEvent<float>();
     public UnityEvent<float> Test { get; private set; } = new UnityEvent<float>();
 
     public UnityEvent OnAngryEvent { get; private set; } = new UnityEvent();
     public UnityEvent OnHappyEvent { get; private set; } = new UnityEvent();
+    public UnityEvent OnDestroyEvent { get; private set; } = new UnityEvent();
 
 
-    private enum State
+    Coroutine _coroutineA;
+
+    private enum WaitingState
     {
-        WaitingToOrder,
-        HasOrdered,
-        WaitingForCook,
-        ReceivedOrder
+        ToOrder,
+        //HasOrdered,
+        ForFood,
+        //ReceivedOrder
+        Done
     }
     private void Awake()
     {
-        
+        Debug.Log((WaitingState)2);
+        Debug.Log((WaitingState)4);
     }
 
     private void Start()
     {
-        WaitToOrderFood();
-    }
-
-    private void Update()
-    {
-        if (Keyboard.current.fKey.wasPressedThisFrame)
-        {
-            OrderFood();
-        }
-
-        if (Keyboard.current.gKey.wasPressedThisFrame)
-        {
-            //CheckOrder();
-        }
+        WaitToOrder();
     }
 
     public void Interact(Player player)
     {
         if (player.GetEquipment() && player.GetEquipment().CheckEquipment("Bowl"))
         {
-            player.DestroyEquipment();
-            OnHappyEvent.Invoke();
+            if (_waitingState == WaitingState.ForFood)
+            {
+                
 
+
+
+
+                ((Bowl)player.GetEquipment()).GetFood();
+                //แก้ให้ coroutine หยุดก่นอเปลี่นย icon
+                RecieveFood((Bowl)player.GetEquipment());
+                _waitingState = WaitingState.Done;
+                player.DestroyEquipment();
+            }
         }
 
         else if (!player.GetEquipment())
         {
-            OrderFood();
+            if (_waitingState == WaitingState.ToOrder)
+            {
+                OrderFood();
+                _waitingState = WaitingState.ForFood;
+                WaitForFood();
+            }
         }
     }
 
 
-    public void WaitToOrderFood()
+    public void WaitToOrder()
     {
-        StartCoroutine(CountdownTimer(OnWaitingToOrderEvent, 10));
+        StartCoroutine(Waiting(OnWaitingToOrder, 10));
     }
+
+    public void WaitForFood()
+    {
+        StartCoroutine(Waiting(OnWaitingForFood, 10));
+    }
+
+
 
     public void OrderFood()
     {
-        FoodOrderList.AddFoodToList();
-        StartCoroutine(CountdownTimer(Test, 30));
-        OnOrderedFoodEvent.Invoke();
+        FoodOrders.Add();
+    }
+
+    public void Done()
+    {
+        Destroy(gameObject);
+        transform.parent.GetComponent<CustomerManager>().CreateCustomer();
     }
 
     public void RecieveFood(Bowl bowl)
     {
-        CheckOrder(bowl);
+
+        if (FoodOrders.CompareData(bowl.GetFood()))
+        {
+            OnHappyEvent.Invoke();
+            Invoke(nameof(Done), 2f);
+
+            
+        }
+
+        else
+        {
+            OnAngryEvent.Invoke();
+            Invoke(nameof(Done), 2f);
+        }
+        
     }
 
 
     public void CheckOrder(Bowl bowl)
     {
-        //_foodOrder.CompareFood(bowl);
         
+        
+    }
+
+    public void WalkAway()
+    {
+
     }
 
     private IEnumerator CountdownTimer(UnityEvent<float> unityEvent, float seconds)
@@ -132,8 +178,9 @@ public class Customer : MonoBehaviour, IInteractor
         float max = seconds;
 
         //Order();
+        WaitingState _currentState = _waitingState;
 
-        while (seconds > 0)
+        while (seconds > 0) //&& _currentState == _waitingState
         {
             unityEvent.Invoke((seconds / max) * 100);
 
@@ -143,23 +190,41 @@ public class Customer : MonoBehaviour, IInteractor
 
         //yield return CountdownTimer(max);
 
+
         OnAngryEvent.Invoke();
+        WalkAway();
         
     }
+
+
 
     private void Order()
     {
-        
+
     }
-
     
-
-    
-
-    public void CheckOrderopo(/*Food.Taiyaki.Filling filling*/)
+    private IEnumerator Waiting(UnityEvent<float> unityEvent, float seconds)
     {
+        float max = seconds;
+        WaitingState startaitingState = _waitingState;
 
+        while (seconds > 0)
+        {
+            unityEvent.Invoke((seconds / max) * 100);
+
+            yield return null;//
+
+            seconds -= Time.deltaTime;
+            if (startaitingState != _waitingState)
+            {
+                Debug.Log("Break");
+                yield break;
+            }
+
+            //yield return null;
+        }
+        OnAngryEvent.Invoke();
+        Invoke(nameof(Done), 2f);
+        Debug.Log("Angry");
     }
-
-    
 }

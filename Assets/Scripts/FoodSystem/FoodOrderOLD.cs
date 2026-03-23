@@ -5,13 +5,13 @@ using System.Collections.Generic;
 namespace FoodSystem
 {
     [Serializable]
-    public class FoodOrder
+    public class FoodOrderOLD
     {
         
-        private List<FoodData> _foodDatas = new();
+        private List<FoodDataOLD> _foodDatas = new();
         
 
-        public FoodData this[int index]
+        public FoodDataOLD this[int index]
         {
             get { return _foodDatas[index]; }
         }
@@ -23,7 +23,7 @@ namespace FoodSystem
             Debug.Log("Checking");
         }
 
-        public FoodData.FoodType GetFoodType()
+        public FoodDataOLD.FoodType GetFoodType()
         {
             return _foodDatas[^1].Type;
         }
@@ -31,10 +31,10 @@ namespace FoodSystem
 
         public void AddFoodToList()
         {
-            _foodDatas.Add(FoodData.RandomFood());           
+            _foodDatas.Add(FoodDataOLD.RandomFood());           
         }
 
-        public void CompareFood(FoodData foodData)
+        public void CompareFood(FoodDataOLD foodData)
         {
             
         }

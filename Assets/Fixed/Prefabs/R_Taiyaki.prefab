@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7456313745163356318}
   - component: {fileID: 7013068491604911238}
   - component: {fileID: 6195486101988654097}
-  - component: {fileID: 8437219014762290753}
+  - component: {fileID: 4125321898747863811}
   m_Layer: 0
   m_Name: R_Taiyaki
   m_TagString: Untagged
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -9103484930961366303, guid: 1983f9582a442e64aa8e1f4a8990357b, type: 3}
+  - {fileID: 2100000, guid: b79247887bfcf8e4d86cb30e2a935faa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,7 +91,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8437219014762290753
+--- !u!114 &4125321898747863811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,14 +100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4006124986747536851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc30b4bbdb45a344b65bffdf3c231aa, type: 3}
+  m_Script: {fileID: 11500000, guid: dc0a6e9115f23e4479553e08859729fd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  CookedStateTime: 0
-  OvercookedStateTime: 0
-  _data:
-    undercookColor: {r: 1, g: 0.9098039, b: 0.023529412, a: 0}
-    excellentColor: {r: 1, g: 0.9098039, b: 0.023529412, a: 0}
-    overcookedColor: {r: 1, g: 0.9098039, b: 0.023529412, a: 0}
-    side: 1
-  isPause: 0
+  m_EditorClassIdentifier: Assembly-CSharp::SideTaiyaki
+  _taiyakiSO: {fileID: 11400000, guid: 1741359f0d57df341ae3b504125c397e, type: 2}

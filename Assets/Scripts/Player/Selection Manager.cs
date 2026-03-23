@@ -23,6 +23,11 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private CameraSwitch _cameraSwitch;
 
 
+    private void OnDrawGizmos()
+    {
+        
+    }
+
     private void OnEnable()
     {
         _trackingPoint.action.Enable();
@@ -85,7 +90,11 @@ public class SelectionManager : MonoBehaviour
 
         }
 
+        if (_cameraSwitch.IsCameraSwitching())
+        {
+            var t = _player.GetEquipment();
 
+        }
     }
 
     private void OnMousePosition(InputAction.CallbackContext context)

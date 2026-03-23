@@ -5,7 +5,7 @@ using UnityEngine;
 namespace FoodSystem
 {
     [Serializable]
-    public class FoodData
+    public class FoodDataOLD
     {
         public FoodType Type { get; private set; }
         
@@ -31,7 +31,7 @@ namespace FoodSystem
             return (FoodType)value.GetValue(random);
         }
 
-        public static FoodData RandomFood()
+        public static FoodDataOLD RandomFood()
         {
             //var random = RandomType();
 
@@ -39,7 +39,7 @@ namespace FoodSystem
 
             if (random == FoodType.Taiyaki)
             {
-                TaiyakiData taiyaki = new(TaiyakiData.RandomFilling());
+                TaiyakiDataOLD taiyaki = new(TaiyakiDataOLD.RandomFilling());
                 return taiyaki;
             }
 

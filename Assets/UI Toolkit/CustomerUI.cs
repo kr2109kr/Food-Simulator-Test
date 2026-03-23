@@ -47,9 +47,9 @@ public class CustomerUI : MonoBehaviour
 
     private void OnEnable()
     {
-        _customer.OnWaitingToOrderEvent.AddListener(ChangeIconToWaitingToOrder);
-        _customer.OnOrderedFoodEvent.AddListener(ChangeIconToFoodOrdered);
-        _customer.Test.AddListener(ChangeProgress);
+        _customer.OnWaitingToOrder.AddListener(ChangeIconToWaitingToOrder);
+        _customer.OnWaitingForFood.AddListener(ChangeIconToFoodOrdered);
+        //_customer.Test.AddListener(ChangeProgress);
         _customer.OnAngryEvent.AddListener(ChangeIconToAngry);
         _customer.OnHappyEvent.AddListener(ChangeIconToHappy);
 
@@ -59,9 +59,10 @@ public class CustomerUI : MonoBehaviour
 
     private void OnDisable()
     {
-        _customer.OnWaitingToOrderEvent.RemoveListener(ChangeIconToWaitingToOrder);
-        _customer.OnOrderedFoodEvent.RemoveListener(ChangeIconToFoodOrdered);
+        _customer.OnWaitingToOrder.RemoveListener(ChangeIconToWaitingToOrder);
+        _customer.OnWaitingForFood.RemoveListener(ChangeIconToFoodOrdered);
     }
+
     private void Awake()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
@@ -122,29 +123,40 @@ public class CustomerUI : MonoBehaviour
 
 
 
-    public void ChangeIconToFoodOrdered()
+    public void ChangeIconToFoodOrdered(float percent)
     {
-        if (_customer.FoodOrderList.GetFoodType() == FoodData.FoodType.Taiyaki)
+        /*
+        if (_customer.FoodOrderList.GetFoodType() == FoodDataOLD.FoodType.Taiyaki)
         {
-            TaiyakiData taiyakiData = (TaiyakiData)_customer.FoodOrderList[0];
+            TaiyakiDataOLD taiyakiData = (TaiyakiDataOLD)_customer.FoodOrderList[0];
 
             switch (taiyakiData.FillingType)
             {
-                case TaiyakiData.Filling.RedBeans:
+                case TaiyakiDataOLD.Filling.RedBeans:
                     _image.sprite = _redBeansSprite;
                     break;
 
-                case TaiyakiData.Filling.Custard:
+                case TaiyakiDataOLD.Filling.Custard:
                     _image.sprite = _custardSprite;
                     break;
 
-                case TaiyakiData.Filling.Chocolate:
+                case TaiyakiDataOLD.Filling.Chocolate:
                     _image.sprite = _chocolateSprite;
                     break;
             }
+
         }
 
-        progressBar.style.display = DisplayStyle.Flex;
+        
+
+        */
+
+        if (_customer.FoodOrders[0] is TaiyakiData)
+        {
+            _image.sprite = _redBeansSprite;
+        }
+
+        progress_0.style.maxHeight = new StyleLength(new Length(percent, LengthUnit.Percent));
     }
 
     public void ChangeProgress(float percent)
@@ -160,6 +172,7 @@ public class CustomerUI : MonoBehaviour
 
     private void ChangeIconToHappy()
     {
+        Debug.Log("Happy");
         _image.sprite = happySprite;
         progressBar.style.display = DisplayStyle.None;
     }
@@ -174,4 +187,5 @@ public class CustomerUI : MonoBehaviour
         icon_0.style.backgroundImage = new StyleBackground(sprite);
 
     }
+    
 }

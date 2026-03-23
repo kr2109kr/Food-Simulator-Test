@@ -22,7 +22,7 @@ namespace FoodSystem
 
         public bool isPause;
 
-        private TaiyakiData taiyakiData = new();
+        private TaiyakiDataOLD taiyakiData = new();
 
 
 
@@ -63,7 +63,7 @@ namespace FoodSystem
             }
         }
 
-        public void SetFilling(TaiyakiData.Filling filling)
+        public void SetFilling(TaiyakiDataOLD.Filling filling)
         {
             taiyakiData.FillingType = filling;
         }

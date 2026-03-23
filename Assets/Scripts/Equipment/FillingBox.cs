@@ -5,7 +5,7 @@ public class FillingBox : Equipment
 {
     //[RequireComponent]
     [SerializeField] private Animator _animator;
-    [SerializeField] private TaiyakiData.Filling _filling;
+    [SerializeField] private TaiyakiDataOLD.Filling _filling;
 
     private void Awake()
     {

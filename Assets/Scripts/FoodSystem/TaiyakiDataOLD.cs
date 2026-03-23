@@ -3,18 +3,20 @@ using UnityEngine;
 
 namespace FoodSystem
 {
-    public class TaiyakiData : FoodData
+    [Serializable]
+    public class TaiyakiDataOLD : FoodDataOLD
     {
         public Filling FillingType { get; set; }
         public Doness LeftDoness { get; private set; }
         public Doness RightDoness { get; private set; }
 
-        public TaiyakiData()
+        public Material material;
+        public TaiyakiDataOLD()
         {
             
         }
 
-        public TaiyakiData(Filling filling)
+        public TaiyakiDataOLD(Filling filling)
         {
             FillingType = filling;
         }

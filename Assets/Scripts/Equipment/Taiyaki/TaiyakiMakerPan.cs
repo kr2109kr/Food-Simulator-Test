@@ -62,9 +62,10 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
             StartCoroutine(PlayAnimationAndWait(_closeAnimName, 0, () =>
             {
+                
                 _taiyakiMaker.StartCombine(this);
                 EnableCollider();
-                Debug.Log("Opennnn");
+                //Debug.Log("Opennnn");
             }));
         }
     }

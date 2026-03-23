@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &965396199025477126
+--- !u!1 &391336651700269247
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3024231056810118634}
-  - component: {fileID: 2354357025695015960}
-  - component: {fileID: 5098034211100831354}
-  - component: {fileID: 3596251313824770948}
+  - component: {fileID: 4885393790328054791}
+  - component: {fileID: 4866850479555718399}
+  - component: {fileID: 1767960166768268909}
+  - component: {fileID: 6872740730440048554}
   m_Layer: 0
-  m_Name: Taiyaki
+  m_Name: L_Taiyaki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3024231056810118634
+--- !u!4 &4885393790328054791
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965396199025477126}
+  m_GameObject: {fileID: 391336651700269247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73275, y: 5.8473, z: -24.47013}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2354357025695015960
+--- !u!33 &4866850479555718399
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965396199025477126}
-  m_Mesh: {fileID: 5507950282486876671, guid: 1983f9582a442e64aa8e1f4a8990357b, type: 3}
---- !u!23 &5098034211100831354
+  m_GameObject: {fileID: 391336651700269247}
+  m_Mesh: {fileID: 2129873895053579915, guid: 1983f9582a442e64aa8e1f4a8990357b, type: 3}
+--- !u!23 &1767960166768268909
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965396199025477126}
+  m_GameObject: {fileID: 391336651700269247}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
+  - {fileID: 2100000, guid: b79247887bfcf8e4d86cb30e2a935faa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,18 +91,16 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3596251313824770948
+--- !u!114 &6872740730440048554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965396199025477126}
+  m_GameObject: {fileID: 391336651700269247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1339438c26538f645ad588c845d4ab48, type: 3}
+  m_Script: {fileID: 11500000, guid: dc0a6e9115f23e4479553e08859729fd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taiyaki
-  _underCookedMaterial: {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
-  _burntMaterial: {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}
-  _excellentMaterial: {fileID: 2100000, guid: 3edcebe5cd8fd73469d6402b76d75b64, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::SideTaiyaki
+  _taiyakiSO: {fileID: 11400000, guid: 1741359f0d57df341ae3b504125c397e, type: 2}

@@ -8,6 +8,11 @@ public class Tongs : Equipment
     [SerializeField] private Animator _animator;
     public GameObject TaiyakiObject { get; set; }
 
+    public override void Interact(Player player)
+    {
+        base.Interact(player);
+    }
+
     public void PickUp(GameObject taiyakiObject)
     {
         

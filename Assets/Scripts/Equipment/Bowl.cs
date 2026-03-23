@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Bowl : Equipment
 {
+    public FoodData foodData;
+    public GameObject taiyakiObject;
+
     public override void Interact(Player player)
     {
         base.Interact(player);
@@ -27,10 +30,17 @@ public class Bowl : Equipment
                 tongs.TaiyakiObject.transform.localRotation = Quaternion.Euler(-30, -90, 0);
             }
 
+            taiyakiObject = tongs.TaiyakiObject;
+
 
             tongs.Open();
             tongs.TaiyakiObject = null;
         }
+    }
+
+    private void Start()
+    {
+        
     }
 
     public void SwitchToCounter()
@@ -40,7 +50,7 @@ public class Bowl : Equipment
 
     public FoodData GetFood()
     {
-        return new FoodData();
+        return taiyakiObject.GetComponent<Taiyaki>().GetFood();
     }
 
     public void Destroy()
