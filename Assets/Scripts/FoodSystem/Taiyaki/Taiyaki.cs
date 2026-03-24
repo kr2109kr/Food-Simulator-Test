@@ -17,7 +17,7 @@ public class Taiyaki : MonoBehaviour
     private bool _isPauseCookingRight;
 
     public TaiyakiData _taiyakiSO;
-    public TaiyakiData _dataForCheck = new TaiyakiData();
+    public TaiyakiData _dataForCheck;
 
 
     private TaiyakiData.Filling _currnetFilling;
@@ -40,7 +40,6 @@ public class Taiyaki : MonoBehaviour
     {
         _meshRenderer = GetComponent<MeshRenderer>();
         _materials = _meshRenderer.materials;
-
         //Test
         //taiyaki.SetFillingData(TaiyakiData.Filling.RedBeans);// param: FillingBox.GetFilling();
         //taiyaki.SetDonessData(TaiyakiData.Side.Left, TaiyakiData.Doness.Excellent);// param: TaiyakiMaker.xxx();
@@ -48,7 +47,7 @@ public class Taiyaki : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CookingTimer(15f));
+        StartCoroutine(CookingTimer(8f));
         
     }
 

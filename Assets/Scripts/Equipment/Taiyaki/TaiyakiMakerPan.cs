@@ -133,25 +133,53 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
         //TaiyakiData.Filling targerFilling = 0; //ประกาศใน method จะไม่มีค่า default
 
-        
 
 
-        
+
+
 
         var t = Instantiate(_combinedTaiyakiPrefabs, GetAnotherPan()._trays[indexOfTray].transform);
 
-        Debug.Log(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
-        Debug.Log(_trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
 
-        if (GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling != TaiyakiData.Filling.None)
+
+        var anotherTaiyakiFilling = GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling;
+        var thisTaiyakiFilling = _trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling;
+
+
+        if (anotherTaiyakiFilling != TaiyakiData.Filling.None)
         {
-            t.GetComponent<Taiyaki>().SetFillingData(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+            switch (anotherTaiyakiFilling)
+            {
+                case TaiyakiData.Filling.RedBeans:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.RedBeans);
+                    break;
+                case TaiyakiData.Filling.Custard:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.Custard);
+                    break;
+                case TaiyakiData.Filling.Chocolate:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.Chocolate);
+                    break;
+
+            }
         }
 
-        else if (_trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling != TaiyakiData.Filling.None)
+        if (thisTaiyakiFilling != TaiyakiData.Filling.None)
         {
-            t.GetComponent<Taiyaki>().SetFillingData(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+            switch (thisTaiyakiFilling)
+            {
+                case TaiyakiData.Filling.RedBeans:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.RedBeans);
+                    break;
+                case TaiyakiData.Filling.Custard:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.Custard);
+                    break;
+                case TaiyakiData.Filling.Chocolate:
+                    t.GetComponent<Taiyaki>().SetFillingData(TaiyakiData.Filling.Chocolate);
+                    break;
+            }
         }
+
+        Debug.Log(t.GetComponent<Taiyaki>()._dataForCheck.filling);
 
         Destroy(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject);
         Destroy(_trays[indexOfTray].TaiyakiGameObject);
@@ -219,7 +247,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
             while (_animator.GetCurrentAnimatorStateInfo(layer).normalizedTime < 1f)
             {
                 yield return null;
-                Debug.Log("Delay");
             }
         }
 

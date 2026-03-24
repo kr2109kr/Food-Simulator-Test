@@ -118,12 +118,12 @@ public class Customer : MonoBehaviour, IInteractor
 
     public void WaitToOrder()
     {
-        StartCoroutine(Waiting(OnWaitingToOrder, 3)); //10
+        StartCoroutine(Waiting(OnWaitingToOrder, 15)); //10
     }
 
     public void WaitForFood()
     {
-        StartCoroutine(Waiting(OnWaitingForFood, 3)); //10
+        StartCoroutine(Waiting(OnWaitingForFood, 30)); //10
     }
 
 

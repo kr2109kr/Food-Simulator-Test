@@ -14,9 +14,9 @@ namespace FoodSystem
         private static Dictionary<FoodType, Func<FoodData>> factory = new Dictionary<FoodType, Func<FoodData>>() {
             { FoodType.Taiyaki, () =>  new TaiyakiData(TaiyakiData.RandomFilling()) },
 
-            { FoodType.Takoyaki, () => new TakoyakiData(TakoyakiData.RandomFilling()) },
+            //{ FoodType.Takoyaki, () => new TakoyakiData(TakoyakiData.RandomFilling()) },
 
-            { FoodType.IchigoAme, () => new IchigoAmeData(IchigoAmeData.RandomType()) }
+            //{ FoodType.IchigoAme, () => new IchigoAmeData(IchigoAmeData.RandomType()) }
         };
 
 
@@ -36,8 +36,8 @@ namespace FoodSystem
         public enum FoodType
         {
             Taiyaki,
-            Takoyaki,
-            IchigoAme
+            //Takoyaki,
+            //IchigoAme
         }
 
         

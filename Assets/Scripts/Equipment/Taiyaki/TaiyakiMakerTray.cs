@@ -51,18 +51,21 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.RedBeans;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+            AddFilling("Red-Beans");
         }
 
         else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingCustard"))
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Custard;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+            AddFilling("Custard");
         }
 
         else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingChocolate"))
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Chocolate;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+            AddFilling("Chocolate");
         }
 
 
