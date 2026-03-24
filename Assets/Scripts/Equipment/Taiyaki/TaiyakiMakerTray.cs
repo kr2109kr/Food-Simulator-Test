@@ -46,7 +46,29 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             FillRaw();
         }
 
-        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Tongs"))
+
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingRedBeans"))
+        {
+            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.RedBeans;
+            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        }
+
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingCustard"))
+        {
+            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Custard;
+            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        }
+
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingChocolate"))
+        {
+            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Chocolate;
+            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        }
+
+
+
+
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Tongs"))
         {
             if (combinedTaiyaki != null)
             {
@@ -69,7 +91,6 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         if (IsNotEmpty())
         {
             combinedTaiyaki = transform.GetChild(0).gameObject;
-            
         }
     }
 
@@ -93,15 +114,16 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         combinedTaiyaki.transform.SetParent(transform, false);
     }
 
-    public void SetCombinedTaiyaki(TaiyakiOld otherTaiyaki)
+    public void SetCombinedTaiyaki(Taiyaki otherTaiyaki)
     {
 
-        TaiyakiGameObject.transform.SetParent(combinedTaiyaki.transform);
+        //TaiyakiGameObject.transform.SetParent(combinedTaiyaki.transform);
 
-        otherTaiyaki.transform.SetParent(combinedTaiyaki.transform);
+        //otherTaiyaki.transform.SetParent(combinedTaiyaki.transform);
 
-        otherTaiyaki.transform.localRotation = Quaternion.Euler(0,0,180);
-        otherTaiyaki.transform.localPosition = Vector3.zero;
+        combinedTaiyaki = otherTaiyaki.gameObject;
+        combinedTaiyaki.transform.localRotation = Quaternion.Euler(0,0,180);
+        combinedTaiyaki.transform.localPosition = Vector3.zero;
     }
 
     //
@@ -129,14 +151,14 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         combinedTaiyaki.transform.localPosition = Vector3.zero;
     }
     //
-    
 
+    
     public void FillRaw()
     {
         TaiyakiGameObject = Instantiate(_taiyakiPrefab, transform);
         TaiyakiGameObject.transform.localPosition = _startPosition;
 
-        TaiyakiGameObject.GetComponent<SideTaiyaki>().StartCooking();
+        //TaiyakiGameObject.GetComponent<SideTaiyaki>().StartCooking();
 
         StartCoroutine(FillRaw(TaiyakiGameObject.transform));
 

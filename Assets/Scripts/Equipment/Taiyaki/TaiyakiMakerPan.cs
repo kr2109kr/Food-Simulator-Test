@@ -28,6 +28,8 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
     [SerializeField] private string _closeAnimName = "Close";
     [SerializeField] private string _openAnimName = "Open";
 
+    [SerializeField] private GameObject _combinedTaiyakiPrefabs;
+
     public enum Side
     {
         Left,
@@ -125,8 +127,36 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
     public void CreateCombinedAtTray(int indexOfTray)
     {
-        GetAnotherPan()._trays[indexOfTray].CreateCombinedTaiyaki();
-        GetAnotherPan()._trays[indexOfTray].SetCombinedTaiyaki(GetTaiyaki(indexOfTray));
+        //GetAnotherPan()._trays[indexOfTray].CreateCombinedTaiyaki();
+        //GetAnotherPan()._trays[indexOfTray].SetCombinedTaiyaki(GetTaiyaki(indexOfTray));
+
+
+        //TaiyakiData.Filling targerFilling = 0; //ประกาศใน method จะไม่มีค่า default
+
+        
+
+
+        
+
+        var t = Instantiate(_combinedTaiyakiPrefabs, GetAnotherPan()._trays[indexOfTray].transform);
+
+        Debug.Log(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        Debug.Log(_trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+
+        if (GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling != TaiyakiData.Filling.None)
+        {
+            t.GetComponent<Taiyaki>().SetFillingData(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        }
+
+        else if (_trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling != TaiyakiData.Filling.None)
+        {
+            t.GetComponent<Taiyaki>().SetFillingData(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
+        }
+
+        Destroy(GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject);
+        Destroy(_trays[indexOfTray].TaiyakiGameObject);
+        //t.GetComponent<Taiyaki>()._dataForCheck.filling = targerFilling;
+        GetAnotherPan()._trays[indexOfTray].SetCombinedTaiyaki(t.GetComponent<Taiyaki>());
     }
 
 

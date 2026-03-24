@@ -206,6 +206,13 @@ MonoBehaviour:
   _redBeansSprite: {fileID: 1099693559, guid: f4dcc7fefbdb38a41a11074e91572aff, type: 3}
   _custardSprite: {fileID: 1306442805, guid: f4dcc7fefbdb38a41a11074e91572aff, type: 3}
   _chocolateSprite: {fileID: 804345342, guid: f4dcc7fefbdb38a41a11074e91572aff, type: 3}
+  _takoSprite: {fileID: -694705866, guid: 04d20e3075c34fd4cbac3254f7abd8dc, type: 3}
+  _shrimpSprite: {fileID: 634977361, guid: 04d20e3075c34fd4cbac3254f7abd8dc, type: 3}
+  _baconSprite: {fileID: 974529470, guid: 04d20e3075c34fd4cbac3254f7abd8dc, type: 3}
+  _strawberrySprite: {fileID: -1538924442, guid: b79dae5f467cadf44bc0399dc64ee9b3, type: 3}
+  _OrangeSprite: {fileID: -1665098981, guid: b79dae5f467cadf44bc0399dc64ee9b3, type: 3}
+  _GrapeSprite: {fileID: -558759591, guid: b79dae5f467cadf44bc0399dc64ee9b3, type: 3}
+  _MixedSprite: {fileID: -1235387409, guid: b79dae5f467cadf44bc0399dc64ee9b3, type: 3}
   orderSprite: {fileID: 1869680952, guid: 4adece42fb0aadd439dd86b3b6d92d6c, type: 3}
   happySprite: {fileID: 168328748, guid: 4adece42fb0aadd439dd86b3b6d92d6c, type: 3}
   angrySprite: {fileID: 1838287391, guid: 4adece42fb0aadd439dd86b3b6d92d6c, type: 3}

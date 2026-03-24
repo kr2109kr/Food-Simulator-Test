@@ -30,10 +30,23 @@ public class CustomerUI : MonoBehaviour
 
     public Button button;
 
+    [Header("Taiyaki Icon")]
+    [SerializeField] private Sprite _redBeansSprite;
+    [SerializeField] private Sprite _custardSprite;
+    [SerializeField] private Sprite _chocolateSprite;
 
-    [SerializeField] public Sprite _redBeansSprite;
-    [SerializeField] public Sprite _custardSprite;
-    [SerializeField] public Sprite _chocolateSprite;
+    [Header("Takoyaki Icon")]
+    [SerializeField] private Sprite _takoSprite;
+    [SerializeField] private Sprite _shrimpSprite;
+    [SerializeField] private Sprite _baconSprite;
+
+
+    [Header("IchigoAme Icon")]
+    [SerializeField] private Sprite _strawberrySprite;
+    [SerializeField] private Sprite _OrangeSprite;
+    [SerializeField] private Sprite _GrapeSprite;
+    [SerializeField] private Sprite _MixedSprite;
+
 
     [Header("Customer State")]
     [SerializeField] private Sprite orderSprite;
@@ -125,35 +138,62 @@ public class CustomerUI : MonoBehaviour
 
     public void ChangeIconToFoodOrdered(float percent)
     {
-        /*
-        if (_customer.FoodOrderList.GetFoodType() == FoodDataOLD.FoodType.Taiyaki)
+        if (_customer.FoodOrders[0] is TaiyakiData taiyakiData)
         {
-            TaiyakiDataOLD taiyakiData = (TaiyakiDataOLD)_customer.FoodOrderList[0];
-
-            switch (taiyakiData.FillingType)
+            switch (taiyakiData.filling)
             {
-                case TaiyakiDataOLD.Filling.RedBeans:
+                case TaiyakiData.Filling.RedBeans:
                     _image.sprite = _redBeansSprite;
                     break;
 
-                case TaiyakiDataOLD.Filling.Custard:
+                case TaiyakiData.Filling.Custard:
                     _image.sprite = _custardSprite;
                     break;
 
-                case TaiyakiDataOLD.Filling.Chocolate:
+                case TaiyakiData.Filling.Chocolate:
                     _image.sprite = _chocolateSprite;
                     break;
-            }
-
+            }  
         }
 
-        
-
-        */
-
-        if (_customer.FoodOrders[0] is TaiyakiData)
+        else if (_customer.FoodOrders[0] is TakoyakiData takoyakiData)
         {
-            _image.sprite = _redBeansSprite;
+            switch (takoyakiData.filling)
+            {
+                case TakoyakiData.Filling.Tako:
+                    _image.sprite = _takoSprite;
+                    break;
+
+                case TakoyakiData.Filling.Shrimp:
+                    _image.sprite = _shrimpSprite;
+                    break;
+
+                case TakoyakiData.Filling.Bacon:
+                    _image.sprite = _baconSprite;
+                    break;
+            }
+        }
+
+        else if (_customer.FoodOrders[0] is IchigoAmeData ichigoAmeData)
+        {
+            switch (ichigoAmeData.type)
+            {
+                case IchigoAmeData.Type.Strawberry:
+                    _image.sprite = _strawberrySprite;
+                    break;
+
+                case IchigoAmeData.Type.Orange:
+                    _image.sprite = _OrangeSprite;
+                    break;
+
+                case IchigoAmeData.Type.Grape:
+                    _image.sprite = _GrapeSprite;
+                    break;
+
+                case IchigoAmeData.Type.Mixed:
+                    _image.sprite = _MixedSprite;
+                    break;
+            }
         }
 
         progress_0.style.maxHeight = new StyleLength(new Length(percent, LengthUnit.Percent));

@@ -48,7 +48,7 @@ public class Taiyaki : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CookingTimer(5));
+        StartCoroutine(CookingTimer(15f));
         
     }
 

@@ -103,4 +103,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a6e9115f23e4479553e08859729fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SideTaiyaki
-  _taiyakiSO: {fileID: 11400000, guid: 1741359f0d57df341ae3b504125c397e, type: 2}
+  _taiyakiSO:
+    foodOrder:
+      takoyakiOrder:
+        <Filling>k__BackingField: 0
+        <doness>k__BackingField: 0
+    filling: 0
+    leftDoness: 0
+    rightDoness: 0
+  _materialsForChange:
+  - {fileID: 2100000, guid: b79247887bfcf8e4d86cb30e2a935faa, type: 2}
+  - {fileID: 2100000, guid: 3edcebe5cd8fd73469d6402b76d75b64, type: 2}
+  - {fileID: 2100000, guid: 800505274cab4e047be2c6288cf2d796, type: 2}

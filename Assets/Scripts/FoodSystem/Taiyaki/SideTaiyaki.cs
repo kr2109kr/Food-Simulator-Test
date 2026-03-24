@@ -8,16 +8,20 @@ public class SideTaiyaki : MonoBehaviour
     private MeshRenderer _meshRenderer;
 
     private bool isPauseCooking;
+    [SerializeField] private Material[] _materialsForChange;
+
+    public TaiyakiData _dataForCheck = new TaiyakiData();
+
+    private void Start()
+    {
+        //StartCoroutine(CookingTimer(15f));
+    }
 
     private void Awake()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void Start()
-    {
-        
-    }
     public void ChangeMaterial(Material material)
     {
         _meshRenderer.material = material;
@@ -26,16 +30,15 @@ public class SideTaiyaki : MonoBehaviour
 
     public void StartCooking()
     {
-        //StartCoroutine(CookingTimer(15f));
+        //StartCoroutine(CookingTimer(5f));
     }
 
-    /*
     public IEnumerator CookingTimer(float seconds)
     {
         float timer = 0;
         float duration = seconds;
 
-        foreach (TaiyakiData.MaterialMapping materialMapping in _taiyakiSO._materialMappings)
+        foreach (Material material in _materialsForChange)
         {
             if (!isPauseCooking)
             {
@@ -44,12 +47,12 @@ public class SideTaiyaki : MonoBehaviour
                     timer += Time.deltaTime;
                     yield return null;
 
-                    ChangeMaterial(materialMapping.material);
+                    ChangeMaterial(material);
+
                 }
 
                 timer = 0;
             }
         }
     }
-    */
 }

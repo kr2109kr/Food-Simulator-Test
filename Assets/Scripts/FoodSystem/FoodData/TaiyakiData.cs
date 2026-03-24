@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 using static FoodSystem.TaiyakiDataOLD;
 
-//[CreateAssetMenu(fileName = "FoodType", menuName = "Scriptable Objects/TaiyakiSO")]
 [Serializable]
 public class TaiyakiData : FoodData
 {

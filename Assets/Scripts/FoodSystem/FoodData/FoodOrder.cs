@@ -25,7 +25,7 @@ public class FoodOrder
 
     public void Add()
     {
-        _foodOrders.Add(new TaiyakiData(TaiyakiData.Filling.Chocolate));
+        _foodOrders.Add(FoodData.RandomFood());
         Debug.Log(_foodOrders.Count);
     }
 
