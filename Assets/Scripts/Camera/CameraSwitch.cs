@@ -11,7 +11,7 @@ public class CameraSwitch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera[] _cashierVirtualCams;
 
     [SerializeField] private CinemachineBrain _brain;
-    private int _currentCookingCam;
+    private int _currentCookingCam = 2;
     private int _currentCashierCam;
     private bool _isInCookingSection = true;
 

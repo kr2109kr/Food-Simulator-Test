@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6596303641873166875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5364502871951863595}
+  - component: {fileID: 215674164714678060}
+  - component: {fileID: 5293728711626362245}
+  m_Layer: 0
+  m_Name: TakoBoxOld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5364502871951863595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596303641873166875}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.7058, z: -0.017916}
+  m_LocalScale: {x: 58, y: 58, z: 58}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &215674164714678060
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596303641873166875}
+  m_Mesh: {fileID: -1291355988716230434, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+--- !u!23 &5293728711626362245
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596303641873166875}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -3156279370955996209, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -3942263383720087714, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -555035645480560591, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 6946346709792231093, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -3851946829880882416, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 1040134869732051478, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 696365041481264034, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 5426600714134095733, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -2427573942487366097, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 4250801934892309503, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 6332703495557262429, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -9101620507391399886, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -3048759025424926297, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -6711518418497687534, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 429477035237315847, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -4319829963253004650, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 4849018010432638505, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 7781126045308916479, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 2371608000368250526, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 6822375922599102809, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 7750550856511191117, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -7097783320920039556, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 758484614528920360, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 2171283223664702457, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -6802637234936457178, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -4339658081263615634, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -312873514234266160, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 4122758462147982416, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 5870621582874988892, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 827616427660994282, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: 2984986395146549641, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  - {fileID: -8273273418382431805, guid: 3f62de4d20b32124cb9aa595c20dabd3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}

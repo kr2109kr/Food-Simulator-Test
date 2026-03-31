@@ -1,10 +1,13 @@
+using CustomerSystem;
+using System;
 using UnityEngine;
 
 public class CustomerManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _cutomerPrefabs;
+    //[SerializeField] private GameObject _cutomerPrefabs;
     Customer customer;
 
+    [SerializeField] private GameObject[] _customerPrefabs;
 
     private void Awake()
     {
@@ -17,11 +20,12 @@ public class CustomerManager : MonoBehaviour
         {
             CreateCustomer();
         }
+        
     }
 
     public void CreateCustomer()
     {
-        Instantiate(_cutomerPrefabs, transform);
+        Instantiate(RandomCustomer(), transform);
     }
 
     private bool IsCustomerEmpty()
@@ -35,5 +39,11 @@ public class CustomerManager : MonoBehaviour
         {
             return true;
         }
+    }
+
+    private GameObject RandomCustomer()
+    {
+        int random = UnityEngine.Random.Range(0, _customerPrefabs.Length);
+        return _customerPrefabs[random];
     }
 }

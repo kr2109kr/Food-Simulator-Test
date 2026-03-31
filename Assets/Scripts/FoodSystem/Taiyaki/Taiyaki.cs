@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Experimental.AI;
 using UnityEngine.InputSystem;
 
+[Serializable]
 public class Taiyaki : MonoBehaviour
 {
     private MeshRenderer _meshRenderer;

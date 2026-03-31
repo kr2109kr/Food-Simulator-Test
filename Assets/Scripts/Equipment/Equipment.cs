@@ -37,9 +37,22 @@ public class Equipment : MonoBehaviour, IInteractor
         return _offsetPosition;
     }
     ///
-    public bool CheckEquipment(string name)
+    public bool CheckEquipmentOLD(string name)
     {
         if (NameTag == name)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Check(Type type)
+    {
+        if (this.GetType() == type)
         {
             return true;
         }

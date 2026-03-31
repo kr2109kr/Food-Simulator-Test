@@ -33,9 +33,9 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
     public void Interact(Player player)
     {
+        Debug.Log("Hello");
 
-
-        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Kettle"))
+        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("Kettle"))
         {
             //_taiyakiMaker.Interact(_taiyaki, this.transform);
             
@@ -47,21 +47,21 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
         }
 
 
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingRedBeans"))
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingRedBeans"))
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.RedBeans;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
             AddFilling("Red-Beans");
         }
 
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingCustard"))
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingCustard"))
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Custard;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
             AddFilling("Custard");
         }
 
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("FillingChocolate"))
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingChocolate"))
         {
             TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Chocolate;
             Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
@@ -71,7 +71,7 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
 
 
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipment("Tongs"))
+        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("Tongs"))
         {
             if (combinedTaiyaki != null)
             {

@@ -34,6 +34,10 @@ public class TaiyakiData : FoodData
         Both
     }
 
+    
+
+    
+
     public TaiyakiData() { }
 
     public TaiyakiData(Filling filling)

@@ -3,9 +3,11 @@ using UnityEngine;
 
 namespace FoodSystem
 {
+    [Serializable]
     public class TakoyakiData : FoodData
     {
         public Filling filling;
+        public Doness doness;
         
         public TakoyakiData(Filling filling)
         {
@@ -25,18 +27,6 @@ namespace FoodSystem
             Uncooked,
             Excellent,
             Burnt
-        }
-
-        [Serializable]
-        public new struct FoodOrder
-        {
-            [field: SerializeField] public Filling Filling { get; set;}
-            [field: SerializeField] public Doness doness { get; set; }
-        }
-
-        public void CreateData()
-        {
-
         }
 
         public override bool CompareData(FoodData foodData)

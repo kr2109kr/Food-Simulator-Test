@@ -6,20 +6,20 @@ using UnityEngine.InputSystem;
 public class Tongs : Equipment
 {
     [SerializeField] private Animator _animator;
-    public GameObject TaiyakiObject { get; set; }
+    public GameObject FoodObject { get; set; }
 
     public override void Interact(Player player)
     {
         base.Interact(player);
     }
 
-    public void PickUp(GameObject taiyakiObject)
+    public void PickUp(GameObject gameObject)
     {
         
         _animator.SetBool("IsPickUp", true);
-        TaiyakiObject = taiyakiObject;
-        TaiyakiObject.transform.SetParent(transform);
-        StartCoroutine(Delay(0.5f, () => { TaiyakiObject.transform.localPosition = Vector3.zero; TaiyakiObject.transform.localRotation = Quaternion.Euler(transform.eulerAngles.x, 0, transform.eulerAngles.z); }));
+        FoodObject = gameObject;
+        FoodObject.transform.SetParent(transform);
+        StartCoroutine(Delay(0.5f, () => { FoodObject.transform.localPosition = Vector3.zero; FoodObject.transform.localRotation = Quaternion.Euler(transform.eulerAngles.x, 0, transform.eulerAngles.z); }));
         
     }
 
