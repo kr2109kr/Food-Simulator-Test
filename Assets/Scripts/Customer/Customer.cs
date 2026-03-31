@@ -72,6 +72,8 @@ namespace CustomerSystem
 
         [SerializeField] private float _speed;
 
+        private Animator _animator;
+
         private enum WaitingState
         {
             ToOrder,
@@ -82,20 +84,28 @@ namespace CustomerSystem
         }
         private void Awake()
         {
+            _animator = GetComponent<Animator>();
         }
 
         private void Start()
         {
-            //WaitToOrder();
+            WaitToOrder();
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
+
+
+
             FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
             FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
             FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
 
+
+
             //test.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
             //test.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
+            test.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
+            test.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
             test.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
 
 
@@ -120,7 +130,9 @@ namespace CustomerSystem
 
 
 
-                    ((Bowl)player.GetEquipment()).GetFood();
+                    //((Bowl)player.GetEquipment()).GetFood();
+
+
                     //แก้ให้ coroutine หยุดก่นอเปลี่นย icon
                     RecieveFood((Bowl)player.GetEquipment());
                     _waitingState = WaitingState.Done;
@@ -132,7 +144,7 @@ namespace CustomerSystem
             {
                 if (_waitingState == WaitingState.ToOrder)
                 {
-                    OrderFood();
+                    //OrderFood();
                     _waitingState = WaitingState.ForFood;
                     WaitForFood();
                 }
@@ -186,6 +198,20 @@ namespace CustomerSystem
             }
             */
 
+            if (FoodOrders.CompareDatas(bowl.GetFoods()))
+            {
+                OnHappyEvent.Invoke();
+                _animator.SetTrigger("Happy");
+                //PlayAnimationAndWait("Happy", 0, () => Destroy(gameObject));
+                Invoke(nameof(Done), 6f);
+            }
+
+            else
+            {
+                OnAngryEvent.Invoke();
+                _animator.SetTrigger("Angry");
+                Invoke(nameof(Done), 8f);
+            }
 
 
         }
@@ -258,6 +284,39 @@ namespace CustomerSystem
             OnAngryEvent.Invoke();
             Invoke(nameof(Done), 2f);
             Debug.Log("Angry");
+        }
+
+
+
+
+
+        private IEnumerator PlayAnimationAndWait(string name, int layer, Action action)
+        {
+            yield return WaitForAnimation(name, layer);
+            action();
+        }
+
+        private IEnumerator WaitForAnimation(string name, int layer)
+        {
+            while (!_animator.IsInTransition(layer))
+            {
+                yield return null;
+            }
+
+            while (_animator.IsInTransition(layer))
+            {
+                yield return null;
+            }
+
+            if (_animator.GetCurrentAnimatorStateInfo(layer).IsName(name))
+            {
+                while (_animator.GetCurrentAnimatorStateInfo(layer).normalizedTime < 1f)
+                {
+                    yield return null;
+                }
+            }
+
+            Debug.Log("Animation has Finished");
         }
     }
 }

@@ -53,6 +53,8 @@ public class FoodOrder
 
         var result = _foodOrders.OrderBy(x => x.GetType().Name).SequenceEqual(foodDatas.OrderBy(x => x.GetType().Name));
 
+        UnityEngine.Debug.Log("Check = " + result);
+
         return result;
     }
 

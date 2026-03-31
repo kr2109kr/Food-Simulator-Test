@@ -1,5 +1,6 @@
 using FoodSystem;
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ public class Bowl : Equipment
     {
         _foodDatas.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
         _foodDatas.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
-        _foodDatas.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
+        _foodDatas.Add(new TakoyakiData(TakoyakiData.Filling.Bacon));
     }
 
     public override void Interact(Player player)
@@ -76,5 +77,8 @@ public class Bowl : Equipment
         Destroy(gameObject);
     }
 
-    
+    public List<FoodData> GetFoods()
+    {
+        return _foodDatas;
+    }
 }

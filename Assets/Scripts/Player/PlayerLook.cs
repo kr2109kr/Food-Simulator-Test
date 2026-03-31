@@ -19,7 +19,7 @@ public class PlayerLook : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(_mouseMovement.action.ReadValue<Vector2>());
+        
     }
 
     private void OnEnable()
@@ -57,6 +57,6 @@ public class PlayerLook : MonoBehaviour
 
 
         transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * _xSentivity);
-        Debug.Log(Vector3.up * (mouseX * Time.deltaTime) * _xSentivity);
+        
     }
 }
