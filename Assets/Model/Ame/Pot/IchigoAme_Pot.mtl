@@ -1,0 +1,66 @@
+# Apple ModelI/O MTL File: IchigoAme_Pot.mtl
+
+newmtl PotSG
+	map_Kd PotSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic PotSG-metallic.png
+	specularTint 0
+	map_roughness PotSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Handle_ASG
+	map_Kd Handle_ASG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Handle_ASG-metallic.png
+	specularTint 0
+	map_roughness Handle_ASG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl TopSG
+	map_Kd TopSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TopSG-metallic.png
+	specularTint 0
+	map_roughness TopSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Handle_BSG
+	map_Kd Handle_BSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Handle_BSG-metallic.png
+	specularTint 0
+	map_roughness Handle_BSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

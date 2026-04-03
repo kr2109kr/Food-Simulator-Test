@@ -1,0 +1,82 @@
+# Apple ModelI/O MTL File: Window.mtl
+
+newmtl Frame1SG
+	map_Kd Frame1SG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Frame1SG-metallic.png
+	specularTint 0
+	map_roughness Frame1SG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Frame2SG
+	map_Kd Frame2SG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Frame2SG-metallic.png
+	specularTint 0
+	map_roughness Frame2SG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Glass1SG
+	map_Kd Glass1SG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Glass1SG-metallic.png
+	specularTint 0
+	map_roughness Glass1SG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Glass2SG
+	map_Kd Glass2SG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Glass2SG-metallic.png
+	specularTint 0
+	map_roughness Glass2SG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl OutFrameSG
+	map_Kd OutFrameSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic OutFrameSG-metallic.png
+	specularTint 0
+	map_roughness OutFrameSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

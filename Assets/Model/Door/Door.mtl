@@ -1,0 +1,34 @@
+# Apple ModelI/O MTL File: Door.mtl
+
+newmtl FrameDoorSG
+	map_Kd FrameDoorSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic FrameDoorSG-metallic.png
+	specularTint 0
+	map_roughness FrameDoorSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Glass3SG
+	map_Kd Glass3SG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Glass3SG-metallic.png
+	specularTint 0
+	map_roughness Glass3SG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
