@@ -1,5 +1,86 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7144258729611044175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player_Footsteps
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Player_Footsteps
+  Guid:
+    Data1: -202615471
+    Data2: 1304806493
+    Data3: -985897839
+    Data4: -578011163
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6958113164641643932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Equip
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Player/Equip
+  Guid:
+    Data1: 663211881
+    Data2: 1247765747
+    Data3: 806858141
+    Data4: -314558059
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4920728412039950100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/New Event
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/New Event
+  Guid:
+    Data1: -967990758
+    Data2: 1089907109
+    Data3: 638673323
+    Data4: -1310143855
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4089484985481473173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +96,65 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639108339370057525
+  lastModified: 639111393540489918
   FileSizes:
   - Name: Desktop
-    Value: 724
+    Value: 1074
   Exists: 1
+--- !u!114 &-3161208515278022775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BG
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/BG
+  Guid:
+    Data1: -1962010232
+    Data2: 1108491013
+    Data3: -416147291
+    Data4: -677683431
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 213002
+--- !u!114 &-1047504110965389798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ichigo_Ame/Add_Fruit
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Ichigo_Ame/Add_Fruit
+  Guid:
+    Data1: 1752908494
+    Data2: 1117465808
+    Data3: -1596964992
+    Data4: 56365123
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,15 +170,36 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -4089484985481473173}
   - {fileID: 737553578330067912}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -3161208515278022775}
+  - {fileID: -7144258729611044175}
+  - {fileID: -4920728412039950100}
+  - {fileID: -1047504110965389798}
+  - {fileID: 7197317653720666193}
+  - {fileID: -6958113164641643932}
+  - {fileID: 2959621338357833604}
   EditorParameters: []
   MasterBanks:
   - {fileID: 737553578330067912}
   StringsBanks:
   - {fileID: -4089484985481473173}
   cacheVersion: 131858
-  cacheTime: 639108339370057525
-  SerializableEventsDict: []
+  cacheTime: 639111393540489918
+  SerializableEventsDict:
+  - key: event:/Music/BG
+    index: 0
+  - key: event:/SFX/Player_Footsteps
+    index: 1
+  - key: event:/SFX/New Event
+    index: 2
+  - key: event:/SFX/Ichigo_Ame/Add_Fruit
+    index: 3
+  - key: event:/SFX/Player/Interact
+    index: 4
+  - key: event:/SFX/Player/Equip
+    index: 5
+  - key: event:/SFX/Player/UnEquip
+    index: 6
 --- !u!114 &737553578330067912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,8 +215,62 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639108339370047548
+  lastModified: 639111393540439545
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 2855520
   Exists: 1
+--- !u!114 &2959621338357833604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/UnEquip
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Player/UnEquip
+  Guid:
+    Data1: -1356946469
+    Data2: 1240076085
+    Data3: -849316705
+    Data4: -553150381
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7197317653720666193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Interact
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Player/Interact
+  Guid:
+    Data1: -1873997009
+    Data2: 1285300913
+    Data3: 1337199501
+    Data4: 1942869111
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

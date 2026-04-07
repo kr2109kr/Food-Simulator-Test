@@ -6,6 +6,13 @@ public class IchigoAmeData : FoodData
 {
     public Type type;
 
+    public enum FruitType
+    {
+        Strawberry,
+        Orange,
+        Grape
+    }
+
     public enum Type
     {
         Strawberry,

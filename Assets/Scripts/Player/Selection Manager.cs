@@ -21,7 +21,7 @@ public class SelectionManager : MonoBehaviour
 
     [SerializeField] private Player _player;
 
-    [SerializeField] private CameraSwitch _cameraSwitch;
+    //[SerializeField] private CameraSwitch _cameraSwitch;
 
 
     private void OnDrawGizmos()
@@ -57,11 +57,13 @@ public class SelectionManager : MonoBehaviour
         Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
+            /*
             _oldPosition = hit.transform.position;
 
             _selectedObject = hit.transform;
             _dragPlane = new Plane(-_camera.transform.forward, hit.point);
             _offset = _selectedObject.position - hit.point;
+            */
 
             CheckForInteract(hit);
         }
@@ -77,6 +79,8 @@ public class SelectionManager : MonoBehaviour
 
     public void TakeEquipment()
     {
+
+        /*
         if (_player.GetEquipment())
         {
             var t = _player.GetEquipment();
@@ -90,12 +94,14 @@ public class SelectionManager : MonoBehaviour
             }
 
         }
+        */
 
+        /*
         if (_cameraSwitch.IsCameraSwitching())
         {
             var t = _player.GetEquipment();
 
-        }
+        }*/
     }
 
     private void OnMousePosition(InputAction.CallbackContext context)

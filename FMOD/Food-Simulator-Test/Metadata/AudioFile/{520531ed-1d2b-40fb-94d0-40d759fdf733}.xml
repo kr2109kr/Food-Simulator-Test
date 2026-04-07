@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{520531ed-1d2b-40fb-94d0-40d759fdf733}">
+		<property name="assetPath">
+			<value>Footsteps, Human, Barefoot, Female, Bathroom Tiles, Steps SND115192 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.38933333333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b9b3fcd7-4ce7-41cd-9f97-cdbbb959ce3c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,3 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Image source="project://database/Assets/Plugins/FMOD/images/AddIcon.png?fileID=2800000&amp;guid=3300e81f02e64924eb7cb7782713b126&amp;type=3#AddIcon" scale-mode="ScaleToFit" style="align-self: center; flex-direction: column; right: 0; top: 0; align-content: center; width: -18%; height: 100%;"/>
+</ui:UXML>

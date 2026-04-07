@@ -1,6 +1,7 @@
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Input References")]
     public InputActionReference _playerMovement;
+
+    //audio
+    private EventInstance _playerFootsteps;
+    
 
 
     private void OnEnable()
@@ -41,6 +46,11 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
+    }
+
+    private void Start()
+    {
+        _playerFootsteps = AudioManager.Instance.CreateEventInstance(FMODEvents.Instance.FootSteps);
     }
 
     public void ProcessMove(Vector2 input)
