@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public void Equip(Equipment equipment)
     {
         _equipment = equipment;
-        _equipment.GetComponent<BoxCollider>().enabled = false;
+        
         _equipment.transform.SetParent(_equipmentHand.transform);
 
         _equipment.transform.localPosition = equipment.HoldPostion;

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 2033440913437236394}
   - component: {fileID: 792648117483543637}
   - component: {fileID: 3439578231495362626}
-  - component: {fileID: 5207527214616999241}
-  - component: {fileID: 7845152219285414590}
   m_Layer: 0
   m_Name: IchigoAme_Cup_IchigoAme_CupSG
   m_TagString: Untagged
@@ -92,49 +90,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5207527214616999241
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636499024801708876}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8625282, y: 0.70115197, z: 0.8625302}
-  m_Center: {x: 0, y: 0.350577, z: 0.0000030100352}
---- !u!114 &7845152219285414590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636499024801708876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08ff2bd4637247b44acde685975b5697, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Cup
-  _station: {fileID: 0}
-  _offsetPosition: {x: 0, y: 0, z: 0}
-  <NameTag>k__BackingField: 
-  <HoldPostion>k__BackingField: {x: 0, y: 0, z: 0}
-  <HoldRotation>k__BackingField: {x: 0, y: 0, z: 0}
-  test: {fileID: 0}
-  _slot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1804191725875023330
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +161,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4791344026714681059}
+  - component: {fileID: 5050068394348296836}
+  - component: {fileID: 6514115678417677780}
   m_Layer: 0
   m_Name: IchigoAme_Cup
   m_TagString: Untagged
@@ -232,6 +189,49 @@ Transform:
   - {fileID: 1914520898875606497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 101.914, z: 0}
+--- !u!65 &5050068394348296836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275288209108300889}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8625282, y: 0.70115197, z: 0.8625302}
+  m_Center: {x: -0.22, y: 0.350577, z: 0.41}
+--- !u!114 &6514115678417677780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275288209108300889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ff2bd4637247b44acde685975b5697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cup
+  _station: {fileID: 0}
+  _offsetPosition: {x: 0, y: 0, z: 0}
+  <NameTag>k__BackingField: Ame Cup
+  <HoldPostion>k__BackingField: {x: -0.5, y: -0.45, z: -1.2}
+  <HoldRotation>k__BackingField: {x: 0, y: 0, z: 0}
+  test: {fileID: 0}
+  _slot:
+  - {fileID: 8098426420120059150}
+  - {fileID: 6887999486841752955}
+  - {fileID: 1914520898875606497}
 --- !u!1 &5466635802389371243
 GameObject:
   m_ObjectHideFlags: 0

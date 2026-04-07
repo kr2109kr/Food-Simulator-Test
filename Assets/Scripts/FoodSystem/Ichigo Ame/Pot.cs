@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class Pot : MonoBehaviour
+public class Pot : Equipment
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void Interact(Player player)
     {
-        
-    }
+        if (player.GetEquipment() is Stick)
+        {
+            Debug.Log("Boom");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (player.GetEquipment() is null)
+        {
+            Debug.Log("Nooo");
+        }
     }
 }

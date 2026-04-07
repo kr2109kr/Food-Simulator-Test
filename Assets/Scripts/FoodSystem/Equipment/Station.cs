@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Station : MonoBehaviour, IInteractor
 {
@@ -24,9 +23,10 @@ public class Station : MonoBehaviour, IInteractor
 
     public void Interact(Player player)
     {
-        if (player.HasEqupment)
+        if (player.HasEqupment && player.GetEquipment().NameTag == NameTag)
         {
-            player.GetEquipment().SetStation(this);
+            //player.GetEquipment().SetStation(this);
+            player.GetEquipment().TransferToStation(this);
             player.UnEquip();
         }
     }

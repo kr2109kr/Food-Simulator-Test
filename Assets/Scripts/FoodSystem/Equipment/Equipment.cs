@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Equipment : MonoBehaviour, IInteractor
 {
@@ -17,11 +16,20 @@ public class Equipment : MonoBehaviour, IInteractor
 
     [SerializeField] private Transform test;
 
+    private BoxCollider _boxCollider;
+
+    private void Awake()
+    {
+        _boxCollider = GetComponent<BoxCollider>();
+    }
+
+
     public virtual void Interact(Player player)
     {
         if (!player.GetEquipment())
         {
             player.Equip(this);
+            _boxCollider.enabled = false;
         }
     }
 
@@ -33,9 +41,14 @@ public class Equipment : MonoBehaviour, IInteractor
 
 
 
-    public void ReturnToStation()
+    public void TransferToStation(Station station)
     {
-        transform.localPosition = _station.GetResetEquipmentPos();
+        transform.SetParent(station.transform);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+        transform.localScale = Vector3.one;
+
+        //transform.localPosition = station.GetResetEquipmentPos();
     }
 
     public Vector3 GetOffsetPosition()

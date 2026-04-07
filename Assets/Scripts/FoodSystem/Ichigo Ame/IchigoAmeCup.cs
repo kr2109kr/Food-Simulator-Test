@@ -10,12 +10,17 @@ public class IchigoAmeCup : Equipment
 
     public override void Interact(Player player)
     {
-        //base.Interact(player);
+        
 
         if (player.GetEquipment() is Stick stick)
         {
             TransferStick(stick);
             player.UnEquip();
+        }
+
+        else
+        {
+            base.Interact(player);
         }
     }
 

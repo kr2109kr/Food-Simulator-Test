@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639111393540489918
+  lastModified: 639111615479683813
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -184,7 +184,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -4089484985481473173}
   cacheVersion: 131858
-  cacheTime: 639111393540489918
+  cacheTime: 639111615479683813
   SerializableEventsDict:
   - key: event:/Music/BG
     index: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639111393540439545
+  lastModified: 639111615479683813
   FileSizes:
   - Name: Desktop
     Value: 2855520

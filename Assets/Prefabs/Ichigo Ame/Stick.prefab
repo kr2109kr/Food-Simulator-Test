@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 243915974603518477}
   - component: {fileID: 3479691639155067700}
   - component: {fileID: 1786577007300485660}
-  - component: {fileID: 7955195572362464106}
   m_Layer: 0
   m_Name: 'Fruit [0]'
   m_TagString: Untagged
@@ -181,27 +180,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7955195572362464106
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449946009841986860}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4680401887279414519
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +191,6 @@ GameObject:
   - component: {fileID: 2532716948315618352}
   - component: {fileID: 2731113772440137998}
   - component: {fileID: 1506610656526116857}
-  - component: {fileID: 8545408821536054033}
   m_Layer: 0
   m_Name: 'Fruit [1]'
   m_TagString: Untagged
@@ -293,27 +270,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8545408821536054033
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4680401887279414519}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5712436914856965017
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,8 +327,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.73, z: 0.37}
+  m_Center: {x: 0, y: 1.8, z: 0.03}
 --- !u!114 &5729200432715592494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +388,6 @@ GameObject:
   - component: {fileID: 4122473408536960605}
   - component: {fileID: 3705869876917561291}
   - component: {fileID: 3126421605448044773}
-  - component: {fileID: 7408359259062020051}
   m_Layer: 0
   m_Name: 'Fruit [2]'
   m_TagString: Untagged
@@ -512,24 +467,3 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7408359259062020051
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7272759467485125176}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
