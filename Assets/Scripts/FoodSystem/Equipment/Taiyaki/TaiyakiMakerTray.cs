@@ -31,45 +31,21 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
     private bool isUsing;
 
+    private void Start()
+    {
+        if (IsNotEmpty())
+        {
+            combinedTaiyaki = transform.GetChild(0).gameObject;
+        }
+    }
+
     public void Interact(Player player)
     {
-        Debug.Log("Hello");
-
-        if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("Kettle"))
+        if (player.GetEquipment() is Kettle kettle)
         {
-            //_taiyakiMaker.Interact(_taiyaki, this.transform);
-            
-
-            var _kettle = player.GetEquipment().GetComponent<Kettle>();
-            _kettle.IsPouring();
-
+            kettle.IsPouring();
             FillRaw();
         }
-
-
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingRedBeans"))
-        {
-            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.RedBeans;
-            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
-            AddFilling("Red-Beans");
-        }
-
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingCustard"))
-        {
-            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Custard;
-            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
-            AddFilling("Custard");
-        }
-
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("FillingChocolate"))
-        {
-            TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling = TaiyakiData.Filling.Chocolate;
-            Debug.Log(TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling);
-            AddFilling("Chocolate");
-        }
-
-
-
 
         else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("Tongs"))
         {
@@ -83,17 +59,7 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
                 RemoveToOtherTray();
 
 
-            }
-
-            
-        }
-    }
-
-    private void Start()
-    {
-        if (IsNotEmpty())
-        {
-            combinedTaiyaki = transform.GetChild(0).gameObject;
+            }   
         }
     }
 
@@ -101,12 +67,11 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     {
         if (transform.childCount != 0)
         {
-            //Debug.Log(name + " is not Empty");
             return true;
         }
+
         else
         {
-            //Debug.Log(name + " is Empty");
             return false;
         }
     }
@@ -130,8 +95,6 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     }
 
     //
-    
-
     public void RemoveToOtherTray()
     {
         combinedTaiyaki = null;
@@ -158,13 +121,6 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
     
     public void FillRaw()
     {
-        TaiyakiGameObject = Instantiate(_taiyakiPrefab, transform);
-        TaiyakiGameObject.transform.localPosition = _startPosition;
-
-        //TaiyakiGameObject.GetComponent<SideTaiyaki>().StartCooking();
-
-        StartCoroutine(FillRaw(TaiyakiGameObject.transform));
-
         IEnumerator FillRaw(Transform rawTaiyaki)
         {
             float step = 0.02f * Time.fixedDeltaTime;
@@ -179,12 +135,24 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
 
             rawTaiyaki.GetComponent<SideTaiyaki>().StartCooking();
         }
+
+
+        TaiyakiGameObject = Instantiate(_taiyakiPrefab, transform);
+        TaiyakiGameObject.transform.localPosition = _startPosition;
+
+        //TaiyakiGameObject.GetComponent<SideTaiyaki>().StartCooking();
+
+        StartCoroutine(FillRaw(TaiyakiGameObject.transform));
+
+        
     }
 
 
 
     public void AddFilling(string color)
     {
+
+        /*
         if (color == "Red-Beans")
         {
             var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
@@ -200,6 +168,7 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             var fillingObject = Instantiate(_fillingPrefab, TaiyakiGameObject.transform);
             fillingObject.GetComponent<MeshRenderer>().material.color = fillingObject.GetComponent<Filling>()._chocolateColor;
         }
+        */
     }
 
     

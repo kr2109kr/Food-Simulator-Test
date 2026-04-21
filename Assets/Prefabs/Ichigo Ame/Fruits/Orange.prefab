@@ -55,5 +55,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 06d98b14fd46af746a76f8af77fed282, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8577618186806226382}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 06d98b14fd46af746a76f8af77fed282, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 769991748025257587}
   m_SourcePrefab: {fileID: 100100000, guid: 06d98b14fd46af746a76f8af77fed282, type: 3}
+--- !u!1 &1338451678901496380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 06d98b14fd46af746a76f8af77fed282, type: 3}
+  m_PrefabInstance: {fileID: 2184891662130468717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8577618186806226382
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338451678901496380}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7989f51c2e38328419f46ffa22345220, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &769991748025257587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338451678901496380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d736deb14e36a244b0b9425be171969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  _sugarCoating: {fileID: 2688438431255019334}
+--- !u!1 &2688438431255019334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4259573906618804267, guid: 06d98b14fd46af746a76f8af77fed282, type: 3}
+  m_PrefabInstance: {fileID: 2184891662130468717}
+  m_PrefabAsset: {fileID: 0}

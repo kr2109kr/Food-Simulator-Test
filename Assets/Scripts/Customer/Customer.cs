@@ -94,11 +94,9 @@ namespace CustomerSystem
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
 
-
-
-            FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
-            FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
-            FoodOrders.Add(new TakoyakiData(TakoyakiData.Filling.Tako));
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
 
 
 
@@ -116,7 +114,7 @@ namespace CustomerSystem
 
         private void Update()
         {
-            Walk();
+            //Walk();
         }
 
         public void Interact(Player player)
@@ -144,7 +142,7 @@ namespace CustomerSystem
             {
                 if (_waitingState == WaitingState.ToOrder)
                 {
-                    //OrderFood();
+                    OrderFood();
                     _waitingState = WaitingState.ForFood;
                     WaitForFood();
                 }
@@ -160,6 +158,7 @@ namespace CustomerSystem
         public void WaitToOrder()
         {
             StartCoroutine(Waiting(OnWaitingToOrder, 15)); //10
+            Debug.Log("WaitToOrder");
         }
 
         public void WaitForFood()

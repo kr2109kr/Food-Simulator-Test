@@ -71,7 +71,7 @@ public class SelectionManager : MonoBehaviour
 
     private void CheckForInteract(RaycastHit hit)
     {
-        if (hit.transform.TryGetComponent<IInteractor>(out var interactor))
+        if (hit.transform.TryGetComponent<IInteractor>(out var interactor) && _player.IsInteracting == false)
         {
             interactor.Interact(_player);
         }

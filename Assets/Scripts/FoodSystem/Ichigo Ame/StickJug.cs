@@ -7,10 +7,13 @@ public class StickJug : Equipment
     public override void Interact(Player player)
     {
         //base.Interact(player);
+        if (player.GetEquipment() is null)
+        {
+            var t = Instantiate(_stickPrefab);
+            player.Equip(t.GetComponent<Stick>());
+            Debug.Log("Hello");
+        }
         
-        var t = Instantiate(_stickPrefab);
-        player.Equip(t.GetComponent<Stick>());
-        Debug.Log("Hello");
     }
 
 }

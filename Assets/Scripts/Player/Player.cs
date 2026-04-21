@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
     Equipment _equipment;
     private SelectionManager _selectionManager;
     [SerializeField] private GameObject _equipmentHand;
+    public bool IsInteracting { get; set; }
 
     public bool HasEqupment { get; private set; }
 
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour
     public void UnEquip()
     {
         //_equipment.ReturnToStation();
-        _equipment.GetComponent<BoxCollider>().enabled = true;
+        //_equipment.GetComponent<BoxCollider>().enabled = true;
         _equipment = null;
 
         HasEqupment = false;

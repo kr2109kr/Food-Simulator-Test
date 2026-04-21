@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Body
     second: {fileID: 2100000, guid: 52f3a973e3c2f634b9f4c5d21540f079, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coating
+    second: {fileID: 2100000, guid: d2d13ddf3324f4a4988a11a217dcba5a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

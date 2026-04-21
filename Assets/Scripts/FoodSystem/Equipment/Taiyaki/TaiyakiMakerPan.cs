@@ -12,8 +12,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
     [SerializeField] private GameObject taiyaki;
 
-    private TaiyakiOld _taiyaki;
-
     [field: SerializeField] public Side SideOfPan { get; private set; }
 
     [SerializeField] private Equipment _requiredEquipment;
@@ -64,7 +62,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
             StartCoroutine(PlayAnimationAndWait(_closeAnimName, 0, () =>
             {
-                
                 _taiyakiMaker.StartCombine(this);
                 EnableCollider();
                 //Debug.Log("Opennnn");
@@ -249,11 +246,6 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
                 yield return null;
             }
         }
-
-        
-
-
-
 
         Debug.Log("Animation has Finished");
     }

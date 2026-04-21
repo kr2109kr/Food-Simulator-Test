@@ -17,6 +17,7 @@ public class Stick : Equipment
     [SerializeField] private Stack<GameObject> test;
 
     [SerializeField] private Transform[] _placeHolder = new Transform[3];
+    [SerializeField] private Fruit[] _fruit = new Fruit[3];
 
     private Animator _animator;
 
@@ -33,6 +34,7 @@ public class Stick : Equipment
         {
 
             var t = Instantiate(fruitPrefab, _placeHolder[index]);
+            _fruit[index] = t.GetComponent<Fruit>();
             //t.transform.localPosition = FruitPostions[index];
         }
 
@@ -54,6 +56,14 @@ public class Stick : Equipment
         if (fruits[^1] is not null)
         {
             IsFull = true;
+        }
+    }
+
+    public void SugarCoatFruits()
+    {
+        foreach (var fruit in _fruit)
+        {
+            fruit.SugarCoat();
         }
     }
 }

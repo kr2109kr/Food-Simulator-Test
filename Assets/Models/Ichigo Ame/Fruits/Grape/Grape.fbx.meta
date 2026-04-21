@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b8fa00a8fdcfaf41b655c2fd657a514
+guid: bfca4c1791447c34594bad0c6deef4fd
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -8,7 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Body
-    second: {fileID: 2100000, guid: ffbd1d0e0e9d3444896d895096fdaa80, type: 2}
+    second: {fileID: 2100000, guid: 5abae130224767b498a20f67899d1166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coating
+    second: {fileID: 2100000, guid: ccba6f6b11039364490843da8708ab0c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

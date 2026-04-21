@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Equipment : MonoBehaviour, IInteractor
@@ -46,7 +47,7 @@ public class Equipment : MonoBehaviour, IInteractor
         transform.SetParent(station.transform);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
-        transform.localScale = Vector3.one;
+        //transform.localScale = Vector3.one;
 
         //transform.localPosition = station.GetResetEquipmentPos();
     }
@@ -86,4 +87,35 @@ public class Equipment : MonoBehaviour, IInteractor
     {
         _station = station;
     }
+
+    protected IEnumerator PlayAnimationAndWait(Animator animator, string name, int layer, Action action)
+    {
+        IEnumerator WaitForAnimation(Animator animator, string name, int layer)
+        {
+            while (!animator.IsInTransition(layer))
+            {
+                yield return null;
+            }
+
+            while (animator.IsInTransition(layer))
+            {
+                yield return null;
+            }
+
+            if (animator.GetCurrentAnimatorStateInfo(layer).IsName(name))
+            {
+                while (animator.GetCurrentAnimatorStateInfo(layer).normalizedTime < 1f)
+                {
+                    yield return null;
+                }
+            }
+
+            Debug.Log("Animation has Finished");
+        }
+
+        yield return WaitForAnimation(animator, name, layer);
+        action();
+    }
+
+    
 }
