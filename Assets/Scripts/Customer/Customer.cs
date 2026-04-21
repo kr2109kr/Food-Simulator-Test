@@ -94,9 +94,9 @@ namespace CustomerSystem
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
             //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
 
-            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
-            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
-            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.Type.Grape));
+            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
+            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
+            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
 
 
 
@@ -123,7 +123,7 @@ namespace CustomerSystem
             {
                 if (_waitingState == WaitingState.ForFood)
                 {
-
+                    
 
 
 
@@ -136,6 +136,14 @@ namespace CustomerSystem
                     _waitingState = WaitingState.Done;
                     player.DestroyEquipment();
                 }
+            }
+
+            else if (player.GetEquipment() is IchigoAmeCup ichigoAmeCup)
+            {
+                RecieveFood(ichigoAmeCup);
+                //Debug.Log(ichigoAmeCup.GetFoods()[0]);
+                _waitingState = WaitingState.Done;
+                player.DestroyEquipment();
             }
 
             else if (!player.GetEquipment())
@@ -170,7 +178,10 @@ namespace CustomerSystem
 
         public void OrderFood()
         {
-            FoodOrders.Add();
+            //FoodOrders.Add();
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
+            FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
         }
 
         public void Done()
@@ -201,7 +212,7 @@ namespace CustomerSystem
             {
                 OnHappyEvent.Invoke();
                 _animator.SetTrigger("Happy");
-                //PlayAnimationAndWait("Happy", 0, () => Destroy(gameObject));
+                PlayAnimationAndWait("Happy", 0, () => Destroy(gameObject));
                 Invoke(nameof(Done), 6f);
             }
 
@@ -215,10 +226,28 @@ namespace CustomerSystem
 
         }
 
+        public void RecieveFood(IchigoAmeCup cup)
+        {
+            if (FoodOrders.CompareDatas(cup.GetFoods()))
+            {
+                OnHappyEvent.Invoke();
+                _animator.SetTrigger("Happy");
+                PlayAnimationAndWait("Happy", 0, () => Destroy(gameObject));
+                Invoke(nameof(Done), 6f);
+                money.AddMoney(5);
+            }
+
+            else
+            {
+                OnAngryEvent.Invoke();
+                _animator.SetTrigger("Angry");
+                Invoke(nameof(Done), 8f);
+            }
+        }
+
 
         public void CheckOrder(Bowl bowl)
         {
-
 
         }
 

@@ -10,7 +10,7 @@ public class Stick : Equipment
 {
     //[SerializeField] List<FruitType> fruits = new List<FruitType>();
 
-    FruitType?[] fruits = new FruitType?[3];
+    public FruitType?[] fruits = new FruitType?[3];
 
     [SerializeField] private List<Vector3> FruitPostions = new();
 

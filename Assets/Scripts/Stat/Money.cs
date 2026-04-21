@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class Money : MonoBehaviour
-{
+{   
     [SerializeField] public int _money;
     [SerializeField] string _moneyText = "test";
     [SerializeField, TextArea] private string Debug_String;
@@ -20,5 +20,6 @@ public class Money : MonoBehaviour
     public void AddMoney(int amount)
     {
         _money += amount;
+        Debug.Log("Money = " + _money);
     }
 }

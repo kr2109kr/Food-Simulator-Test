@@ -177,23 +177,25 @@ public class CustomerUI : MonoBehaviour
 
         else if (_customer.FoodOrders[0] is IchigoAmeData ichigoAmeData)
         {
-            switch (ichigoAmeData.type)
+            switch (ichigoAmeData.fruitType)
             {
-                case IchigoAmeData.Type.Strawberry:
+                case IchigoAmeData.FruitType.Strawberry:
                     _image.sprite = _strawberrySprite;
                     break;
 
-                case IchigoAmeData.Type.Orange:
+                case IchigoAmeData.FruitType.Orange:
                     _image.sprite = _OrangeSprite;
                     break;
 
-                case IchigoAmeData.Type.Grape:
+                case IchigoAmeData.FruitType.Grape:
                     _image.sprite = _GrapeSprite;
                     break;
 
+                /*
                 case IchigoAmeData.Type.Mixed:
                     _image.sprite = _MixedSprite;
                     break;
+                */
             }
         }
 

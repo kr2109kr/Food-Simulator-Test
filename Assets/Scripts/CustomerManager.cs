@@ -6,6 +6,7 @@ public class CustomerManager : MonoBehaviour
 {
     //[SerializeField] private GameObject _cutomerPrefabs;
     Customer customer;
+    [SerializeField] private Money _money;
 
     [SerializeField] private GameObject[] _customerPrefabs;
 

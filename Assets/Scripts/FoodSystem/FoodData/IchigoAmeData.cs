@@ -5,6 +5,7 @@ using UnityEngine;
 public class IchigoAmeData : FoodData
 {
     public Type type;
+    public FruitType fruitType;
 
     public enum FruitType
     {
@@ -21,9 +22,9 @@ public class IchigoAmeData : FoodData
         Mixed
     }
 
-    public IchigoAmeData(Type type)
+    public IchigoAmeData(FruitType fruitType)
     {
-        this.type = type;
+        this.fruitType = fruitType;
     }
 
     public override bool CompareData(FoodData foodData)
@@ -36,7 +37,7 @@ public class IchigoAmeData : FoodData
             return false;
         }
 
-        else if (type == t.type)
+        else if (fruitType == t.fruitType)
         {
             Debug.Log("Same Filling, Same Type");
             return true;

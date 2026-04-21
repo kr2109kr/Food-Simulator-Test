@@ -50,7 +50,7 @@ namespace FoodSystem
         {
             Taiyaki,
             Takoyaki,
-            //IchigoAme
+            IchigoAme
         }
 
         

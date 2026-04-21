@@ -11,6 +11,19 @@ public class TaiyakiData : FoodData
     public Filling filling;
     public Doness leftDoness;
     public Doness rightDoness;
+    public Dictionary<string, int> inventory = new Dictionary<string, int>()
+    {
+        {"Potion", 5},
+        {"Sword", 1},
+        {"Shield", 1}
+    };
+
+    public Dictionary<Filling, int> price = new Dictionary<Filling, int>()
+    {
+        { Filling.RedBeans, 180 },
+        { Filling.Chocolate, 180 },
+        { Filling.Custard, 200 }
+    };
 
     public enum Filling
     {
@@ -34,6 +47,7 @@ public class TaiyakiData : FoodData
         Both
     }
 
+    
     
 
     

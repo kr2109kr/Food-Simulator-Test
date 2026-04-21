@@ -49,6 +49,10 @@ public class FoodOrder
 
     public bool CompareDatas(List<FoodData> foodDatas)
     {
+        UnityEngine.Debug.Log(foodDatas.Count);
+        UnityEngine.Debug.Log(_foodOrders.Count);
+
+
         if (_foodOrders.Count != foodDatas.Count) { return false; }
 
         var result = _foodOrders.OrderBy(x => x.GetType().Name).SequenceEqual(foodDatas.OrderBy(x => x.GetType().Name));
