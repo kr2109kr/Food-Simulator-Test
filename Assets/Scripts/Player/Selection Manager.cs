@@ -151,7 +151,7 @@ public class SelectionManager : MonoBehaviour
 
         if (hits.Length > 1)
         {
-            if (hits[1].transform.gameObject.TryGetComponent<Customer>(out Customer customer1))
+            if (hits[1].transform.gameObject.TryGetComponent<CustomerOrder>(out CustomerOrder customer1))
             {
                 //customer1.CheckOrder(_taiyakiFilling);
             }

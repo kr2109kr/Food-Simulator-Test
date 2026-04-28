@@ -1,0 +1,66 @@
+# Apple ModelI/O MTL File: WallShelf.mtl
+
+newmtl PoleSG1
+	map_Kd PoleSG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic PoleSG1-metallic.png
+	specularTint 0
+	map_roughness PoleSG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl LegSG1
+	map_Kd LegSG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic LegSG1-metallic.png
+	specularTint 0
+	map_roughness LegSG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl TopSG1
+	map_Kd TopSG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TopSG1-metallic.png
+	specularTint 0
+	map_roughness TopSG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl initialShadingGroup
+	map_Kd initialShadingGroup-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic initialShadingGroup-metallic.png
+	specularTint 0
+	map_roughness initialShadingGroup-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

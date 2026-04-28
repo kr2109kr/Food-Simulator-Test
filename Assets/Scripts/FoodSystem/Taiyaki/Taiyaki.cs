@@ -63,9 +63,17 @@ public class Taiyaki : MonoBehaviour
 
     }
 
+    /*
     public FoodData GetFood()
     {
         return _dataForCheck;
+    }
+    */
+
+
+    public TaiyakiData GetFood()
+    {
+        return _taiyakiData;
     }
 
     public void ChangeMaterials(TaiyakiData.Side side, Material material)
@@ -98,11 +106,11 @@ public class Taiyaki : MonoBehaviour
         _dataForCheck.rightDoness = doness;
     }
 
-    public void PauseCooking(TaiyakiDataOLD.Side side)//left right
+    public void PauseCooking(TaiyakiData.Side side)//left right
     {
-        //_isPauseCookingLeft = side == TaiyakiData.Side.Left ? true : _isPauseCookingRight = true;\
-        _isPauseCookingLeft = true;
-        _isPauseCookingRight = true;
+        _isPauseCookingLeft = side == TaiyakiData.Side.Left ? true : _isPauseCookingRight = true;
+        //_isPauseCookingLeft = true;
+        //_isPauseCookingRight = true;
 
     }
 

@@ -1,0 +1,34 @@
+# Apple ModelI/O MTL File: Knife.mtl
+
+newmtl BladeSG
+	map_Kd BladeSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic BladeSG-metallic.png
+	specularTint 0
+	map_roughness BladeSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl HandleSG
+	map_Kd HandleSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic HandleSG-metallic.png
+	specularTint 0
+	map_roughness HandleSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

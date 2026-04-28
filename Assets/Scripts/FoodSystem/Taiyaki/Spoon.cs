@@ -21,4 +21,5 @@ public class Spoon : Equipment
     public TaiyakiData.Filling Filling { get; set; }
 
     [SerializeField] private GameObject _fillingObject;
+    [SerializeField] private GameObject _fillingPrefab;
 }

@@ -9,6 +9,9 @@ public class TakoyakiMakerTray : MonoBehaviour, IInteractor
     private GameObject _fullTakoyakiPrefabs;
     private GameObject _currentObject;
 
+
+    private GameObject _curremtHaldTakoyaki;
+
     [Header("FillFlour")]
     [SerializeField] private Vector3 _startPosition;
     [SerializeField] private Vector3 _target = Vector3.zero;
@@ -57,6 +60,7 @@ public class TakoyakiMakerTray : MonoBehaviour, IInteractor
                 _kettle.IsPouring();
 
                 FillFlour();
+                Debug.Log("wwww");
 
                 _state++;
             }
@@ -64,12 +68,25 @@ public class TakoyakiMakerTray : MonoBehaviour, IInteractor
 
         else if (_state == State.HasFlour)
         {
-            if (player.GetEquipment()?.Check(typeof(TakoyakiFillingBox)) ?? false)
+            if (player.GetEquipment()?.Check(typeof(TakoyakiFillingSpoon)) ?? false)
             {
-                var FillingBox = player.GetEquipment().GetComponent<TakoyakiFillingBox>();
+                var FillingSpoon = player.GetEquipment().GetComponent<TakoyakiFillingSpoon>();
 
-                AddFilling(FillingBox.Filling, FillingBox.FillingPrefab);
-                
+                if (FillingSpoon.Filling == TakoyakiData.Filling.Tako)
+                {
+                    _currentObject.GetComponent<HalfTakoyaki>().ShowTako();
+                }
+                else if (FillingSpoon.Filling == TakoyakiData.Filling.Shrimp)
+                {
+                    _currentObject.GetComponent<HalfTakoyaki>().ShowShrimp();
+                }
+                else if (FillingSpoon.Filling == TakoyakiData.Filling.Bacon)
+                {
+                    _currentObject.GetComponent<HalfTakoyaki>().ShowBacon();
+                }
+
+                //AddFilling(FillingSpoon.Filling, FillingSpoon.FillingPrefab);
+
 
                 _state++;
             }

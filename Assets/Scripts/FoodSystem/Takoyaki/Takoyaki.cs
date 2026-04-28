@@ -7,6 +7,8 @@ public class Takoyaki : MonoBehaviour
 {
     [SerializeField] private TakoyakiData _takoyakiData;
 
+    
+
     [SerializeField] private Material[] _materialsForChange;
     private MeshRenderer _meshRenderer;
 
@@ -17,6 +19,7 @@ public class Takoyaki : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
+
     private void Start()
     {
         StartTest();
@@ -24,7 +27,7 @@ public class Takoyaki : MonoBehaviour
 
     private void StartTest()
     {
-        StartCoroutine(CookingTimer(5f));
+        StartCoroutine(CookingTimer(10f));
         _takoyakiData.filling = TakoyakiData.Filling.Tako;
         _takoyakiData.doness = TakoyakiData.Doness.Burnt;
     }

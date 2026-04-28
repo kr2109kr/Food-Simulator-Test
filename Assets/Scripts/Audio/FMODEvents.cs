@@ -8,6 +8,11 @@ public class FMODEvents : MonoBehaviour
 
     [field: SerializeField] public EventReference Clicked { get; private set; }
 
+
+    [field: Header("Game Manager SFX")]
+    [field: SerializeField] public EventReference AddMoney { get; private set; }
+
+
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference FootSteps { get; private set; }
     [field: SerializeField] public EventReference Interact { get; private set; }

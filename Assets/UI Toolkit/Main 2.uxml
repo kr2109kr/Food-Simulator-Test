@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement enabled="true" name="Setting" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UI%20Image/Setting.PNG?fileID=2800000&amp;guid=5b170bc0498c2b64191044e65f66a54e&amp;type=3#Setting&quot;); display: none;"/>
+    <ui:Button text="Start" name="Start"/>
+</ui:UXML>

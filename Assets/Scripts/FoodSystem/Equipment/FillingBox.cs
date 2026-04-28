@@ -7,6 +7,9 @@ public class FillingBox : Equipment
     [SerializeField] private Animator _animator;
     [SerializeField] private TaiyakiData.Filling _filling;
 
+    [SerializeField] private Vector3 _offsetPos;
+    [SerializeField] private Vector3 _offsetRot;
+
     [SerializeField] private Spoon _spoon;
 
     private void Awake()
@@ -32,7 +35,8 @@ public class FillingBox : Equipment
         {
             player.UnEquip();
             _spoon.transform.SetParent(this.transform);
-            _spoon.transform.localPosition = Vector3.zero;
+            _spoon.transform.localPosition = _offsetPos;
+            _spoon.transform.localRotation = Quaternion.Euler(_offsetRot);
         }
     }
 }

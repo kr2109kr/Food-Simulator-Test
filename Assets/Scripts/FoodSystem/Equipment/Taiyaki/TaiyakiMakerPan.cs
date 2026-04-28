@@ -1,7 +1,6 @@
 using FoodSystem;
 using System;
 using System.Collections;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class TaiyakiMakerPan : MonoBehaviour, IInteractor
@@ -38,11 +37,7 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
     {
         
 
-        AnimatorController animatorController = _animator.runtimeAnimatorController as AnimatorController;
-
-        AnimatorStateMachine animatorStateMachine = animatorController.layers[0].stateMachine;
-
-        _animator.Play(animatorStateMachine.defaultState.name, 0, 1f); //Set Default Animation State
+        
 
 
         //animatorStateMachine.defaultState.speed = 1f;
@@ -139,8 +134,8 @@ public class TaiyakiMakerPan : MonoBehaviour, IInteractor
 
 
 
-        var anotherTaiyakiFilling = GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling;
-        var thisTaiyakiFilling = _trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>()._dataForCheck.filling;
+        var anotherTaiyakiFilling = GetAnotherPan()._trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>().Filling;
+        var thisTaiyakiFilling = _trays[indexOfTray].TaiyakiGameObject.GetComponent<SideTaiyaki>().Filling;
 
 
         if (anotherTaiyakiFilling != TaiyakiData.Filling.None)

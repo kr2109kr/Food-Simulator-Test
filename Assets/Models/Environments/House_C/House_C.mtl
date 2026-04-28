@@ -1,0 +1,162 @@
+# Apple ModelI/O MTL File: House_C.mtl
+
+newmtl Glass10SG1
+	map_Kd Glass10SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Glass10SG1-metallic.png
+	specularTint 0
+	map_roughness Glass10SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl FrameWindow4SG1
+	map_Kd FrameWindow4SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic FrameWindow4SG1-metallic.png
+	specularTint 0
+	map_roughness FrameWindow4SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl OutDoor3SG1
+	map_Kd OutDoor3SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic OutDoor3SG1-metallic.png
+	specularTint 0
+	map_roughness OutDoor3SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl TopRoof1SG1
+	map_Kd TopRoof1SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TopRoof1SG1-metallic.png
+	specularTint 0
+	map_roughness TopRoof1SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Under_B1SG1
+	map_Kd Under_B1SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Under_B1SG1-metallic.png
+	specularTint 0
+	map_roughness Under_B1SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Roof_B1SG1
+	map_Kd Roof_B1SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Roof_B1SG1-metallic.png
+	specularTint 0
+	map_roughness Roof_B1SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Roof2SG1
+	map_Kd Roof2SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Roof2SG1-metallic.png
+	specularTint 0
+	map_roughness Roof2SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Roof_B2SG1
+	map_Kd Roof_B2SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Roof_B2SG1-metallic.png
+	specularTint 0
+	map_roughness Roof_B2SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Glass4SG1
+	map_Kd Glass4SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Glass4SG1-metallic.png
+	specularTint 0
+	map_roughness Glass4SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Frame3SG1
+	map_Kd Frame3SG1-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Frame3SG1-metallic.png
+	specularTint 0
+	map_roughness Frame3SG1-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

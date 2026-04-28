@@ -1,0 +1,82 @@
+# Apple ModelI/O MTL File: Takoyaki_Pan.mtl
+
+newmtl TakoyakiSG
+	map_Kd TakoyakiSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TakoyakiSG-metallic.png
+	specularTint 0
+	map_roughness TakoyakiSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl TopSG
+	map_Kd TopSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic TopSG-metallic.png
+	specularTint 0
+	map_roughness TopSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl PowerSG
+	map_Kd PowerSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic PowerSG-metallic.png
+	specularTint 0
+	map_roughness PowerSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl UnderPowerSG
+	map_Kd UnderPowerSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic UnderPowerSG-metallic.png
+	specularTint 0
+	map_roughness UnderPowerSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl MainSG
+	map_Kd MainSG-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic MainSG-metallic.png
+	specularTint 0
+	map_roughness MainSG-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

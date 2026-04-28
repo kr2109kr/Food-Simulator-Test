@@ -30,7 +30,7 @@ public class Equipment : MonoBehaviour, IInteractor
         if (!player.GetEquipment())
         {
             player.Equip(this);
-            _boxCollider.enabled = false;
+            //_boxCollider.enabled = false;
         }
     }
 
@@ -45,8 +45,8 @@ public class Equipment : MonoBehaviour, IInteractor
     public void TransferToStation(Station station)
     {
         transform.SetParent(station.transform);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
+        transform.localPosition = HoldPostion;
+        transform.localRotation = Quaternion.Euler(HoldRotation);
         //transform.localScale = Vector3.one;
 
         //transform.localPosition = station.GetResetEquipmentPos();

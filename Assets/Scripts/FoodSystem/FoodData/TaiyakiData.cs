@@ -11,6 +11,11 @@ public class TaiyakiData : FoodData
     public Filling filling;
     public Doness leftDoness;
     public Doness rightDoness;
+
+    static int random;
+
+    public int Price { get; private set; }
+
     public Dictionary<string, int> inventory = new Dictionary<string, int>()
     {
         {"Potion", 5},
@@ -47,12 +52,19 @@ public class TaiyakiData : FoodData
         Both
     }
 
-    
+    private void Test()
+    {
+        int a = price[Filling.Custard];
+    }
     
 
     
 
-    public TaiyakiData() { }
+    public TaiyakiData()
+    {
+        this.filling = RandomFilling();
+        Price = price[filling];
+    }
 
     public TaiyakiData(Filling filling)
     {
@@ -92,7 +104,7 @@ public class TaiyakiData : FoodData
     {
         Array value = Enum.GetValues(typeof(Filling));
 
-        int random = UnityEngine.Random.Range(1, value.Length); //0 = None
+        random = UnityEngine.Random.Range(1, value.Length); //0 = None
 
         return (Filling)value.GetValue(random);
     }

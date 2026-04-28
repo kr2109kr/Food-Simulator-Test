@@ -7,10 +7,29 @@ public class SideTaiyaki : MonoBehaviour
 
     private MeshRenderer _meshRenderer;
 
+    [SerializeField] private GameObject _redBeansFilling;
+    [SerializeField] private GameObject _custardFilling;
+    [SerializeField] private GameObject _chocolateFilling;
+
     private bool isPauseCooking;
     [SerializeField] private Material[] _materialsForChange;
 
-    public TaiyakiData _dataForCheck = new TaiyakiData();
+    public TaiyakiData.Filling Filling;
+
+    public void ShowRedBeans()
+    {
+        _redBeansFilling.SetActive(true);
+    }
+
+    public void ShowCustard()
+    {
+        _custardFilling.SetActive(true);
+    }
+
+    public void ShowChocolate()
+    {
+        _chocolateFilling.SetActive(true);
+    }
 
     private void Start()
     {

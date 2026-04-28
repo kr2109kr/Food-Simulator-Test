@@ -47,19 +47,48 @@ public class TaiyakiMakerTray : MonoBehaviour, IInteractor
             FillRaw();
         }
 
-        else if (player.GetEquipment() != null && player.GetEquipment().CheckEquipmentOLD("Tongs"))
+        else if (player.GetEquipment() is TaiyakiSpoon taiyakiSpoon)
+        {
+            taiyakiSpoon.HasFilling = false;
+
+            if (taiyakiSpoon.Filling == TaiyakiData.Filling.RedBeans)
+            {
+                TaiyakiGameObject.GetComponent<SideTaiyaki>().ShowRedBeans();
+                TaiyakiGameObject.GetComponent<SideTaiyaki>().Filling = TaiyakiData.Filling.RedBeans;
+            }
+
+            else if (taiyakiSpoon.Filling == TaiyakiData.Filling.Chocolate)
+            {
+                TaiyakiGameObject.GetComponent<SideTaiyaki>().ShowChocolate();
+                TaiyakiGameObject.GetComponent<SideTaiyaki>().Filling = TaiyakiData.Filling.Chocolate;
+            }
+        }
+
+        else if (player.GetEquipment() is TaiyakiCustardBag taiyakiCustardBag)
+        {
+            TaiyakiGameObject.GetComponent<SideTaiyaki>().ShowCustard();
+            TaiyakiGameObject.GetComponent<SideTaiyaki>().Filling = TaiyakiData.Filling.Custard;
+        }
+
+        else if (player.GetEquipment() is Tongs tongs)
         {
             if (combinedTaiyaki != null)
             {
-                var _tongs = player.GetEquipment().GetComponent<Tongs>();
+                Debug.Log("PPPPPPPP");
+                ;
 
-                _tongs.PickUp(combinedTaiyaki);
-                combinedTaiyaki.GetComponent<Taiyaki>().PauseCooking(TaiyakiDataOLD.Side.Left);
+                tongs.PickUp(combinedTaiyaki);
+                combinedTaiyaki.GetComponent<Taiyaki>().PauseCooking(TaiyakiData.Side.Left);
 
                 RemoveToOtherTray();
 
 
-            }   
+            }
+
+            else
+            {
+                Debug.Log("SSSSSSS");
+            }
         }
     }
 

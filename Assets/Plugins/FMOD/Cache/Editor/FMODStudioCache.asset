@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639111615479683813
+  lastModified: 639129723769698402
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 1126
   Exists: 1
 --- !u!114 &-3161208515278022775
 MonoBehaviour:
@@ -123,7 +123,7 @@ MonoBehaviour:
   - {fileID: 737553578330067912}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -178,13 +178,14 @@ MonoBehaviour:
   - {fileID: 7197317653720666193}
   - {fileID: -6958113164641643932}
   - {fileID: 2959621338357833604}
+  - {fileID: 3107313538768850403}
   EditorParameters: []
   MasterBanks:
   - {fileID: 737553578330067912}
   StringsBanks:
   - {fileID: -4089484985481473173}
   cacheVersion: 131858
-  cacheTime: 639111615479683813
+  cacheTime: 639129723769698402
   SerializableEventsDict:
   - key: event:/Music/BG
     index: 0
@@ -200,6 +201,8 @@ MonoBehaviour:
     index: 5
   - key: event:/SFX/Player/UnEquip
     index: 6
+  - key: event:/SFX/Game_Manager/Money_Add
+    index: 7
 --- !u!114 &737553578330067912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,10 +218,10 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639111615479683813
+  lastModified: 639129723769638158
   FileSizes:
   - Name: Desktop
-    Value: 2855520
+    Value: 2865152
   Exists: 1
 --- !u!114 &2959621338357833604
 MonoBehaviour:
@@ -238,6 +241,33 @@ MonoBehaviour:
     Data2: 1240076085
     Data3: -849316705
     Data4: -553150381
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3107313538768850403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Game_Manager/Money_Add
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Game_Manager/Money_Add
+  Guid:
+    Data1: 293579038
+    Data2: 1134440297
+    Data3: 613374907
+    Data4: 1862677803
   Banks:
   - {fileID: 737553578330067912}
   IsStream: 0
