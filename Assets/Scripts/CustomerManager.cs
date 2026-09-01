@@ -1,4 +1,6 @@
 using CustomerSystem;
+using KomorebiKitchen;
+using KomorebiKitchen.Environment;
 using System;
 using UnityEngine;
 
@@ -22,6 +24,10 @@ public class CustomerManager : MonoBehaviour
     [SerializeField] public Vector3 _spawnPos;
 
     [field: SerializeField] public Vector3[] TargetsPos { get; private set; }
+
+
+    [SerializeField] public Door _Door;
+    [SerializeField] public Cashier _Cashier;
 
     private CustomerOrder npc;
 
@@ -49,19 +55,23 @@ public class CustomerManager : MonoBehaviour
         {
             c = Instantiate(RandomCustomer(_NPC_01_Varients), transform);
             c.transform.position = _spawnPos;
+            c.GetComponent<Customer>().Init(_Door, _Cashier);
         }
 
         else if (_currentCustomerType == 1)
         {
             c = Instantiate(RandomCustomer(_NPC_02_Varients), transform);
             c.transform.position = _spawnPos;
+            c.GetComponent<Customer>().Init(_Door, _Cashier);
         }
 
         else if (_currentCustomerType == 2)
         {
             c = Instantiate(RandomCustomer(_NPC_Rich_Varients), transform);
             c.transform.position = _spawnPos;
+            c.GetComponent<Customer>().Init(_Door, _Cashier);
         }
+        
         //var c = Instantiate(RandomCustomer(), transform);
         
     }

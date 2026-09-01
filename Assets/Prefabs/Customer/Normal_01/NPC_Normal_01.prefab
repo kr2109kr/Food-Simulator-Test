@@ -865,6 +865,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a25cbf3c585d08e48ba6c1cec8b6e671, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5010994905225272816}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a25cbf3c585d08e48ba6c1cec8b6e671, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5286095274645017148}
   m_SourcePrefab: {fileID: 100100000, guid: a25cbf3c585d08e48ba6c1cec8b6e671, type: 3}
 --- !u!1 &6185487226948094867 stripped
 GameObject:
@@ -945,6 +948,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomerWalk
   _speed: 4.5
   test: {fileID: 0}
+--- !u!114 &5286095274645017148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185487226948094867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49166c00622483d46b041dc7c1aa64ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KomorebiKitchen.Customer
 --- !u!4 &6817486048504140073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a25cbf3c585d08e48ba6c1cec8b6e671, type: 3}

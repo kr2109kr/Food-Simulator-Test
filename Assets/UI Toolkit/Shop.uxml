@@ -1,0 +1,75 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/ShopButton.uss?fileID=7433441132597879392&amp;guid=d706a9e6773d4d243ba6642a78ce1909&amp;type=3#ShopButton"/>
+    <ui:VisualElement enabled="true" name="Taiyaki" style="flex-grow: 1; background-color: rgb(168, 82, 82);">
+        <ui:Button name="Equipment" enabled="true" style="display: none;">
+            <ui:Image/>
+            <ui:Label text="Ichigo Ame" name="Name"/>
+            <ui:Label text="500" name="Price"/>
+        </ui:Button>
+        <ui:VisualElement name="Type" style="flex-grow: 1; display: flex; flex-direction: row;">
+            <ui:Button name="RedBeans" style="display: flex; max-width: 100px; max-height: 100px;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/red-beans.png?fileID=2800000&amp;guid=f7665248f07d98a468db0e374d7f062f&amp;type=3#red-beans" style="min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="あんこ" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Custard" style="display: flex; max-width: 100px; max-height: 100px;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/custard.png?fileID=2800000&amp;guid=e311840f9392bb44b87feababb89878c&amp;type=3#custard" style="aspect-ratio: auto; min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="カスタード" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Chocolate" enabled="true" style="display: flex; max-width: 100px; max-height: 100px;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/chocolate.png?fileID=2800000&amp;guid=76538834ddbb4444e94c721d4da30d39&amp;type=3#chocolate" style="min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="チョコレート" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement enabled="true" name="Takoyaki" style="flex-grow: 1; background-color: rgb(168, 82, 82); max-width: 100px; max-height: 100px;">
+        <ui:Button name="Equipment" style="display: none;">
+            <ui:Image/>
+            <ui:Label text="Ichigo Ame" name="Name"/>
+            <ui:Label text="500" name="Price"/>
+        </ui:Button>
+        <ui:VisualElement name="Type" style="flex-grow: 1; display: flex; flex-direction: row;">
+            <ui:Button name="Octopus" enabled="true" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/octopus.png?fileID=2800000&amp;guid=eeba1b4eae340e1479ae51b06ee19442&amp;type=3#octopus" style="min-height: 30px; min-width: 30px;"/>
+                <ui:Label text="たこ" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Shrimp" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/shrimp.png?fileID=2800000&amp;guid=2cc2ee7b483686f43855fde13f81cce3&amp;type=3#shrimp" style="aspect-ratio: auto; min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="エビ" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Bacon" enabled="true" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/bacon.png?fileID=2800000&amp;guid=343aabe4874a31347b29d6ac6ad642c7&amp;type=3#bacon" style="min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="ベーコン" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement enabled="true" name="IchigoAme" style="flex-grow: 1; background-color: rgb(168, 82, 82); max-width: 100px; max-height: 100px;">
+        <ui:Button name="Equipment" style="display: none;">
+            <ui:Image/>
+            <ui:Label text="Ichigo Ame" name="Name"/>
+            <ui:Label text="500" name="Price"/>
+        </ui:Button>
+        <ui:VisualElement name="Type" style="flex-grow: 1; display: flex; flex-direction: row;">
+            <ui:Button name="Strawberry" enabled="true" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/strawberry.png?fileID=2800000&amp;guid=4996c1bd80fd3f14089d793fc4ec29d0&amp;type=3#strawberry" style="min-height: 30px; min-width: 30px;"/>
+                <ui:Label text="いちご" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Orange" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/orange.png?fileID=2800000&amp;guid=6ccda0da9fece064c863d9a1c9707be3&amp;type=3#orange" style="aspect-ratio: auto; min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="みかん" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+            <ui:Button name="Grape" enabled="true" style="display: flex;">
+                <ui:Image name="Image" source="project://database/Assets/UI%20Toolkit/UI%20Image/MockUp/grape.png?fileID=2800000&amp;guid=74e8bec0168fa4c4bbec6f1f74b7fccd&amp;type=3#grape" style="min-width: 30px; min-height: 30px;"/>
+                <ui:Label text="マスカット" name="Name" style="-unity-font-style: bold;"/>
+                <ui:Label text="¥‎500‎‎" name="Price"/>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

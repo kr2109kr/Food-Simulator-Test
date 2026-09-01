@@ -12,7 +12,7 @@ public class TaiyakiData : FoodData
     public Doness leftDoness;
     public Doness rightDoness;
 
-    static int random;
+    int random;
 
     public int Price { get; private set; }
 
@@ -62,8 +62,8 @@ public class TaiyakiData : FoodData
 
     public TaiyakiData()
     {
-        this.filling = RandomFilling();
-        Price = price[filling];
+        //this.filling = RandomFilling();
+        //Price = price[filling];
     }
 
     public TaiyakiData(Filling filling)
@@ -71,11 +71,12 @@ public class TaiyakiData : FoodData
         this.filling = filling;
 
     }
-
-    public static TaiyakiData RandomData()
+    /*
+    public TaiyakiData RandomData()
     {
-        return new TaiyakiData(RandomFilling());
-    }
+
+        //return new TaiyakiData(RandomFilling());
+    }*/
 
     public override bool CompareData(FoodData foodData)
     {
@@ -99,13 +100,15 @@ public class TaiyakiData : FoodData
             return false;
         }
     }
-
-    public static Filling RandomFilling()
+    /*
+    public Filling RandomFilling()
     {
         Array value = Enum.GetValues(typeof(Filling));
 
-        random = UnityEngine.Random.Range(1, value.Length); //0 = None
+        int random = UnityEngine.Random.Range(1, value.Length); //0 = None
 
         return (Filling)value.GetValue(random);
     }
+    */
+
 }

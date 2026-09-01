@@ -10,7 +10,7 @@ namespace FoodSystem
     public class FoodData
     {
         private static Dictionary<FoodType, Func<FoodData>> factory = new Dictionary<FoodType, Func<FoodData>>() {
-            { FoodType.Taiyaki, () =>  new TaiyakiData(TaiyakiData.RandomFilling()) },
+            //{ FoodType.Taiyaki, () =>  new TaiyakiData(TaiyakiData.RandomFilling()) },
 
             { FoodType.Takoyaki, () => new TakoyakiData(TakoyakiData.RandomFilling()) },
 

@@ -7,11 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     private VisualElement _root;
     private Button _startButton;
+    private Button _exitButton;
 
     private void OnEnable()
     {
         _startButton.clicked += StartGame;
         _startButton.RegisterCallback<ClickEvent>(ww);
+        _startButton.RegisterCallback<ClickEvent>(ww);
+    }
+    private void Awake()
+    {
+        _root = GetComponent<UIDocument>().rootVisualElement;
+        _startButton = _root.Q<Button>("Start");
+        _exitButton = _root.Q<Button>("Exit");
     }
 
     private void ww(ClickEvent evt)
@@ -24,11 +32,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Gameplay");
     }
 
-
-
-    private void Awake()
+    private void ExitGame()
     {
-        _root = GetComponent<UIDocument>().rootVisualElement;
-        _startButton = _root.Q<Button>("Start");
-    }
+        Application.Quit();
+    }    
 }

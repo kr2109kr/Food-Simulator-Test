@@ -35,7 +35,7 @@ public class AudioManager : MonoBehaviour
     private void InitializeMusic()
     {
         _musicInstance = CreateEventInstance(FMODEvents.Instance.Music);
-        _musicInstance.start();
+        //_musicInstance.start();
     }
 
     public EventInstance CreateEventInstance(EventReference eventReference)

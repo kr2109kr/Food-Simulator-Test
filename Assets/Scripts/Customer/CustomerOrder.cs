@@ -4,6 +4,7 @@ using FoodSystem;
 using System.Collections.Generic;
 using UnityEngine.Events;
 using System;
+using KomorebiKitchen;
 
 namespace CustomerSystem
 {
@@ -37,7 +38,7 @@ namespace CustomerSystem
         public FoodOrder FoodOrders { get; private set; } = new();
         [SerializeField] private CustomerUI _customerUI;
 
-        CustomerWalk _customerWalk;
+        CustomerMovement _customerWalk;
 
         Dictionary<WaitingState, Action> ActionMap = new Dictionary<WaitingState, Action>();
 
@@ -76,28 +77,7 @@ namespace CustomerSystem
         {
             _animator = GetComponent<Animator>();
             _gameManager = Transform.FindFirstObjectByType<GameManager>();
-            _customerWalk = GetComponentInParent<CustomerWalk>();
-        }
-
-        private void Start()
-        {
-            //WaitToOrder();
-
-            //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
-            //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
-            //FoodOrders.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
-
-            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
-            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
-            //FoodOrders.Add(new IchigoAmeData(IchigoAmeData.FruitType.Grape));
-
-
-
-            //test.Add(new TaiyakiData(TaiyakiData.Filling.RedBeans));
-
-            //FoodOrders.CompareDatas(test);
-
-
+            _customerWalk = GetComponentInParent<CustomerMovement>();
         }
 
         public void Interact(Player player)
@@ -146,6 +126,11 @@ namespace CustomerSystem
         {
             StartCoroutine(Waiting(OnWaitingToOrder, 15)); //10
             Debug.Log("WaitToOrder");
+        }
+
+        public void WaitToOrder(Action action)
+        {
+            StartCoroutine(Waiting(OnWaitingToOrder, 15)); //10
         }
 
         public void WaitForFood()
@@ -221,7 +206,7 @@ namespace CustomerSystem
 
         public void WalkAway()
         {
-            _customerWalk.WalkAway();
+            //_customerWalk.WalkAway();
             OnFinishedEvent.Invoke();
         }
 

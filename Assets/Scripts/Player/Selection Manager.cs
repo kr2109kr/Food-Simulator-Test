@@ -1,6 +1,7 @@
 using CustomerSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -52,6 +53,11 @@ public class SelectionManager : MonoBehaviour
         _clickingAction.action.Disable();
     }
 
+    private void Update()
+    {
+        RaycatOutline();
+    }
+
     private void OnTouchPress(InputAction.CallbackContext context)
     {
         Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
@@ -77,40 +83,48 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
-    public void TakeEquipment()
-    {
-
-        /*
-        if (_player.GetEquipment())
-        {
-            var t = _player.GetEquipment();
-            Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
-
-
-
-            if (_dragPlane.Raycast(ray, out float distance))
-            {
-                t.transform.position = ray.GetPoint(distance) + t.GetOffsetPosition();
-            }
-
-        }
-        */
-
-        /*
-        if (_cameraSwitch.IsCameraSwitching())
-        {
-            var t = _player.GetEquipment();
-
-        }*/
-    }
+    
 
     private void OnMousePosition(InputAction.CallbackContext context)
     {
         _currentTouchPos = context.ReadValue<Vector2>();
-
-        TakeEquipment();
+        Debug.Log("www");
+        
     }
 
+    private Test current;
+
+    private void RaycatOutline()
+    {
+        Ray ray = _camera.ScreenPointToRay(_currentTouchPos);
+
+
+        //Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Test newTarget = hit.collider.GetComponent<Test>();
+
+            if (newTarget != current)
+            {
+                if (current != null)
+                    current.DisableOutline();
+
+                current = newTarget;
+
+                if (current != null)
+                    current.EnableOutline();
+            }
+        }
+        else
+        {
+            if (current != null)
+            {
+                current.EnableOutline();
+                current = null;
+            }
+        }
+    }
 
     private void OnTouchRelease(InputAction.CallbackContext context)
     {
@@ -140,6 +154,8 @@ public class SelectionManager : MonoBehaviour
         }
         */
     }
+
+
 
     private void CheckRaycastTarget()
     {

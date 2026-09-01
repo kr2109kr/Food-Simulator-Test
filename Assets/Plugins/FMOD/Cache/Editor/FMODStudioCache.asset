@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639129723769698402
+  lastModified: 639133717426067450
   FileSizes:
   - Name: Desktop
-    Value: 1126
+    Value: 1266
   Exists: 1
 --- !u!114 &-3161208515278022775
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-874949803415749720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Radio/Cyclone-Sticky FInger
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/Radio/Cyclone-Sticky FInger
+  Guid:
+    Data1: -1232551702
+    Data2: 1217571059
+    Data3: 1971956643
+    Data4: 1339180044
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 271460
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,13 +206,15 @@ MonoBehaviour:
   - {fileID: -6958113164641643932}
   - {fileID: 2959621338357833604}
   - {fileID: 3107313538768850403}
+  - {fileID: 2171110954800076693}
+  - {fileID: -874949803415749720}
   EditorParameters: []
   MasterBanks:
   - {fileID: 737553578330067912}
   StringsBanks:
   - {fileID: -4089484985481473173}
   cacheVersion: 131858
-  cacheTime: 639129723769698402
+  cacheTime: 639133717426067450
   SerializableEventsDict:
   - key: event:/Music/BG
     index: 0
@@ -203,6 +232,10 @@ MonoBehaviour:
     index: 6
   - key: event:/SFX/Game_Manager/Money_Add
     index: 7
+  - key: event:/Music/Radio/One by One - Sticky Finger
+    index: 8
+  - key: event:/Music/Radio/Cyclone-Sticky FInger
+    index: 9
 --- !u!114 &737553578330067912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,11 +251,38 @@ MonoBehaviour:
   Path: FMOD/Food-Simulator-Test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639129723769638158
+  lastModified: 639133717426032473
   FileSizes:
   - Name: Desktop
-    Value: 2865152
+    Value: 9641056
   Exists: 1
+--- !u!114 &2171110954800076693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Radio/One by One - Sticky Finger
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/Radio/One by One - Sticky Finger
+  Guid:
+    Data1: 389125027
+    Data2: 1272112236
+    Data3: -410030943
+    Data4: -1473135818
+  Banks:
+  - {fileID: 737553578330067912}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 258094
 --- !u!114 &2959621338357833604
 MonoBehaviour:
   m_ObjectHideFlags: 0
